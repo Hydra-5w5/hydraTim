@@ -20,25 +20,25 @@ add_action( 'wp_enqueue_scripts', 'enfiler_css' );
 
 /* ------------------------------------------ Enregistrement des menus */
 
-// function enregistre_menus(){
-//     register_nav_menus( array(
-//         'menu_entete' => 'Menu entete',
-//         'menu_sidebar'  => 'Menu sidebar',
-//     ) );
-// }
-// add_action( 'after_setup_theme', 'enregistre_menus', 0 );
+function enregistre_menus(){
+    register_nav_menus( array(
+        'menu_entete' => 'Menu entete',
+        'menu_sidebar'  => 'Menu sidebar',
+    ) );
+}
+add_action( 'after_setup_theme', 'enregistre_menus', 0 );
 
 /* ------------------------------------------ add_theme_support */
 // add_theme_support( 'title-tag' );
-// add_theme_support( 'custom-logo', array(
-//     'height' => 500,
-//     'width'  => 500,
-// ) );
+add_theme_support( 'custom-logo', array(
+    'height' => 500,
+    'width'  => 500,
+) );
 
 /* permet d'utiliser la fonction image en arrière plan dans personnaliser */
 // add_theme_support( 'custom-background' );
-// add_theme_support( 'post-thumbnails' );
-// set_post_thumbnail_size( 150, 150, true ); // l'image peut etre cropper
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 150, 150, true ); // l'image peut etre cropper
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

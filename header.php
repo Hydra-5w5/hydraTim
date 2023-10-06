@@ -14,8 +14,27 @@
 
 <body class="site custom-background">
     <header class="site__entete">
+    <div class="entete__nav <?= is_front_page() ? "entete__acc" : "" ?>">
+            <div class="menu__logo">
+                <?php the_custom_logo(); ?>
+            </div>
+            <div class="menu__nav__recherche">
+                <input id="cc__bouton__burger" type="checkbox" />
+                <label class='bouton__burger__conteneur' for="cc__bouton__burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <?php wp_nav_menu(array(
+                                    "menu" => "entete",
+                                    "container" => "nav",
+                                    "container_class" => "menu__entete", //pour changer le nom de la class
+                )); ?>
+                <!-- <div class="bloc__couleur"></div> -->
 
+
+            </div>
+        </div>
     </header>
 
-
-
+    

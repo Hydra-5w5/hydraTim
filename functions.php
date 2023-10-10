@@ -110,37 +110,17 @@ set_post_thumbnail_size( 150, 150, true ); // l'image peut etre cropper
 
 /* ------------------------------------------ enregistrement des widgets */
 // Enregistrer le sidebar
-// function enregistrer_sidebar() {
+function enregistrer_sidebar() {
     
-//     register_sidebar( array(
-//         'name' => __( 'Footer 1', 'nom-de-mon-theme' ),
-//         'id' => 'footer_1',
-//         'description' => __( 'Un zone de widget pour afficher des widgets dans le pied de page.', 'nom-de-mon-theme' ),
-//         'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//         'after_widget' => '</div>',
-//         'before_title' => '<h2 class="widget-title">',
-//         'after_title' => '</h2>',
-//     ) );
+    register_sidebar( array(
+        'name' => __( 'Image Accueil', 'nom-de-mon-theme' ),
+        'id' => 'img_acc',
+        'description' => __( 'Un zone de widget pour afficher une image dans la page accueil.', 'nom-de-mon-theme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
 
-//     register_sidebar( array(
-//         'name' => __( 'Footer 2', 'nom-de-mon-theme' ),
-//         'id' => 'footer_2',
-//         'description' => __( 'Un zone de widget pour afficher des widgets dans le pied de page.', 'nom-de-mon-theme' ),
-//         'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//         'after_widget' => '</div>',
-//         'before_title' => '<h2 class="widget-title">',
-//         'after_title' => '</h2>',
-//     ) );
-
-//     register_sidebar( array(
-//         'name' => __( 'Footer 3', 'nom-de-mon-theme' ),
-//         'id' => 'footer_3',
-//         'description' => __( 'Un zone de widget pour afficher des widgets dans le pied de page.', 'nom-de-mon-theme' ),
-//         'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//         'after_widget' => '</div>',
-//         'before_title' => '<h2 class="widget-title">',
-//         'after_title' => '</h2>',
-//     ) );
-
-// }
-// add_action( 'widgets_init', 'enregistrer_sidebar' );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );

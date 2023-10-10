@@ -372,6 +372,11 @@ a {
 }
 
 /* --------------------------------------------- composant */
+.grande__taille .image__acc .wp-block-image .wp-image-85 {
+  width: 1000px;
+  height: 100px;
+}
+
 .site__entete {
   /* ///////////////////////////////////// entete barre de navigation */
 }
@@ -381,6 +386,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #250036;
+  margin: 0;
 }
 @media screen and (min-width: 1080px) {
   .site__entete .entete__nav {

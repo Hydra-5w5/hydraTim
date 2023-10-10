@@ -11,7 +11,7 @@
 </head>
 
 <body class="site custom-background">
-    <header class="site__entete">
+    <header class="site__entete <?= is_front_page() ? "grande__taille" : "" ?>">
         <div class="entete__nav">
             <div class="menu__logo">
                 <?php the_custom_logo(); ?>
@@ -30,6 +30,11 @@
                 )); ?>
             </div>
         </div>
+
+        <div class="image__acc">
+            <?php dynamic_sidebar( 'img_acc' ); ?>
+        </div>
+
     </header>
 
     

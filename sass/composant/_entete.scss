@@ -1,0 +1,168 @@
+.site__entete{ // entete du site
+  /* ///////////////////////////////////// entete barre de navigation */
+  .entete__nav { // barre de navigation
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #250036;
+
+    @media screen and (min-width : $largeur__bureau) {
+      flex-direction: row;
+    }
+    
+    .menu__logo { // logo dans entete
+      align-self: flex-start;
+
+      .custom-logo-link img { // logo
+        width: 85px;
+        height: auto;
+        padding-top: 10px;
+
+        @media screen and (min-width : $largeur__bureau) {
+          padding-left: 20px;
+        }
+
+      }
+
+    }
+
+    .menu__nav { // nav avec bouton burger et recherche
+      display : flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+
+      @media screen and (min-width : $largeur__bureau) {
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          padding-top: 10px;
+          border-left: none;
+      }
+
+      /* ////////////////////////////// menu entete */
+      .menu__entete { // nav
+        display: none;
+        opacity: 0;
+
+        @media screen and (min-width : $largeur__bureau) {
+          display: flex;
+          opacity: 1;
+        }
+
+        .menu { // ul
+          background:transparent;
+          display: flex;
+          list-style-type: none;
+          flex-direction: column;
+          padding-right: 20px;
+          gap: 5px;
+          padding: 10px;
+          top: 3rem;
+          right:0;
+
+          @media screen and (min-width:$largeur__bureau) {
+            position : static;
+            top: auto;
+            right:auto;
+            flex-direction: row;
+            transform : translateX(0);
+        }
+    
+          .menu-item { // li
+            a {
+              padding : 3px 5px;
+              text-decoration: none;
+              color: #ffffff;
+              font-size: 1.1rem;
+              font-weight: bold;
+              transition: color 1s ease;
+            }
+
+            a:hover {
+              color: #038C65;
+            }
+
+          }
+
+        } // FIN ul
+    
+      } // FIN navigation
+
+      /* ////////////////////////////// bouton burger */
+
+      #cc__bouton__burger {
+        display: none;
+
+      }
+
+      .bouton__burger__conteneur {
+        padding: 20px;
+
+        @media screen and (min-width:$largeur__bureau) {
+          display: none;
+        }
+
+      }
+      .bouton__burger__conteneur div {
+        position: relative;
+        top: 0;
+        height: 5px;
+        background-color: #ffffff;
+        margin-bottom: 4px;
+        transition: 0.3s ease;
+        border-radius: 2px;
+      }
+
+      .bouton__burger__conteneur div:first-child {
+        transform-origin: 0;
+      }
+      .bouton__burger__conteneur div:last-child {
+        margin-bottom: 0;
+        transform-origin: 60px;
+      }
+      .bouton__burger__conteneur div:nth-child(2) {
+        right: 0;
+        width: 30px;
+      }
+
+      // menu burger checker
+      #cc__bouton__burger:checked ~ .menu__entete {
+        display: flex;
+        position: fixed;
+        top: 115px;
+        right: 34%;
+        text-align: center;
+        z-index: 12;
+        opacity: 1;
+        transition: opacity 5s;
+
+        @media screen and (min-width:$largeur__bureau) {
+          position: static;
+        }
+      }
+      #cc__bouton__burger:checked ~ .bloc__couleur {
+        @media screen and (max-width:$largeur__bureau) {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden; 
+          background-color: rgb(0, 0, 0); 
+          z-index: 11; 
+        }
+      }
+      #cc__bouton__burger:checked ~ .bouton__burger__conteneur {
+        z-index: 12;
+        position: fixed;
+        right: 0;
+
+      }
+    } // FIN nav avec bouton burger
+
+  } // FIN barre de navigation
+
+} // FIN site entete

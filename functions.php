@@ -7,7 +7,7 @@
  * Ajouter le css
  */
 function enfiler_css() {
-    wp_enqueue_style('4w4-gr1-principal', // identificateur
+    wp_enqueue_style('hydra5w5', // identificateur
                     get_template_directory_uri() . '/style.css', // adresse url de style.css
                     array(), // définir les dépendances
                     filemtime(get_template_directory() . '/style.css'), // le calcul de la version du fichier css
@@ -29,14 +29,14 @@ function enregistre_menus(){
 add_action( 'after_setup_theme', 'enregistre_menus', 0 );
 
 /* ------------------------------------------ add_theme_support */
-// add_theme_support( 'title-tag' );
+add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo', array(
     'height' => 500,
     'width'  => 500,
 ) );
 
 /* permet d'utiliser la fonction image en arrière plan dans personnaliser */
-// add_theme_support( 'custom-background' );
+add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 150, 150, true ); // l'image peut etre cropper
 

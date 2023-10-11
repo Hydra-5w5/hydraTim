@@ -11,7 +11,7 @@
 </head>
 
 <body class="site custom-background">
-    <header class="site__entete  <?= is_front_page() ? "grande__taille" : "" ?>">
+    <header class="site__entete">
         <div class="entete__nav">
             <div class="menu__logo">
                 <?php the_custom_logo(); ?>
@@ -30,7 +30,9 @@
                 )); ?>
             </div>
         </div>
-        <img src="<?php header_image(); ?>" alt="">
+        <div class=" <?= is_front_page() ? "affiche__img" : "cache__img" ?>">
+            <img src="<?php header_image(); ?>" alt="">
+        </div>
     </header>
 
     

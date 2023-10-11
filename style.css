@@ -372,16 +372,20 @@ a {
 }
 
 /* --------------------------------------------- composant */
-.grande__taille {
+.affiche__img {
   height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
-.grande__taille img {
+.affiche__img img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+}
+
+.cache__img {
+  display: none;
 }
 
 .site__entete {

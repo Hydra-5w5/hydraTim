@@ -372,9 +372,16 @@ a {
 }
 
 /* --------------------------------------------- composant */
-.grande__taille .image__acc .wp-block-image .wp-image-85 {
-  width: 1000px;
-  height: 100px;
+.grande__taille {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.grande__taille img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .site__entete {

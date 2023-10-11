@@ -1,19 +1,16 @@
+
 .grande__taille { 
-  // height: 100vh;
-  // display: flex;
-
-  // flex-direction: column;
-  .image__acc {
-    // width: 100%;
-    .wp-block-image {
-      .wp-image-85 {
-        width: 1000px;
-        height: 100px;
-      }
-
-    }
+  height: 100vh;
+  display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
   }
-  
 }
 
 .site__entete{ // entete du site

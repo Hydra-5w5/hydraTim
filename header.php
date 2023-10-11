@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <title>TIM Maisonneuve</title>
+    <title>TIM</title>
     <?php wp_head(); ?>
 </head>
 
 <body class="site custom-background">
-    <header class="site__entete <?= is_front_page() ? "grande__taille" : "" ?>">
+    <header class="site__entete  <?= is_front_page() ? "grande__taille" : "" ?>">
         <div class="entete__nav">
             <div class="menu__logo">
                 <?php the_custom_logo(); ?>
@@ -30,11 +30,7 @@
                 )); ?>
             </div>
         </div>
-
-        <div class="image__acc">
-            <?php dynamic_sidebar( 'img_acc' ); ?>
-        </div>
-
+        <img src="<?php header_image(); ?>" alt="">
     </header>
 
     

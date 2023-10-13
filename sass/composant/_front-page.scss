@@ -1,0 +1,62 @@
+/* Ajuster la largeur maximale de la vidéo */
+.wp-block-embed.is-provider-youtube {
+  max-width: 100vw;
+  margin: 0 auto; /* Centre la vidéo horizontalement */
+  position: relative;
+  display: block;
+
+  @media screen and (min-width : $largeur__bureau) {
+    max-width: 70vw;
+  }
+
+  iframe {
+    width: 100%;
+    height: calc(100vw * 9 / 16); /* Calculez la hauteur en fonction du rapport 16:9 */
+
+    @media screen and (min-width : $largeur__bureau) {
+      height: calc(70vw * 9 / 16); /* Calculez la hauteur en fonction du rapport 16:9 */
+    }
+
+  }
+}
+
+.thematiques-cours {
+  margin: 5em auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .cours {
+    margin-top: 2em;
+    width: 100%;
+    max-height: 100vh; /* Limite la hauteur du conteneur à 100vh */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    .boite {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 2px solid rgb(59, 0, 53);
+      border-radius: 30px;
+      background-color: rgb(128, 0, 104);
+      margin: 10px; /* Espace autour des boîtes de cours */
+      height: 200px;
+      width: 20%;
+      cursor: default;
+
+      h5 {
+        color: rgb(255, 255, 255);
+      }
+
+    }
+    
+  }
+
+}
+

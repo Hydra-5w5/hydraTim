@@ -6,7 +6,7 @@
 
   <div class="conteneur-categorie">
       <div class="cat_image">
-          <img src="" alt="">
+          <img src="https://cloudfront.slrlounge.com/wp-content/uploads/2020/06/best-landscape-photographers-to-follow-in-2020-1200x675.jpg-" alt="">
       </div>
           <div class="desc_texte">
               <p>
@@ -20,3 +20,9 @@
           </div>
   </div>
 </article>
+<?php wp_nav_menu(array(
+    "menu" => "menu-etudiants",
+    "container" => "nav",
+    "container_class" => "social__media"
+  )); 
+?>

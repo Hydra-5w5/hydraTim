@@ -114,9 +114,9 @@ set_post_thumbnail_size( 150, 150, true ); // l'image peut etre cropper
 function enregistrer_sidebar() {
     
     register_sidebar( array(
-        'name' => __( 'Image Accueil', 'nom-de-mon-theme' ),
-        'id' => 'img_acc',
-        'description' => __( 'Un zone de widget pour afficher une image dans la page accueil.', 'nom-de-mon-theme' ),
+        'name' => __( 'Vidéo Accueil', 'nom-de-mon-theme' ),
+        'id' => 'video_acc',
+        'description' => __( 'Un zone de widget pour afficher une Vidéo dans la page accueil.', 'nom-de-mon-theme' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title">',

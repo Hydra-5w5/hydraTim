@@ -1,3 +1,9 @@
 .site__footer {
   background-color: #250036;
+  .footer__logo { // logo
+    .custom-logo-link img { // image logo
+      width: 85px;
+      height: auto;
+    }
+  }
 }

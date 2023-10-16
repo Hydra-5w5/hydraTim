@@ -30,9 +30,6 @@
                 )); ?>
             </div>
         </div>
-        <div class=" <?= is_front_page() ? "affiche__img" : "cache__img" ?>">
-            <img src="<?php header_image(); ?>" alt="">
-        </div>
     </header>
 
     

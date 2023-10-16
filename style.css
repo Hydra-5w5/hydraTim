@@ -365,29 +365,16 @@ h6 {
 
 p {
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 a {
   font-family: "Poppins", sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 /* --------------------------------------------- composant */
-.affiche__img {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.affiche__img img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.cache__img {
-  display: none;
-}
-
 .site__entete {
   /* ///////////////////////////////////// entete barre de navigation */
 }
@@ -540,12 +527,22 @@ a {
   right: 0;
 }
 
+.affiche__img {
+  display: flex;
+}
+.affiche__img img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 /* Ajuster la largeur maximale de la vidéo */
 .wp-block-embed.is-provider-youtube {
   max-width: 100vw;
   margin: 0 auto; /* Centre la vidéo horizontalement */
   position: relative;
   display: block;
+  margin-top: 50px;
 }
 @media screen and (min-width: 1080px) {
   .wp-block-embed.is-provider-youtube {
@@ -613,5 +610,4 @@ a {
   background-color: #340044;
   color: white;
   min-height: 100vh;
-  padding: 15px;
 }/*# sourceMappingURL=style.css.map */

@@ -624,10 +624,81 @@ a {
 
 .site__footer {
   background-color: #250036;
-}
-.site__footer .footer__logo .custom-logo-link img {
-  width: 85px;
   height: auto;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /**** suivezNous ****/
+}
+@media screen and (min-width: 1080px) {
+  .site__footer {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.site__footer .contenu__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  /************* VERSION TABLETTE *************/
+  /************* VERSION PC *************/
+  /**** logo footer ****/
+  /**** recherche__footer ****/
+  /**** rejoindre ****/
+}
+.site__footer .contenu__footer h2 {
+  color: #AC46A1;
+}
+.site__footer .contenu__footer a {
+  color: white;
+}
+@media screen and (min-width: 1080px) {
+  .site__footer .contenu__footer {
+    flex-wrap: wrap;
+    min-height: 22em;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-around;
+  }
+}
+.site__footer .contenu__footer .footer__logo .custom-logo-link img {
+  width: 95px;
+  height: auto;
+}
+.site__footer .contenu__footer .recherche__footer input {
+  background-color: rgb(102, 51, 106);
+  border: none;
+}
+.site__footer .suivezNous {
+  padding-top: 20px;
+}
+.site__footer .suivezNous h2 {
+  color: #AC46A1;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1080px) {
+  .site__footer .suivezNous {
+    margin-left: 20%;
+  }
+}
+.site__footer .suivezNous .reseaux {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.site__footer .suivezNous .reseaux .reseau {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  background-color: rgb(102, 51, 106);
 }
 
 /******************************** Evenement ***********************************/
@@ -680,6 +751,7 @@ a .blocflex__evenement .bocflex__description p {
   padding-left: 10px;
   align-items: center;
   align-self: center;
+  height: 100%;
 }
 .blocflex__etudiants .cat__content p {
   text-align: center;

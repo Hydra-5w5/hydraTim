@@ -1,4 +1,5 @@
 <article class="blocflex__etudiants">
+  
   <div class="cat__content">
     <p><?php the_content(); ?></p>
   </div>

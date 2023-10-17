@@ -4,10 +4,12 @@
   display: flex;
   min-height: 80vh;
   flex-direction: column;
-  // gap: 30px;
+align-items: center;
+  gap: 30px;
   
   .conteneur__texte {
     width: 500px;
+    text-align: center;
     h1 {
       padding-top: 20px;
     }

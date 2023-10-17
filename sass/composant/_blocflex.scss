@@ -1,0 +1,82 @@
+/******************************** Evenement ***********************************/
+a {
+  width: 450px;
+  height: 375px;
+
+  .blocflex__evenement {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(143, 0, 143);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+  
+    .bocflex__images {
+      height: 50%;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+    .bocflex__description {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      //h6 {}
+  
+      p {
+        text-align: center;
+      }
+  
+    }
+
+  }
+
+}
+
+/******************************** Etudiants ***********************************/
+.blocflex__etudiants {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: rgb(74, 0, 87);
+  border-radius: 30px;
+
+  .cat__content {
+    line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
+    padding-left: 10px;
+    align-items: flex-start;
+
+    p {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .cat__image {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+}

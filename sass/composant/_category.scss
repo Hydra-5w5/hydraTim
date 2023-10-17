@@ -1,0 +1,32 @@
+
+.section__categorie {
+  padding: 20px 100px 20px 100px;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  // gap: 30px;
+  
+  .conteneur__texte {
+    width: 500px;
+    h1 {
+      padding-top: 20px;
+    }
+
+    p {
+      color: rgb(143, 0, 143);
+    }
+
+  }
+
+  .conteneur__bloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  // .conteneur__menu {
+
+  // }
+
+}

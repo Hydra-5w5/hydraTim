@@ -593,6 +593,28 @@ a {
   color: rgb(255, 255, 255);
 }
 
+.section__categorie {
+  padding: 20px 100px 20px 100px;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+}
+.section__categorie .conteneur__texte {
+  width: 500px;
+}
+.section__categorie .conteneur__texte h1 {
+  padding-top: 20px;
+}
+.section__categorie .conteneur__texte p {
+  color: rgb(143, 0, 143);
+}
+.section__categorie .conteneur__bloc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .site__erreur {
   background-color: rgb(251, 0, 0);
 }
@@ -605,9 +627,73 @@ a {
   height: auto;
 }
 
+/******************************** Evenement ***********************************/
+a {
+  width: 450px;
+  height: 375px;
+}
+a .blocflex__evenement {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(143, 0, 143);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+a .blocflex__evenement .bocflex__images {
+  height: 50%;
+  width: 100%;
+}
+a .blocflex__evenement .bocflex__images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+a .blocflex__evenement .bocflex__description {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+a .blocflex__evenement .bocflex__description p {
+  text-align: center;
+}
+
+/******************************** Etudiants ***********************************/
+.blocflex__etudiants {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: rgb(74, 0, 87);
+  border-radius: 30px;
+}
+.blocflex__etudiants .cat__content {
+  line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
+  padding-left: 10px;
+  align-items: flex-start;
+}
+.blocflex__etudiants .cat__content p {
+  font-size: 1.5rem;
+}
+.blocflex__etudiants .cat__image {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+.blocflex__etudiants .cat__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /* --------------------------------------------- layout */
 .site__main {
   background-color: #340044;
   color: white;
-  min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */

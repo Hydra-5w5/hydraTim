@@ -1,0 +1,30 @@
+.section__categorie {
+  padding: 20px;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  gap: 30px;
+  
+  .conteneur__texte {
+    h1 {
+      padding-top: 20px;
+    }
+
+    p {
+      color: rgb(143, 0, 143);
+    }
+
+  }
+
+  .conteneur__bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    justify-self: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+}

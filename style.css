@@ -652,6 +652,18 @@ a {
   /**** logo footer ****/
   /**** recherche__footer ****/
   /**** rejoindre ****/
+  /*.rejoindre {
+
+    .liste__joindre {
+      // display: flex;
+      // flex-direction: column;
+    }
+
+    a {
+
+    }
+
+  }*/
 }
 .site__footer .contenu__footer h2 {
   color: #AC46A1;

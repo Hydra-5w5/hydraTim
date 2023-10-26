@@ -11,11 +11,9 @@
   $titre_long = substr($titre, 7, $postion);
   $duree = substr($titre, strpos($titre, '('));
 ?>
-
-<article class="blocflex__article">
-  <a href="<?php the_permalink(); ?>">
-    <h5><?= $sigle; ?></h5>
-    <h6><?= $titre_long; ?></h6>
-    <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-  </a>
-</article>
+<a href="<?php the_permalink(); ?>">
+  <article class="blocflex__cours">
+    <div class="sigle"><h5><?= $sigle; ?></h5></div>
+    <div class="titre__cours"><h6><?= $titre_long; ?></h6></div>
+  </article>
+</a>

@@ -18,6 +18,24 @@
             <p><?php the_archive_description(); ?></p>
         </div>
 
+        <div class="conteneur__option">
+            <?php
+                // Vérifiez si la catégorie a un slug égal à "cours"
+                if ($category->slug === 'cours') {
+                    ?>
+                    <select name="sessions" id="sessions">
+                        <option value="1" selected>Session 1</option>
+                        <option value="2">Session 2</option>
+                        <option value="3">Session 3</option>
+                        <option value="4">Session 4</option>
+                        <option value="5">Session 5</option>
+                        <option value="6">Session 6</option>
+                    </select>
+                    <?php
+                }
+            ?>
+        </div>
+
         <div class="conteneur__bloc">
             <?php
                 $args = array(
@@ -33,8 +51,6 @@
                         // Affichez le contenu de chaque article ici
                     endwhile;
                     wp_reset_postdata();
-                else :
-                    echo '<p>Aucun article trouvé pour cette catégorie.</p>';
                 endif;
             ?>
         </div>

@@ -23,7 +23,6 @@ Text Domain: hydra-5w5
 
 /* --------------------------------------------- base */
 @import "base/heading";
-@import "base/markdown";
 // @import "base/espacement";
 // @import "base/lien";
 // @import "base/list";
@@ -37,6 +36,8 @@ Text Domain: hydra-5w5
 @import "composant/barre-recherche";
 @import "composant/404";
 @import "composant/footer";
+@import "composant/blocflex";
+@import "composant/defilement";
 
 /* --------------------------------------------- layout */
-@import "layout/contenu";
+@import "layout/layout";

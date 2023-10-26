@@ -7,5 +7,6 @@
   <div class="cat__image">
     <?php the_post_thumbnail('medium_large') ?>
   </div>
+
 </article>
 

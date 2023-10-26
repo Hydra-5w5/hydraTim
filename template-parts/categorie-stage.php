@@ -1,12 +1,12 @@
-<div class="conteneur-categorie">
+<article class="blocflex__stage">
 
-    <div class="desc_texte">
-      <p><?php the_content(); ?></p>
-    </div>
+  <div class="cat__content">
+    <p><?php the_content(); ?></p>
+  </div>
 
-    <div class="cat_image">
-      <?php the_post_thumbnail('medium_large') ?>
-    </div>
+  <div class="cat__image">
+    <?php the_post_thumbnail('medium_large') ?>
+  </div>
 
-</div>
+</article>
 

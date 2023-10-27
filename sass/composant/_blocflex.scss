@@ -179,9 +179,10 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    height: 15%;
 
     img{
-      width: 50px;
+      width: 45px;
       height: auto;
     }
 
@@ -190,7 +191,7 @@ a {
   .photo__profs {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 85%;
     align-items: flex-end;
     justify-content: center;
 

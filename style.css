@@ -861,15 +861,16 @@ a .blocflex__evenement .bocflex__description p {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  height: 15%;
 }
 .blocflex__profs .sujet__profs img {
-  width: 50px;
+  width: 45px;
   height: auto;
 }
 .blocflex__profs .photo__profs {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 85%;
   align-items: flex-end;
   justify-content: center;
 }

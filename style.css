@@ -842,6 +842,45 @@ a .blocflex__evenement .bocflex__description p {
   background-color: rgb(119, 45, 146);
 }
 
+/******************************** Profs ***********************************/
+.blocflex__profs {
+  background-color: rgb(79, 0, 103);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.blocflex__profs .sujet__profs {
+  background-color: rgb(134, 42, 126);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.blocflex__profs .sujet__profs img {
+  width: 50px;
+  height: auto;
+}
+.blocflex__profs .photo__profs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.blocflex__profs .photo__profs img {
+  width: auto;
+  height: 90%;
+}
+.blocflex__profs .info__profs {
+  display: none;
+}
+
 /* --------------------------------------------- layout */
 .site__main {
   background-color: #340044;

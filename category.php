@@ -63,7 +63,13 @@ get_header();
                 'etudiants' => 'menu-etudiants',
                 'cours' => 'menu-etudiants',
                 'profs' => 'menu-etudiants',
-                'projets' => 'menu-projets'
+                'futur' => 'menu-etudiants',
+                'temoignage' => 'menu-etudiants',
+                'web' => 'menu-projets',
+                'jeux' => 'menu-projets',
+                'videos' => 'menu-projets',
+                'design' => 'menu-projets',
+                '3d' => 'menu-projets'
                 // Ajoutez d'autres correspondances au besoin
             );
 

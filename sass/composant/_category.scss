@@ -1,0 +1,40 @@
+/******************************** Categorie ***********************************/
+.section__categorie {
+  // padding: 20px 100px 20px 100px;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  
+  .conteneur__texte {
+    width: 500px;
+    text-align: center;
+    h1 {
+      padding: 20px 0 20px 0;
+    }
+
+    p {
+      color: rgb(143, 0, 143);
+      margin: 0;
+    }
+
+  }
+
+  .conteneur__bloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  // .conteneur__menu {
+
+  // }
+  .texte__chargement {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;;
+  }
+
+}

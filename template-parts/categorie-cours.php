@@ -17,5 +17,9 @@ $duree = substr($titre, strpos($titre, '('));
 
 <div class="boite__modale" id="<?= $sigle ?>__boite"> 
     <h2><?= $titre_long; ?></h2>
+    <h4>description :</h4>
     <p><?= the_content() ?></p>
+    <h4>équipement :</h4>
+    <p><?php the_field('equipement'); ?></p>
+
 </div>

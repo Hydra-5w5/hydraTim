@@ -133,6 +133,7 @@ a {
   justify-content: space-between;
   overflow: hidden;
   border-radius: 30px;
+  cursor: pointer;
 
   width: 285px;
   height: 150px;
@@ -143,7 +144,7 @@ a {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #512664;
+    background-color: #A8DADC;
     justify-content: center;
   }
 
@@ -155,7 +156,8 @@ a {
     height: 60%;
     width: 100%;
     padding: 10px;
-    background-color: #893680;
+    background-color: #F1FAEE;
+    color: #1E5076;
   }
 
 }

@@ -383,7 +383,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #250036;
+  background-color: #154569;
   margin: 0;
 }
 @media screen and (min-width: 1080px) {
@@ -613,7 +613,7 @@ a {
   padding: 20px 0 20px 0;
 }
 .section__categorie .conteneur__texte p {
-  color: rgb(143, 0, 143);
+  color: #A8DADC;
   margin: 0;
 }
 .section__categorie .conteneur__bloc {
@@ -633,7 +633,7 @@ a {
 }
 
 .site__footer {
-  background-color: #250036;
+  background-color: #A8DADC;
   height: auto;
   overflow: hidden;
   text-align: center;
@@ -676,7 +676,7 @@ a {
   }*/
 }
 .site__footer .contenu__footer h2 {
-  color: #AC46A1;
+  color: #154569;
 }
 .site__footer .contenu__footer a {
   color: white;
@@ -696,14 +696,14 @@ a {
   height: auto;
 }
 .site__footer .contenu__footer .recherche__footer input {
-  background-color: rgb(102, 51, 106);
+  background-color: #F1FAEE;
   border: none;
 }
 .site__footer .suivezNous {
   padding-top: 20px;
 }
 .site__footer .suivezNous h2 {
-  color: #AC46A1;
+  color: #154569;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 1080px) {
@@ -720,7 +720,7 @@ a {
   width: 3em;
   height: 3em;
   border-radius: 100%;
-  background-color: rgb(102, 51, 106);
+  background-color: #F1FAEE;
 }
 
 /******************************** Evenement ***********************************/
@@ -828,6 +828,7 @@ a .blocflex__evenement .bocflex__description p {
   justify-content: space-between;
   overflow: hidden;
   border-radius: 30px;
+  cursor: pointer;
   width: 285px;
   height: 150px;
 }
@@ -837,7 +838,7 @@ a .blocflex__evenement .bocflex__description p {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #512664;
+  background-color: #A8DADC;
   justify-content: center;
 }
 .blocflex__cours .titre__cours {
@@ -848,7 +849,8 @@ a .blocflex__evenement .bocflex__description p {
   height: 60%;
   width: 100%;
   padding: 10px;
-  background-color: #893680;
+  background-color: #F1FAEE;
+  color: #1E5076;
 }
 
 /******************************** Profs ***********************************/
@@ -894,7 +896,7 @@ a .blocflex__evenement .bocflex__description p {
 }
 
 .conteneur__menu {
-  background-color: #512664;
+  background-color: #457B9D;
   width: 100%;
 }
 .conteneur__menu .menu__secondaire .menu {
@@ -905,7 +907,7 @@ a .blocflex__evenement .bocflex__description p {
 }
 .conteneur__menu .menu__secondaire .menu .menu-item {
   text-align: center;
-  background-color: #893680;
+  background-color: #1E5076;
   width: 15%;
   padding: 10px 0 10px;
   border-radius: 10px;
@@ -921,12 +923,20 @@ a .blocflex__evenement .bocflex__description p {
   transition: transform 1s;
   width: 75%;
   padding: 20px;
-  background-color: aqua;
+  background-color: #A8DADC;
   border-radius: 30px;
+  border: #457B9D 3px solid;
+}
+.boite__modale h2 {
+  color: #457B9D;
+  padding-bottom: 50px;
+}
+.boite__modale h4 {
+  color: #F1FAEE;
 }
 
 /* --------------------------------------------- layout */
 .site__main {
-  background-color: #340044;
+  background-color: #1D3557;
   color: white;
 }/*# sourceMappingURL=style.css.map */

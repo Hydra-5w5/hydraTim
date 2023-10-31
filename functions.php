@@ -126,38 +126,11 @@ function enregistrer_sidebar() {
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
 
-////////////////////////    Liste des sessions     /////////////////////////////
-add_action('wp_ajax_load_session_articles', 'load_session_articles');
-add_action('wp_ajax_nopriv_load_session_articles', 'load_session_articles');
 
-function load_session_articles() {
-    $selectedSession = $_GET['selectedSession'];
-
-    // Effectuez une nouvelle requête pour obtenir les articles de la session sélectionnée
-    $args_session = array(
-        'category_name' => 'session' . $selectedSession,
-        'orderby' => 'title',
-        'order' => 'ASC'
-    );
-    $query_session = new WP_Query($args_session);
-
-    if ($query_session->have_posts()) {
-        ob_start();
-
-        while ($query_session->have_posts()) {
-            $query_session->the_post();
-            get_template_part('template-parts/categorie', 'cours');
-        }
-
-        wp_reset_postdata();
-        $result = ob_get_clean();
-        echo $result;
-    }
-
-    die();
-}
-
+/**jquery */
 function load_jquery() {
     wp_enqueue_script('jquery');
 }
 add_action('wp_enqueue_scripts', 'load_jquery');
+
+

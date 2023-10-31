@@ -1,6 +1,4 @@
-<a href="<?php the_permalink(); ?>">
-  <article class="blocflex__profs">
-    
+  <article class="blocflex__profs">  
     <div class="sujet__profs">
       <h3><?php the_field('sujet'); ?></h3> 
       <?php
@@ -20,6 +18,4 @@
       <h3><?php the_title(); ?></h3> 
       <p><?php the_field('description'); ?></p>
     </div>
-
   </article>
-</a>

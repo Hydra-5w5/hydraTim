@@ -1,0 +1,9 @@
+.boite__modale {
+  transform: scale(0);
+  position: absolute;
+  transition: transform 1s;
+  width: 75%;
+  padding: 20px;
+  background-color: aqua;
+  border-radius: 30px;
+}

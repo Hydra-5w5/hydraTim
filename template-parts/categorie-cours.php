@@ -10,7 +10,12 @@ $postion = strpos(substr($titre, 7), $aTrouver);
 $titre_long = substr($titre, 7, $postion);
 $duree = substr($titre, strpos($titre, '('));
 ?>
-<article class="blocflex__cours">
+<article class="blocflex__cours" id="<?= $sigle ?>__cours">
     <div class="sigle"><h5><?= $sigle; ?></h5></div>
     <div class="titre__cours"><h6><?= $titre_long; ?></h6></div>
 </article>
+
+<div class="boite__modale" id="<?= $sigle ?>__boite"> 
+    <h2><?= $titre_long; ?></h2>
+    <p><?= the_content() ?></p>
+</div>

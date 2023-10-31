@@ -915,6 +915,16 @@ a .blocflex__evenement .bocflex__description p {
   display: block;
 }
 
+.boite__modale {
+  transform: scale(0);
+  position: absolute;
+  transition: transform 1s;
+  width: 75%;
+  padding: 20px;
+  background-color: aqua;
+  border-radius: 30px;
+}
+
 /* --------------------------------------------- layout */
 .site__main {
   background-color: #340044;

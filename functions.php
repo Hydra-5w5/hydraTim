@@ -18,6 +18,17 @@ function enfiler_css() {
 }
 add_action( 'wp_enqueue_scripts', 'enfiler_css' );
 
+/**
+* Ajouter le javascript
+*/
+function theme_enqueue_scripts() {
+    // Enregistrez et incluez le fichier JavaScript
+    wp_enqueue_script('onglet', get_template_directory_uri() . '/js/onglet.js', array(), '1.0', true);
+}
+
+add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+
+
 /* ------------------------------------------ Enregistrement des menus */
 
 function enregistre_menus(){

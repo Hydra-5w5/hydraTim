@@ -19,7 +19,7 @@ $duree = substr($titre, strpos($titre, '('));
     <h2><?= $titre_long; ?></h2>
     <h4>description :</h4>
     <p><?= the_content() ?></p>
-    <h4>équipement :</h4>
+    <h4>équipements :</h4>
     <p><?php the_field('equipement'); ?></p>
 
 </div>

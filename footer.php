@@ -8,7 +8,7 @@
     <div class="adresse section">
       <h2>Adresse</h2>
       <p>3800 Avenue Sherbrooke Est </p>
-      <p>Montréal,QC</p> <p>H1X 2A2</p> 
+      <p>Montréal,QC</p> <p>H1X 2A2</p>
     </div>
 
     <div class="rejoindre section">

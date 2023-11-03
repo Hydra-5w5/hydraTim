@@ -325,34 +325,60 @@ template {
 
 /* --------------------------------------------- variable */
 /* --------------------------------------------- base */
+/* Mobile First - Tailles de police de base */
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-size: 3.75rem; /* Taille de police de base pour les écrans mobiles */
 }
 
 h2 {
-  font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  font-size: 2.1875rem;
 }
 
 h4 {
-  font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+  font-size: 1.875rem;
 }
 
 h5 {
-  font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+  font-size: 1.5625rem;
 }
 
 h6 {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  font-size: 1.25rem;
 }
 
-P {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+p {
+  font-size: 1.1rem;
 }
 
+/* Tailles de police adaptatives avec clamp() pour les écrans plus larges (tablettes) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  }
+  h2 {
+    font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  }
+  h3 {
+    font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  }
+  h4 {
+    font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+  }
+  h5 {
+    font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+  }
+  h6 {
+    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  }
+  P {
+    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  }
+}
+/* Styles de police et de texte communs */
 h1,
 h2,
 h3,
@@ -368,6 +394,7 @@ p {
   color: white;
 }
 
+/* Styles pour les liens */
 a {
   font-family: "Poppins", sans-serif;
   color: white;
@@ -633,7 +660,7 @@ a {
 }
 
 .site__footer {
-  background-color: #A8DADC;
+  background-color: #154569;
   height: auto;
   overflow: hidden;
   text-align: center;
@@ -676,7 +703,7 @@ a {
   }*/
 }
 .site__footer .contenu__footer h2 {
-  color: #154569;
+  color: #A8DADC;
 }
 .site__footer .contenu__footer a {
   color: white;
@@ -703,7 +730,7 @@ a {
   padding-top: 20px;
 }
 .site__footer .suivezNous h2 {
-  color: #154569;
+  color: #A8DADC;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 1080px) {
@@ -855,7 +882,7 @@ a .blocflex__evenement .bocflex__description p {
 
 /******************************** Profs ***********************************/
 .blocflex__profs {
-  background-color: #694579;
+  background-color: #457B9D;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -863,9 +890,10 @@ a .blocflex__evenement .bocflex__description p {
   height: 400px;
   border-radius: 30px;
   overflow: hidden;
+  cursor: pointer;
 }
 .blocflex__profs .sujet__profs {
-  background-color: #512664;
+  background-color: #154569;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -893,6 +921,7 @@ a .blocflex__evenement .bocflex__description p {
 }
 .blocflex__profs .info__profs {
   display: none;
+  height: 100px;
 }
 
 .conteneur__menu {
@@ -922,10 +951,13 @@ a .blocflex__evenement .bocflex__description p {
   position: absolute;
   transition: transform 1s;
   width: 75%;
+  height: 65%;
   padding: 20px;
   background-color: #A8DADC;
   border-radius: 30px;
   border: #457B9D 3px solid;
+  z-index: 100;
+  top: 20%;
 }
 .boite__modale h2 {
   color: #457B9D;

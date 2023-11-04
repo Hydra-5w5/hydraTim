@@ -1,6 +1,9 @@
 .conteneur__menu {
-  background-color: #512664;
+  background-color: #457B9D;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  
   .menu__secondaire { // nav
 
     .menu { // ul
@@ -11,7 +14,7 @@
 
       .menu-item { // li
         text-align: center;
-        background-color: #893680;
+        background-color: #1E5076;
         width: 15%;
         padding: 10px 0 10px;
         border-radius: 10px;

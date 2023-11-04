@@ -8,9 +8,19 @@
 
         <main class="site__main">
 
-            <div class=" <?= is_front_page() ? "affiche__img" : "cache__img" ?>">
-                <img src="<?php header_image(); ?>" alt="">
-            </div>
+            <section class="section__presentation">
+                <div class="section__info">
+                    <h3>Découvrez la Technique d'integration multimédia de l'école Maisonneuve </h3>
+                    <div class="conteneur__btn">
+                        <div class="btn"><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">informations supplémentaire</a></div>
+                        <div class="btn"><a href="">explorer les thématiques</a></div>
+                    </div>
+                </div>
+
+                <div class="affiche__img">
+                    <img src="<?php header_image(); ?>" alt="">
+                </div>
+            </section>
 
             <div class="Conteneur__video">
                 <?php dynamic_sidebar( 'video_acc' ); ?>

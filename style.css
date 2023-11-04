@@ -406,6 +406,10 @@ a {
   /* ///////////////////////////////////// entete barre de navigation */
 }
 .site__entete .entete__nav {
+  position: sticky;
+  z-index: 10;
+  width: 100%;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -479,6 +483,10 @@ a {
     transform: translateX(0);
   }
 }
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item {
+  position: relative;
+  /* Afficher le sous-menu lorsque .menu-item est survolé */
+}
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a {
   padding: 3px 5px;
   text-decoration: none;
@@ -488,7 +496,30 @@ a {
   transition: color 1s ease;
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover {
-  color: #038C65;
+  color: #457B9D;
+  text-decoration: underline;
+}
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  background-color: #F1FAEE;
+  border: 3px solid #457B9D;
+}
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a {
+  color: #457B9D;
+}
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a:hover {
+  text-decoration: underline;
+}
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item:hover .sub-menu {
+  display: flex;
 }
 .site__entete .entete__nav .menu__nav #cc__bouton__burger {
   display: none;
@@ -554,12 +585,50 @@ a {
   right: 0;
 }
 
-.affiche__img {
+.section__presentation {
   display: flex;
+  width: 100%;
 }
-.affiche__img img {
-  width: 100vw;
-  height: 100vh;
+.section__presentation .section__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 50%;
+  background-color: #F1FAEE;
+  color: #0077B6;
+}
+.section__presentation .section__info h3 {
+  text-align: center;
+  width: 75%;
+}
+.section__presentation .section__info .conteneur__btn {
+  display: flex;
+  gap: 20px;
+}
+.section__presentation .section__info .conteneur__btn .btn {
+  width: 200px;
+  height: 50px;
+  background-color: #457B9D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 15px;
+}
+.section__presentation .section__info .conteneur__btn .btn a {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.section__presentation .affiche__img {
+  height: 85vh;
+  width: 50%;
+}
+.section__presentation .affiche__img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 

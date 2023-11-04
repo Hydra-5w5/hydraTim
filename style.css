@@ -632,6 +632,7 @@ a {
   align-items: center;
   gap: 30px;
   overflow: hidden;
+  position: relative;
 }
 .section__categorie .conteneur__texte {
   width: 500px;
@@ -650,6 +651,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 100px;
 }
 .section__categorie .class__profs {
   flex-wrap: nowrap;
@@ -985,6 +987,8 @@ a .blocflex__evenement .blocflex__description p {
 .conteneur__menu {
   background-color: #457B9D;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .conteneur__menu .menu__secondaire .menu {
   display: flex;

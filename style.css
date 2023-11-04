@@ -651,6 +651,12 @@ a {
   justify-content: center;
   gap: 30px;
 }
+.section__categorie .class__profs {
+  flex-wrap: nowrap;
+}
+.section__categorie .class__cours {
+  flex-wrap: nowrap;
+}
 
 .site__erreur {
   background-color: rgb(251, 0, 0);
@@ -757,16 +763,16 @@ a .blocflex__evenement {
   border-radius: 30px;
   overflow: hidden;
 }
-a .blocflex__evenement .bocflex__images {
+a .blocflex__evenement .blocflex__images {
   height: 50%;
   width: 100%;
 }
-a .blocflex__evenement .bocflex__images img {
+a .blocflex__evenement .blocflex__images img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-a .blocflex__evenement .bocflex__description {
+a .blocflex__evenement .blocflex__description {
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -774,7 +780,7 @@ a .blocflex__evenement .bocflex__description {
   align-items: center;
   padding: 10px;
 }
-a .blocflex__evenement .bocflex__description p {
+a .blocflex__evenement .blocflex__description p {
   text-align: center;
 }
 
@@ -938,6 +944,42 @@ a .blocflex__evenement .bocflex__description p {
 .blocflex__profs .info__profs p {
   font-size: 0.9rem;
   margin: 0;
+}
+
+/******************************** galerie ***********************************/
+.blocflex__galerie {
+  width: 80vw;
+}
+.blocflex__galerie h3 {
+  margin-bottom: 3px;
+}
+.blocflex__galerie .wp-block-gallery {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+.blocflex__galerie .wp-block-gallery .wp-block-image {
+  flex: 0 0 80vw;
+  max-width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .blocflex__galerie .wp-block-gallery .wp-block-image {
+    flex: 0 0 40vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__galerie .wp-block-gallery .wp-block-image {
+    flex: 0 0 20vw;
+  }
+}
+.blocflex__galerie .wp-block-gallery .wp-block-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .conteneur__menu {

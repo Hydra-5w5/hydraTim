@@ -16,8 +16,12 @@ get_header();
             <p><?php the_archive_description(); ?></p>
         </div>
 
+        <!-- Ajoutez une classe personnalisée basée sur la catégorie actuelle -->
+        <?php
+            $category_class = 'class__' . $category->slug;
+        ?>
         <!-- Affiche les articles -->
-        <div class="conteneur__bloc" id="articles-containeur">
+        <div class="conteneur__bloc <?= $category_class ?>" id="articles-containeur">
             <?php
             // Affichez les articles de la catégorie initiale (cours)
             $args = array(

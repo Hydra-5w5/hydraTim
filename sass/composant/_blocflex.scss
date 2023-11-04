@@ -11,7 +11,7 @@ a {
     border-radius: 30px;
     overflow: hidden;
   
-    .bocflex__images {
+    .blocflex__images {
       height: 50%;
       width: 100%;
 
@@ -23,7 +23,7 @@ a {
 
     }
 
-    .bocflex__description {
+    .blocflex__description {
       height: 50%;
       display: flex;
       flex-direction: column;
@@ -234,5 +234,45 @@ a {
   }
 
 }
+/******************************** galerie ***********************************/
+.blocflex__galerie {
+  width: 80vw;
+  
+  h3 {
+    margin-bottom: 3px;
+  }
+  
+  .wp-block-gallery {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+
+    .wp-block-image {
+      flex: 0 0 calc(80vw / 1);      
+      max-width: 100%;
+
+      @media screen and (min-width: $largeur__tablette) {
+        flex: 0 0 calc(80vw / 2); 
+      }
+  
+      @media screen and (min-width: $largeur__bureau) {
+        flex: 0 0 calc(80vw / 4);
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      
+    }
+  }
+
+}
+
 // Fin des blocflex
 

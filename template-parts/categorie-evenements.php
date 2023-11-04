@@ -8,10 +8,10 @@
 ?>
 <a href="<?php the_permalink(); ?>">
   <article class="blocflex__evenement">
-      <div class="bocflex__images">
+      <div class="blocflex__images">
         <?php the_post_thumbnail('medium_large') ?>
       </div>
-      <div class="bocflex__description">
+      <div class="blocflex__description">
         <h6><?= $titre; ?></h6>
         <p><?= wp_trim_words(get_the_excerpt(), 20) ?></p>
       </div>

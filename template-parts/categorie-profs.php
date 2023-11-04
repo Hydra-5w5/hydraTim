@@ -9,7 +9,6 @@
       ?>
     </div>
 
-
     <div class="photo__profs">
       <?php the_post_thumbnail('medium_large') ?>
     </div>
@@ -18,19 +17,5 @@
       <h3><?php the_title(); ?></h3> 
       <p><?php the_content() ?></p>
     </div>
+    
   </article>
-
-  <script>
-document.querySelectorAll('.blocflex__profs').forEach(function(prof) {
-    prof.addEventListener('click', function() {
-        let info = this.querySelector('.info__profs');
-        if (info.style.display === 'flex') {
-            info.style.display = 'none';
-            this.style.width = '300px';  // taille originale
-        } else {
-            info.style.display = 'flex';
-            this.style.width = '500px';  // agrandir taille
-        }
-    });
-});
-  </script>

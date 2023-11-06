@@ -16,6 +16,7 @@ $duree = substr($titre, strpos($titre, '('));
 </article>
 
 <div class="boite__modale" id="<?= $sigle ?>__boite"> 
+    <div class="btn__fermer">x</div>
     <h2><?= $titre_long; ?></h2>
     <h4>description :</h4>
     <p><?= the_content() ?></p>

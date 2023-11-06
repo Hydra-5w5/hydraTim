@@ -10,7 +10,7 @@
 
             <section class="section__presentation">
                 <div class="section__info">
-                    <h3>Découvrez la Technique d'integration multimédia de l'école Maisonneuve </h3>
+                    <h3>Découvrez La Technique D'integration Multimédia Du Collège Maisonneuve </h3>
                     <div class="conteneur__btn">
                         <div class="btn"><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">informations supplémentaire</a></div>
                         <div class="btn"><a href="">explorer les thématiques</a></div>

@@ -9,6 +9,7 @@
       ?>
     </div>
 
+      
     <div class="photo__profs">
       <?php the_post_thumbnail('medium_large') ?>
     </div>
@@ -17,5 +18,11 @@
       <h3><?php the_title(); ?></h3> 
       <p><?php the_content() ?></p>
     </div>
+<<<<<<< HEAD
     
   </article>
+=======
+    <?php the_content();?>
+  </article>
+</a>
+>>>>>>> 75b3dea (changements mineurs)

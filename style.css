@@ -403,7 +403,112 @@ a {
 
 /* --------------------------------------------- composant */
 .site__entete {
+  /************* MENU BURGER FIN *************/
   /* ///////////////////////////////////// entete barre de navigation */
+}
+.site__entete #menuToggle {
+  display: block;
+  position: absolute;
+  left: 1em;
+  z-index: 1;
+  /* Liens du menu */
+  /*
+  * Design du burger
+  */
+  /* 
+  * Fait un "X" avec les spans du burger
+  */
+  /*
+  * Cache le span du milieu
+  */
+  /*
+  * Modifie la place du dernier
+  */
+}
+.site__entete #menuToggle a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.site__entete #menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* Cache le checkbox */
+  z-index: 2; /* Le place par dessus le burder */
+}
+.site__entete #menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+.site__entete #menuToggle span.ligneMilieu {
+  margin-left: 10px;
+}
+.site__entete #menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+.site__entete #menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+.site__entete #menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+.site__entete #menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.site__entete #menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+.site__entete #menuToggle input:checked ~ ul {
+  transform: none;
+}
+.site__entete #menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  border-bottom-right-radius: 20px;
+  background: #6E3D80;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+.site__entete #menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+.site__entete #menu li:hover {
+  background-color: #4F1A64;
+}
+.site__entete #menu-pc {
+  display: none;
+}
+.site__entete #menu-pc a {
+  color: white;
+}
+.site__entete main {
+  height: 90vh;
+  width: 100vw;
+  /***Couleur background du site web***/
+  background-color: #340044;
 }
 .site__entete .entete__nav {
   position: sticky;
@@ -414,7 +519,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
   background-color: #154569;
+=======
+  background-color: #c9b1d4;
+>>>>>>> bd20694 (changements)
   margin: 0;
 }
 @media screen and (min-width: 1080px) {

@@ -5,7 +5,6 @@
   *
   */
 ?>
-<article class="blocflex__galerie">
-    <h3><?php the_title() ?></h3>
+<article class="blocflex__temoignage">
     <div><?php the_content(); ?></div>
 </article>

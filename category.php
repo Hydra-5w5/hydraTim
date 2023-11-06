@@ -66,14 +66,21 @@ get_header();
 
         <div class="choix__projets">
             <?php
-                // Affiche le menu de choix des projets
-                if($category->slug == 'projets') {
-                    wp_nav_menu(array(
-                        "menu" => "choix-projets",
-                        "container" => "nav",
-                        "container_class" => "menu__choix", //pour changer le nom de la class
-                    )); 
-                }
+            // Affichez les articles de la catégorie initiale (cours)
+            $args = array(
+                'category_name' => $category->slug,
+                'orderby' => 'title',
+                'order' => 'ASC'
+            );
+            $query = new WP_Query($args);
+
+            if ($query->have_posts() && $category->slug != 'cours') :
+                while ($query->have_posts()) : $query->the_post();
+                 the_content();
+                    get_template_part('template-parts/categorie', $category->slug);
+                endwhile;
+                wp_reset_postdata();
+            endif;
             ?>
         </div>
 

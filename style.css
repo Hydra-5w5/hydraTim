@@ -409,7 +409,7 @@ a {
   position: sticky;
   z-index: 10;
   width: 100%;
-  height: 15vh;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -620,7 +620,8 @@ a {
   font-weight: bold;
 }
 .section__presentation .affiche__img {
-  height: 85vh;
+  height: 95vh;
+  height: calc(100vh - 100px);
   width: 50%;
 }
 .section__presentation .affiche__img img {

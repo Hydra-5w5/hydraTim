@@ -409,7 +409,7 @@ a {
   position: sticky;
   z-index: 10;
   width: 100%;
-  height: 15vh;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -421,9 +421,6 @@ a {
   .site__entete .entete__nav {
     flex-direction: row;
   }
-}
-.site__entete .entete__nav .menu__logo {
-  align-self: flex-start;
 }
 .site__entete .entete__nav .menu__logo .custom-logo-link img {
   width: 85px;
@@ -623,7 +620,8 @@ a {
   font-weight: bold;
 }
 .section__presentation .affiche__img {
-  height: 85vh;
+  height: 95vh;
+  height: calc(100vh - 100px);
   width: 50%;
 }
 .section__presentation .affiche__img img {
@@ -704,6 +702,8 @@ a {
   position: relative;
 }
 .section__categorie .conteneur__texte {
+  display: flex;
+  flex-direction: column;
   width: 500px;
   text-align: center;
 }
@@ -724,6 +724,24 @@ a {
 }
 .section__categorie .class__profs {
   flex-wrap: nowrap;
+}
+.section__categorie .class__profs .btn__gauche {
+  background-color: red;
+  border: 1px solid black;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  cursor: pointer;
+}
+.section__categorie .class__profs .btn__droite {
+  background-color: red;
+  border: 1px solid black;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
 }
 .section__categorie .class__cours {
   flex-wrap: nowrap;
@@ -828,7 +846,7 @@ a {
 a .blocflex__evenement {
   display: flex;
   flex-direction: column;
-  background-color: rgb(143, 0, 143);
+  background-color: #457B9D;
   width: 450px;
   height: 375px;
   border-radius: 30px;
@@ -862,7 +880,7 @@ a .blocflex__evenement .blocflex__description p {
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  background-color: rgb(74, 0, 87);
+  background-color: #457B9D;
   border-radius: 30px;
 }
 .blocflex__etudiants .cat__content {
@@ -896,7 +914,7 @@ a .blocflex__evenement .blocflex__description p {
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  background-color: rgb(74, 0, 87);
+  background-color: #457B9D;
   border-radius: 30px;
 }
 .blocflex__stage .cat__content {
@@ -1078,17 +1096,18 @@ a .blocflex__evenement .blocflex__description p {
 }
 
 .boite__modale {
-  transform: scale(0);
+  transform: scale(0) translate(-50%, -50%);
+  transform-origin: 50px 50px;
   position: absolute;
   transition: transform 1s;
   width: 75%;
-  height: 65%;
   padding: 20px;
   background-color: #A8DADC;
   border-radius: 30px;
   border: #457B9D 3px solid;
   z-index: 100;
-  top: 20%;
+  top: 50%;
+  left: 50%;
 }
 .boite__modale h2 {
   color: #457B9D;
@@ -1096,6 +1115,74 @@ a .blocflex__evenement .blocflex__description p {
 }
 .boite__modale h4 {
   color: #F1FAEE;
+}
+.boite__modale .btn__fermer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: #F1FAEE;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.choix__projets {
+  width: 90vw;
+}
+.choix__projets .menu__choix {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choix__projets .menu__choix .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+@media screen and (min-width: 1080px) {
+  .choix__projets .menu__choix .menu {
+    flex-direction: row;
+  }
+}
+.choix__projets .menu__choix .menu .menu-item {
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  list-style: none;
+  background-color: #154569;
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: 175px 175px;
+  background-position: center;
+}
+.choix__projets .menu__choix .menu .menu-item a {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background-color: #457B9D;
+}
+.choix__projets .menu__choix .menu .web {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/world-wide-web.png");
+}
+.choix__projets .menu__choix .menu .trois-d {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/cube.png");
+}
+.choix__projets .menu__choix .menu .videos {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/video-camera.png");
+}
+.choix__projets .menu__choix .menu .jeux {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/console.png");
+}
+.choix__projets .menu__choix .menu .design {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/graphic-design.png");
 }
 
 /* --------------------------------------------- layout */

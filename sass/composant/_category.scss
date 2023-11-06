@@ -10,8 +10,11 @@
   position: relative;
   
   .conteneur__texte {
+    display: flex;
+    flex-direction: column;
     width: 500px;
     text-align: center;
+    
     h1 {
       padding: 20px 0 20px 0;
     }
@@ -34,10 +37,32 @@
 
   .class__profs {
     flex-wrap: nowrap;
+    
+    .btn__gauche {
+      background-color: red;
+      border: 1px solid black;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      cursor: pointer;
+    }	
+    .btn__droite {
+      background-color: red;
+      border: 1px solid black;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      cursor: pointer;
+    }	
+
   }
   .class__cours {
     flex-wrap: nowrap;
   }
+
+
   // .class__galerie {
     
   // }

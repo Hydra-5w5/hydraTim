@@ -1,0 +1,67 @@
+.choix__projets {
+  width: 90vw;
+
+  .menu__choix {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 20px;
+
+      @media screen and (min-width : $largeur__bureau) {
+        flex-direction: row;
+      }
+
+      .menu-item {
+        display: flex;
+        border-radius: 30px;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        list-style: none;
+        background-color: #154569;
+        height: 300px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: 175px 175px;
+        background-position: center;
+
+        a {
+          display: block;
+          font-size: 1.5rem;
+          font-weight: bold;
+          width: 100%;
+          padding: 10px 0 10px 0;
+          text-align: center;
+          background-color: #457B9D;
+        }
+
+      }
+
+      .web {
+        background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/world-wide-web.png");
+      }
+      .trois-d {
+        background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/cube.png");
+      }
+      .videos {
+        background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/video-camera.png");
+      }
+      .jeux {
+        background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/console.png");
+      }
+      .design {
+        background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/graphic-design.png");
+      }
+
+    }
+
+  }
+
+}

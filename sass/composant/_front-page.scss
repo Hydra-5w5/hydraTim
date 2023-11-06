@@ -32,6 +32,7 @@
         border-radius: 15px;
 
         a {
+          // display: block;
           text-align: center;
           color: white;
           font-weight: bold;
@@ -42,7 +43,8 @@
   }
 
   .affiche__img { 
-    height: 85vh;
+    height: 95vh;
+    height: calc(100vh - 100px);
     width: 50%;
 
     img {

@@ -12,9 +12,11 @@
                     <article class="dans__article"> 
                         <div>
                             <?php the_post_thumbnail('thumbnail'); ?>
-                            <h3><?php the_title(); ?></h3>
                         </div>
-                        <?php the_content(); ?>
+                        <div>
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_content(); ?>
+                        </div>
                     </article>
                 <?php endwhile; ?>
             <?php endif; ?>

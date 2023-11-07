@@ -335,7 +335,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.1875rem;
+  font-size: 1.2rem;
 }
 
 h4 {
@@ -704,6 +704,20 @@ a {
 }
 .thematiques-cours .cours .boite h5 {
   color: rgb(255, 255, 255);
+}
+
+.texte-descriptif {
+  margin-left: 30px;
+}
+
+.citation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.citation h3 {
+  margin: 10px;
 }
 
 .dans__article {

@@ -133,3 +133,16 @@
 
 }
 
+.texte-descriptif{
+ margin-left: 30px;
+}
+.citation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  h3{
+    margin: 10px;
+  }
+}

@@ -75,7 +75,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="citation">
                 <h3>"Créez, Intégrez, Émerveillez </h3>
                 <h3> La Puissance du Multimédia!" </h3>
             </div>

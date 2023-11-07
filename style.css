@@ -331,7 +331,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -461,7 +461,8 @@ a {
   }
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu {
-  background: transparent;
+  width: 50%;
+  background: #A8DADC;
   display: flex;
   list-style-type: none;
   flex-direction: column;
@@ -539,21 +540,24 @@ a {
   border-radius: 2px;
 }
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:first-child {
-  transform-origin: 0;
+  transform-origin: 0% 0%;
 }
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:last-child {
   margin-bottom: 0;
   transform-origin: 60px;
 }
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:nth-child(2) {
+  transform-origin: 0% 0%;
   right: 0;
   width: 30px;
+  right: 10px;
 }
 .site__entete .entete__nav .menu__nav #cc__bouton__burger:checked ~ .menu__entete {
   display: flex;
+  width: 100%;
+  height: 50%;
   position: fixed;
   top: 115px;
-  right: 34%;
   text-align: center;
   z-index: 12;
   opacity: 1;
@@ -681,7 +685,7 @@ a {
   width: 100%;
   max-height: 100vh; /* Limite la hauteur du conteneur à 100vh */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -690,12 +694,12 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid rgb(59, 0, 53);
+  border: 2px solid #3D6D8C;
   border-radius: 30px;
-  background-color: rgb(128, 0, 104);
+  background-color: #457B9D;
   margin: 10px; /* Espace autour des boîtes de cours */
   height: 200px;
-  width: 20%;
+  width: 80%;
   cursor: default;
 }
 .thematiques-cours .cours .boite h5 {

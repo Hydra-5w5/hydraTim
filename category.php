@@ -14,8 +14,11 @@ get_header();
         <div class="conteneur__texte">
             <h1><?php single_cat_title(); ?></h1>
             <p><?php the_archive_description(); ?></p>
-        </div>
+        </div> 
 
+
+
+ 
         <!-- classe personnalisée basée sur la catégorie actuelle -->
         <?php
             $category_class = 'class__' . $category->slug;

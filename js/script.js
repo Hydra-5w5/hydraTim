@@ -19,20 +19,26 @@
     document.getElementById("btn__session6")
   ];
 
-  function hideAllSessions() {
+  function cacherSessions() {
     sessions.forEach(session => {
       session.forEach(el => el.style.display = 'none');
     });
   }
 
-  function showSession(index) {
+  function montrerSession(index) {
     sessions[index].forEach(el => el.style.display = 'flex');
   }
 
   boutons.forEach((bouton, index) => {
     bouton.addEventListener("click", function(){
-      hideAllSessions();
-      showSession(index);
+      // Supprime la classe 'selectionner' de tous les boutons
+      boutons.forEach(btn => btn.classList.remove('selectionner'));
+
+      // Ajoute la classe 'selectionner' au bouton cliqué
+      bouton.classList.add('selectionner');
+
+      cacherSessions();
+      montrerSession(index);
     });
   });
 })();

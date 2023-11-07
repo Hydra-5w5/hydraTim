@@ -39,7 +39,7 @@ else if ($session == 6){
 </article>
 
 <div class="boite__modale" id="<?= $sigle ?>__boite"> 
-    <div class="btn__fermer">x</div>
+    <div class="btn__fermer">&#10005;</div>
     <h2><?= $titre_long; ?></h2>
     <h4>description :</h4>
     <p><?= the_content() ?></p>

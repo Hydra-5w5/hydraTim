@@ -854,11 +854,11 @@ a .blocflex__evenement {
 }
 a .blocflex__evenement .blocflex__images {
   height: 50%;
-  width: 100%;
+  min-width: 100%;
 }
 a .blocflex__evenement .blocflex__images img {
-  height: 100%;
-  width: 100%;
+  height: 10em;
+  width: 20em;
   object-fit: cover;
 }
 a .blocflex__evenement .blocflex__description {
@@ -1035,9 +1035,11 @@ a .blocflex__evenement .blocflex__description p {
   margin: 0;
 }
 
-/******************************** galerie ***********************************/
+/******************************** SECTION GALLERY ***********************************/
+/**/
 .blocflex__galerie {
-  width: 80vw;
+  margin-left: 1.5em;
+  width: auto;
 }
 .blocflex__galerie h3 {
   margin-bottom: 3px;
@@ -1051,7 +1053,6 @@ a .blocflex__evenement .blocflex__description p {
 }
 .blocflex__galerie .wp-block-gallery .wp-block-image {
   flex: 0 0 80vw;
-  max-width: 100%;
 }
 @media screen and (min-width: 700px) {
   .blocflex__galerie .wp-block-gallery .wp-block-image {
@@ -1060,12 +1061,16 @@ a .blocflex__evenement .blocflex__description p {
 }
 @media screen and (min-width: 1080px) {
   .blocflex__galerie .wp-block-gallery .wp-block-image {
-    flex: 0 0 20vw;
+    flex: 0 0 1;
+  }
+  .blocflex__galerie .wp-block-gallery .wp-block-image img {
+    width: 20em;
+    height: 10em;
   }
 }
 .blocflex__galerie .wp-block-gallery .wp-block-image img {
   display: block;
-  width: 100%;
+  width: 14em;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
@@ -1124,6 +1129,24 @@ a .blocflex__evenement .blocflex__description p {
   color: #F1FAEE;
   font-size: 3rem;
   cursor: pointer;
+}
+
+.conteneur-boutons {
+  position: relative;
+  bottom: 13em;
+  width: 92vw;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.conteneur-boutons button {
+  background-color: aqua;
+}
+
+.galerie {
+  width: auto;
+  overflow-x: scroll;
 }
 
 .choix__projets {

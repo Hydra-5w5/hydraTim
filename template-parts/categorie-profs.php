@@ -18,11 +18,6 @@
       <h3><?php the_title(); ?></h3> 
       <p><?php the_content() ?></p>
     </div>
-<<<<<<< HEAD
-    
-  </article>
-=======
     <?php the_content();?>
   </article>
 </a>
->>>>>>> 75b3dea (changements mineurs)

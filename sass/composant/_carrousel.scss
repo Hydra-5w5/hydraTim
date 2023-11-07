@@ -4,3 +4,23 @@
 //   border: none;
 //   color: #000;
 // }
+
+.conteneur-boutons{
+    position: relative;
+    bottom: 13em;
+    width: 92vw;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    button{
+        background-color: aqua;
+    }
+}
+
+.galerie{
+    width: auto;
+    overflow-x: scroll;
+
+}

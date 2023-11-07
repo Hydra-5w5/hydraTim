@@ -22,7 +22,7 @@
                 </div>
              
             </section>
-            
+             
             <div class="Conteneur__video">
                 <?php dynamic_sidebar( 'video_acc' ); ?>
             </div>

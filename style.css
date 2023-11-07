@@ -785,7 +785,7 @@ a {
 }
 
 .site__footer {
-  background-color: #154569;
+  background-color: #A8DADC;
   height: auto;
   overflow: hidden;
   text-align: center;
@@ -828,10 +828,10 @@ a {
   }*/
 }
 .site__footer .contenu__footer h2 {
-  color: #A8DADC;
+  color: #1D3557;
 }
 .site__footer .contenu__footer a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 @media screen and (min-width: 1080px) {
   .site__footer .contenu__footer {
@@ -848,7 +848,8 @@ a {
   height: auto;
 }
 .site__footer .contenu__footer .recherche__footer input {
-  background-color: #F1FAEE;
+  background-color: #1D3557;
+  border-radius: 30px;
   border: none;
 }
 .site__footer .suivezNous {

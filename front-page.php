@@ -15,14 +15,17 @@
                         <div class="btn"><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">informations supplémentaire</a></div>
                         <div class="btn"><a href="">explorer les thématiques</a></div>
                     </div>
+                   
                 </div>
 
                 <div class="affiche__img">
                     <img src="<?php header_image(); ?>" alt="">
                 </div>
-             
+                
             </section>
-             
+          
+            <?php get_template_part('vaguesVariantes/vaguesBas')?> 
+
             <div class="Conteneur__video">
                 <?php dynamic_sidebar( 'video_acc' ); ?>
             </div>

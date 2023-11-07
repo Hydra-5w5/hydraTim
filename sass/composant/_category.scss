@@ -26,6 +26,25 @@
 
   }
 
+  .btns__sessions{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    .btn__session{
+      background-color: #154569;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+
+      h4{
+        padding: 5px;
+        color: #A8DADC;
+      }
+    }
+
+  }
+
   .conteneur__bloc {
     display: flex;
     flex-direction: row;
@@ -59,9 +78,29 @@
 
   }
   .class__cours {
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
+    width: 80%;
   }
 
+  .session1 {
+    display: flex;
+  }
+  .session2 {
+    display: none;
+  }
+  .session3 {
+    display: none;
+  }
+  .session4 {
+    display: none;
+  }
+  .session5 {
+    display: none;
+  }
+  .session6 {
+    display: none;
+  }
+  
 
   // .class__galerie {
     

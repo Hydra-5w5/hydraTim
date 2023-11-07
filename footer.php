@@ -22,9 +22,9 @@
 
     <div class="recherche__footer section">
       <h2>Recherche</h2>
-      <form action="">
-        <input type="text" name="" id="">
-      </form>
+      <?php  get_search_form(); ?> 
+
+
     </div>
   </div>
 
@@ -42,4 +42,4 @@
 
   </footer>
 
-  <?php wp_footer(); ?>
+  <?php wp_footer(); ?> 

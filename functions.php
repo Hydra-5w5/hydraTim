@@ -18,6 +18,18 @@ function enfiler_css() {
 }
 add_action( 'wp_enqueue_scripts', 'enfiler_css' );
 
+/**
+ * Ajouter le js
+ */
+function enfiler_js() {
+    wp_enqueue_script('hydra5w5', // identificateur
+                    get_template_directory_uri() . '/js/script.js', // adresse url de style.css
+                    array(), // définir les dépendances
+                    filemtime(get_template_directory() . '/js/script.js'), // le calcul de la version du fichier css
+                    true); // média
+}
+add_action( 'wp_enqueue_scripts', 'enfiler_js' );
+
 /* ------------------------------------------ Enregistrement des menus */
 
 function enregistre_menus(){

@@ -1,0 +1,36 @@
+/******************************** Cours ***********************************/
+.blocflex__cours {
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: pointer;
+
+  width: 285px;
+  height: 150px;
+
+  .sigle {
+    text-align: center;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #A8DADC;
+    justify-content: center;
+  }
+
+  .titre__cours {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    padding: 10px;
+    background-color: #F1FAEE;
+    color: #1E5076;
+  }
+
+}

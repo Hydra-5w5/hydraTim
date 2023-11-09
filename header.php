@@ -12,6 +12,7 @@
 
 <body class="site custom-background">
     <header class="site__entete">
+   
         <div class="entete__nav">
             <div class="menu__logo">
                 <?php the_custom_logo(); ?>

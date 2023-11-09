@@ -14,7 +14,7 @@ get_header();
         <div class="conteneur__texte">
             <h1><?php single_cat_title(); ?></h1>
             <p><?php the_archive_description(); ?></p>
-        </div>
+        </div> 
 
         <div class="btns__sessions"> 
             <?php

@@ -1,5 +1,5 @@
 .site__footer {
-  background-color:  #154569;
+  background-color:  #A8DADC;
   height: auto;
   overflow: hidden;
   text-align: center;
@@ -23,11 +23,11 @@
     gap: 20px;
 
     h2 {
-      color: #A8DADC;
+      color: #1D3557;
     }
   
     a {
-      color: white;
+      color: rgb(255, 255, 255);
     }
 
     /************* VERSION TABLETTE *************/
@@ -62,11 +62,14 @@
     .recherche__footer {
 
       input {
-        background-color: #F1FAEE;
+        background-color: #1D3557;
+        border-radius: 30px;
         border: none;
+
       }
 
     }
+   
     /**** rejoindre ****/
     /*.rejoindre {
 

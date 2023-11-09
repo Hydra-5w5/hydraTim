@@ -22,8 +22,8 @@
 
     <div class="recherche__footer section">
       <h2>Recherche</h2>
-      <form action="">
-        <input type="text" name="" id="">
+      <form class="rechercheBarre" action="">
+        <input type="text" name="" id=""&#x1F50D>
       </form>
     </div>
   </div>

@@ -331,11 +331,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 2.1875rem;
+  font-size: 1.2rem;
 }
 
 h4 {
@@ -343,7 +343,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.5625rem;
+  font-size: 1rem;
 }
 
 h6 {
@@ -461,7 +461,8 @@ a {
   }
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu {
-  background: transparent;
+  width: 50%;
+  background: #A8DADC;
   display: flex;
   list-style-type: none;
   flex-direction: column;
@@ -539,21 +540,24 @@ a {
   border-radius: 2px;
 }
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:first-child {
-  transform-origin: 0;
+  transform-origin: 0% 0%;
 }
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:last-child {
   margin-bottom: 0;
   transform-origin: 60px;
 }
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:nth-child(2) {
+  transform-origin: 0% 0%;
   right: 0;
   width: 30px;
+  right: 10px;
 }
 .site__entete .entete__nav .menu__nav #cc__bouton__burger:checked ~ .menu__entete {
   display: flex;
+  width: 100%;
+  height: 50%;
   position: fixed;
   top: 115px;
-  right: 34%;
   text-align: center;
   z-index: 12;
   opacity: 1;
@@ -604,10 +608,11 @@ a {
 .section__presentation .section__info h3 {
   text-align: center;
   width: 75%;
+  font-size: 1.2rem;
 }
 .section__presentation .section__info .conteneur__btn {
   display: flex;
-  gap: 20px;
+  gap: 5px;
 }
 .section__presentation .section__info .conteneur__btn .btn {
   width: 200px;
@@ -643,6 +648,15 @@ a {
   .section__presentation .affiche__img img {
     display: none;
   }
+}
+
+/*vagues*/
+.vaguesBas {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #F1FAEE;
+  margin-top: -200px;
 }
 
 /* Ajuster la largeur maximale de la vidéo */
@@ -690,16 +704,31 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid rgb(59, 0, 53);
+  border: 2px solid #3D6D8C;
   border-radius: 30px;
-  background-color: rgb(128, 0, 104);
+  background-color: #457B9D;
   margin: 10px; /* Espace autour des boîtes de cours */
-  height: 200px;
-  width: 20%;
+  height: 100px;
+  width: 40%;
   cursor: default;
 }
 .thematiques-cours .cours .boite h5 {
   color: rgb(255, 255, 255);
+}
+
+.texte-descriptif {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.citation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.citation h3 {
+  margin: 10px;
 }
 
 .dans__article {
@@ -803,7 +832,7 @@ a {
 }
 
 .site__footer {
-  background-color: #154569;
+  background-color: #A8DADC;
   height: auto;
   overflow: hidden;
   text-align: center;
@@ -846,10 +875,10 @@ a {
   }*/
 }
 .site__footer .contenu__footer h2 {
-  color: #A8DADC;
+  color: #1D3557;
 }
 .site__footer .contenu__footer a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 @media screen and (min-width: 1080px) {
   .site__footer .contenu__footer {
@@ -866,7 +895,8 @@ a {
   height: auto;
 }
 .site__footer .contenu__footer .recherche__footer input {
-  background-color: #F1FAEE;
+  background-color: #1D3557;
+  border-radius: 30px;
   border: none;
 }
 .site__footer .suivezNous {

@@ -1,0 +1,32 @@
+.conteneur__menu {
+  background-color: #457B9D;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  
+  .menu__secondaire { // nav
+
+    .menu { // ul
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none;
+
+      .menu-item { // li
+        text-align: center;
+        background-color: #1E5076;
+        width: 15%;
+        padding: 10px 0 10px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+
+        a { //lien
+          display: block; 
+        }
+
+      }
+
+    }
+
+  }
+}

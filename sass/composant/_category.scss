@@ -1,0 +1,113 @@
+/******************************** Categorie ***********************************/
+.section__categorie {
+  // padding: 20px 100px 20px 100px;
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  position: relative;
+  
+  .conteneur__texte {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    
+    h1 {
+      padding: 20px 0 20px 0;
+    }
+
+    p {
+      color: #A8DADC;
+      margin: 0;
+    }
+
+  }
+
+  .btns__sessions{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    .btn__session{
+      background-color: #154569;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+
+      h4{
+        padding: 5px;
+        color: #A8DADC;
+      }
+    }
+
+    .selectionner {
+      background-color: rgb(137, 137, 137); /* Changez ceci en fonction de votre design */
+    }
+
+  }
+
+  .conteneur__bloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .class__profs {
+    flex-wrap: nowrap;
+    
+    .btn__gauche {
+      background-color: red;
+      border: 1px solid black;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      cursor: pointer;
+    }	
+    .btn__droite {
+      background-color: red;
+      border: 1px solid black;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      cursor: pointer;
+    }	
+
+  }
+  .class__cours {
+    // flex-wrap: nowrap;
+    width: 80%;
+  }
+
+  .session1 {
+    display: flex;
+  }
+  .session2 {
+    display: none;
+  }
+  .session3 {
+    display: none;
+  }
+  .session4 {
+    display: none;
+  }
+  .session5 {
+    display: none;
+  }
+  .session6 {
+    display: none;
+  }
+  
+
+  // .class__galerie {
+    
+  // }
+
+}

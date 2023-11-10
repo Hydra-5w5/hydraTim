@@ -1,0 +1,117 @@
+.site__footer {
+  background-color:  #A8DADC;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width : $largeur__bureau) {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .contenu__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    h2 {
+      color: #1D3557;
+    }
+  
+    a {
+      color: rgb(255, 255, 255);
+    }
+
+    /************* VERSION TABLETTE *************/
+    @media screen and (min-width : $largeur__tablette) {
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // // align-items: flex-start;
+    // justify-content: space-around;
+    }
+    
+    /************* VERSION PC *************/
+    @media screen and (min-width : $largeur__bureau) {
+      flex-wrap: wrap;
+      min-height: 22em;
+      flex-direction: row;
+      align-items: flex-start;
+      align-content: center;
+      justify-content: space-around;
+    }
+
+    /**** logo footer ****/
+    .footer__logo { 
+
+      .custom-logo-link img { // image logo
+        width: 95px;
+        height: auto;
+      }
+
+    }
+
+    /**** recherche__footer ****/
+    .recherche__footer {
+
+      input {
+        background-color: #1D3557;
+        border-radius: 30px;
+        border: none;
+
+      }
+
+    }
+   
+    /**** rejoindre ****/
+    /*.rejoindre {
+
+      .liste__joindre {
+        // display: flex;
+        // flex-direction: column;
+      }
+
+      a {
+
+      }
+
+    }*/
+  }
+
+      /**** suivezNous ****/
+      .suivezNous {
+        padding-top: 20px;
+
+        h2 {
+          color: #A8DADC;
+          padding-bottom: 10px;
+        }
+
+        @media screen and (min-width : $largeur__bureau) {
+          margin-left: 20%;
+        }
+
+        .reseaux {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+
+          .reseau {
+            width: 3em;
+            height: 3em;
+            border-radius: 100%;
+            background-color: #F1FAEE;
+          }
+  
+        }
+        
+      }
+
+}

@@ -30,15 +30,18 @@
   }
 
   boutons.forEach((bouton, index) => {
-    bouton.addEventListener("click", function(){
-      // Supprime la classe 'selectionner' de tous les boutons
-      boutons.forEach(btn => btn.classList.remove('selectionner'));
-
-      // Ajoute la classe 'selectionner' au bouton cliqué
-      bouton.classList.add('selectionner');
-
-      cacherSessions();
-      montrerSession(index);
-    });
+    if (bouton) { // Vérifie si le bouton existe
+      bouton.addEventListener("click", function(){
+        // Supprime la classe 'selectionner' de tous les boutons
+        boutons.forEach(btn => btn && btn.classList.remove('selectionner')); // Vérifie également si le bouton existe avant de supprimer la classe
+  
+        // Ajoute la classe 'selectionner' au bouton cliqué
+        bouton.classList.add('selectionner');
+  
+        cacherSessions();
+        montrerSession(index);
+      });
+    } 
   });
+
 })();

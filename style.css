@@ -1064,7 +1064,6 @@ a {
 .blocflex__galerie ::-webkit-scrollbar {
   width: 20px;
   background-color: #A8DADC;
-  border-radius: 0 0 10px 10px;
 }
 .blocflex__galerie ::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -1098,9 +1097,56 @@ a {
 .boite__modale h4 {
   color: #F1FAEE;
 }
+.boite__modale .btn__fermer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: #F1FAEE;
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 0;
+}
 
-/******************************** Evenement ***********************************/
-a .blocflex__evenement {
+.superposition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 90;
+}
+
+.conteneur-boutons {
+  position: relative;
+  bottom: 13em;
+  width: 92vw;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.conteneur-boutons button {
+  background-color: aqua;
+}
+
+.galerie {
+  width: auto;
+  overflow-x: scroll;
+}
+
+.choix__projets {
+  width: 90vw;
+}
+.choix__projets .menu__choix {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choix__projets .menu__choix .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

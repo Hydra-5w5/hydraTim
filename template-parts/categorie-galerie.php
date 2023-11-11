@@ -7,9 +7,9 @@
 ?>
 <article class="blocflex__galerie">
     <h3><?php the_title() ?></h3>
+    <div class="conteneur-boutons">
+  <button class="bouton gauche"></button>
+  <button class="bouton droite">Droite</button>
+</div>
     <div><?php the_content(); ?></div>
 </article>
-<!-- <div class="conteneur-boutons">
-  <button class="bouton gauche">Gauche</button>
-  <button class="bouton droite">Droite</button>
-</div> -->

@@ -491,6 +491,7 @@ a {
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: bold;
+  margin: 10px;
   transition: color 1s ease;
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover {
@@ -615,7 +616,7 @@ a {
   gap: 5px;
 }
 .section__presentation .section__info .conteneur__btn .btn {
-  width: 200px;
+  width: 150px;
   height: 50px;
   background-color: #457B9D;
   display: flex;
@@ -632,7 +633,6 @@ a {
 .section__presentation .affiche__img {
   height: 95vh;
   height: calc(100vh - 100px);
-  width: 50%;
 }
 .section__presentation .affiche__img img {
   width: 100%;
@@ -644,19 +644,66 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 700px) {
-  .section__presentation .affiche__img img {
+
+/*vagues*/
+.vaguesBasMobile {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: -200px;
+}
+@media screen and (min-width: 700px) {
+  .vaguesBasMobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .vaguesBasMobile {
     display: none;
   }
 }
 
-/*vagues*/
-.vaguesBas {
+.vaguesBasTablette {
   position: relative;
   width: 100%;
   height: 100px;
-  background-color: #F1FAEE;
-  margin-top: -200px;
+  margin-top: -100px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 480px) {
+  .vaguesBasTablette {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .vaguesBasTablette {
+    display: none;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .vaguesBasTablette {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .vaguesbasLaptop {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .vaguesbasLaptop {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .vaguesbasLaptop {
+    display: none;
+  }
 }
 
 /* Ajuster la largeur maximale de la vidéo */

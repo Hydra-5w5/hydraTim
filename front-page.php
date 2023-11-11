@@ -21,10 +21,10 @@
                 <div class="affiche__img">
                     <img src="<?php header_image(); ?>" alt="">
                 </div>
-                
             </section>
-          
+            <section>
             <?php get_template_part('vaguesVariantes/vaguesBas')?> 
+            </section>
 
             <div class="Conteneur__video">
                 <?php dynamic_sidebar( 'video_acc' ); ?>

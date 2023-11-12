@@ -60,6 +60,9 @@
         .menu { // ul
           width: 50%;
           background:#A8DADC;
+          border-bottom-left-radius: 30px ;
+          border-bottom-right-radius: 30px ;
+          
           display: flex;
           list-style-type: none;
           flex-direction: column;

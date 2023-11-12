@@ -70,7 +70,7 @@
             </div>
 
             <div class="texte-descriptif">
-                <p>
+                <p class="texte">
                     Le multimédia fait référence à la combinaison de différents types de
                     médias, tels que le texte, l’image, la vidéo, l’audio et d’autres
                     éléments interactifs, dans un seul support ou système. Il vise à créer
@@ -83,7 +83,12 @@
                 <h3> La Puissance du Multimédia!" </h3>
             </div>
 
-        </main>
+            <?php get_template_part('vaguesVariantes/vaguesHaut')?> 
 
-    <?php get_footer(); ?>   
+        </main>
+       
+    <?php get_footer();?>   
+
+    
+
     

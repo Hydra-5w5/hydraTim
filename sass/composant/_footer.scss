@@ -90,7 +90,7 @@
         padding-top: 20px;
 
         h2 {
-          color: #A8DADC;
+          color: #ffffff;
           padding-bottom: 10px;
         }
 
@@ -99,9 +99,13 @@
         }
 
         .reseaux {
+          position: absolute;
           display: flex;
           justify-content: center;
           gap: 15px;
+          z-index: 2;
+          right: 50px;
+          margin-top: 50px;
 
           .reseau {
             width: 3em;
@@ -112,6 +116,14 @@
   
         }
         
+      }
+
+      .vaguesHautPiedPage{
+        position:relative;
+        width: 100%;
+        
+        z-index: 1;
+       
       }
 
 }

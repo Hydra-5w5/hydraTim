@@ -1091,6 +1091,11 @@ a .blocflex__evenement .blocflex__description p {
   }
 }
 
+/******************************** SECTION TEMOIGNAGE ***********************************/
+.blocflex__temoignage {
+  width: 100%;
+}
+
 .conteneur__menu {
   background-color: #457B9D;
   width: 100%;
@@ -1256,6 +1261,35 @@ a .blocflex__evenement .blocflex__description p {
 }
 .choix__projets .menu__choix .menu .design {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/graphic-design.png");
+}
+
+.wp-block-embed figcaption {
+  width: 91.5%;
+  height: 1.5em;
+  background-color: #F1FAEE;
+  color: #1E5076;
+  margin-top: -0.3em;
+  padding-top: 0.5em;
+  padding-left: 2em;
+}
+@media screen and (min-width: 700px) {
+  .wp-block-embed figcaption {
+    width: 95.5%;
+  }
+}
+
+.class__temoignage {
+  width: 24em;
+}
+@media screen and (min-width: 700px) {
+  .class__temoignage {
+    width: 45em;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .class__temoignage {
+    width: 60em;
+  }
 }
 
 /* --------------------------------------------- layout */

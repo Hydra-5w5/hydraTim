@@ -784,9 +784,6 @@ a {
   gap: 30px;
   margin-bottom: 100px;
 }
-.section__categorie .class__profs {
-  flex-wrap: nowrap;
-}
 .section__categorie .class__profs .btn__gauche {
   background-color: red;
   border: 1px solid black;
@@ -1186,7 +1183,7 @@ a .blocflex__evenement .blocflex__description p {
 /******************************** Profs ***********************************/
 .blocflex__profs {
   background-color: #457B9D;
-  display: flex;
+  display: none;
   position: relative;
   flex-direction: row;
   align-items: center;

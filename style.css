@@ -462,7 +462,8 @@ a {
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu {
   width: 50%;
-  background: #A8DADC;
+  height: 100%;
+  background: #457B9D;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   display: flex;
@@ -486,10 +487,8 @@ a {
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item {
   position: relative;
-  /* Afficher le sous-menu lorsque .menu-item est survolé */
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a {
-  padding: 2px 2px;
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
@@ -497,31 +496,24 @@ a {
   margin: 20px;
   transition: color 1s ease;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover {
-  color: #457B9D;
-  text-decoration: underline;
-}
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu {
-  display: none;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  border-radius: 0 0 30px 30px;
-  position: absolute;
+  background-color: #092749;
+  position: relative;
   list-style: none;
-  width: 100%;
+  width: 110%;
+  right: 20px;
   padding: 10px;
-  background-color: #F1FAEE;
-  border: 3px solid #457B9D;
+}
+@media screen and (min-width: 1080px) {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu {
+    display: none;
+  }
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a {
-  color: #457B9D;
-}
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a:hover {
-  text-decoration: underline;
-}
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item:hover .sub-menu {
-  display: flex;
+  color: #ffffff;
+  padding-top: 10px;
 }
 .site__entete .entete__nav .menu__nav #cc__bouton__burger {
   display: none;
@@ -624,6 +616,8 @@ a {
   gap: 30px;
   margin: 10px;
   flex-direction: column;
+  z-index: 2;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1080px) {
   .section__presentation .section__info .conteneur__btn {
@@ -659,77 +653,6 @@ a {
   .section__presentation .affiche__img img {
     display: none;
   }
-}
-
-/*vagues Bas*/
-.vaguesBasMobile {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  margin-top: -150px;
-}
-@media screen and (min-width: 700px) {
-  .vaguesBasMobile {
-    display: none;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .vaguesBasMobile {
-    display: none;
-  }
-}
-
-.vaguesBasTablette {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  margin-top: -100px;
-  padding-bottom: 50px;
-}
-@media screen and (max-width: 425px) {
-  .vaguesBasTablette {
-    display: none;
-  }
-}
-@media screen and (max-width: 700px) {
-  .vaguesBasTablette {
-    display: none;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .vaguesBasTablette {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .vaguesbasLaptop {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    margin-top: -100px;
-    padding-bottom: 50px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .vaguesbasLaptop {
-    display: none;
-  }
-}
-@media screen and (min-width: 700px) {
-  .vaguesbasLaptop {
-    display: none;
-  }
-}
-
-/*vagues Haut*/
-.vaguesHaut {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  margin-top: -100px;
-  padding-top: 20px;
-  padding-bottom: 100px;
 }
 
 /* Ajuster la largeur maximale de la vidéo */
@@ -1154,6 +1077,14 @@ a {
 }
 .choix__projets .menu__choix .menu .design {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/graphic-design.png");
+}
+
+/* Vagues Du site */
+.section__presentation svg {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 240px;
 }
 
 /* --------------------------------------------- composant blocflex */

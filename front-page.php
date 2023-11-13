@@ -21,9 +21,10 @@
                 <div class="affiche__img">
                     <img src="<?php header_image(); ?>" alt="">
                 </div>
+                <?php get_template_part('vagues-variantes/vaguesHautFront')?> 
             </section>
             <section>
-            <?php get_template_part('vaguesVariantes/vaguesBas')?> 
+           
             </section>
 
             <div class="Conteneur__video">
@@ -83,7 +84,7 @@
                 <h3> La Puissance du Multimédia!" </h3>
             </div>
 
-            <?php get_template_part('vaguesVariantes/vaguesHaut')?> 
+            <?php get_template_part('vagues-variantes/vaguesFrontMillieu')?> 
 
         </main>
        

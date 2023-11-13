@@ -7,6 +7,7 @@ get_header();
 ?>
 
 <main class="site__main">
+<?php get_template_part('vagues-variantes/vaguesGeneral')?> 
     <section class="section__categorie">
         <?php
         $category = get_queried_object();
@@ -104,6 +105,8 @@ get_header();
             ?>
         </div>
     </section>
+
+
 </main>
 
 <?php get_footer();

@@ -6,8 +6,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 400px;
   border-radius: 30px;
   overflow: hidden;
   cursor: pointer;
@@ -48,7 +46,6 @@
   }
 
   .info__profs {
-    display: none;
     flex-direction: column;
     align-self: flex-end;
     flex-wrap: wrap;
@@ -71,3 +68,44 @@
   }
 
 }
+
+.selectionne {
+  width: 750px;
+  height: 400px;
+
+  .info__profs{
+    display: flex;
+  }
+  .photo__profs {
+    width: 50%;
+  }
+
+}
+
+.non-selectionne {
+  width: 300px;
+  height: 400px;
+
+  .info__profs{
+    display: none;
+  }
+  .photo__profs {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : $largeur__tablette) {
+  .selectionne {
+    width: 750px;
+    height: 40000px;
+  }
+
+}
+@media screen and (max-width : $largeur__tablette) {
+  .non-selectionne {
+    width: 3000px;
+    height: 400px;
+  }
+}
+
+

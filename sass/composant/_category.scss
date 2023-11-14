@@ -2,7 +2,7 @@
 .section__categorie {
   // padding: 20px 100px 20px 100px;
   display: flex;
-  min-height: 80vh;
+  min-height: 70vh;
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -55,7 +55,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
   }
 
   .class__profs {
@@ -83,6 +83,10 @@
   .class__cours {
     // flex-wrap: nowrap;
     width: 80%;
+  }
+  .class__profs {
+    // flex-wrap: nowrap;
+    align-items: center;
   }
 
   .session1 {

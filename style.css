@@ -933,19 +933,26 @@ a {
   }
 }
 .site__footer .suivezNous .reseaux {
+  width: 20%;
+  margin: auto;
   position: absolute;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  z-index: 2;
-  right: 50px;
+  right: 80px;
   margin-top: 50px;
 }
+@media screen and (min-width: 1080px) {
+  .site__footer .suivezNous .reseaux {
+    right: 50%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .site__footer .suivezNous .reseaux {
+    right: 30%;
+  }
+}
 .site__footer .suivezNous .reseaux .reseau {
-  width: 3em;
-  height: 3em;
-  border-radius: 100%;
-  background-color: #F1FAEE;
+  margin: 20px;
 }
 .site__footer .vaguesHautPiedPage {
   position: relative;
@@ -1080,13 +1087,29 @@ a {
 }
 
 /* Vagues Du site */
+/*Vagues Haut Front Page*/
 .section__presentation svg {
   width: 100%;
   position: absolute;
   z-index: 1;
-  padding-top: 240px;
+  padding-top: 280px;
+}
+@media screen and (min-width: 700px) {
+  .section__presentation svg {
+    padding-top: 480px;
+  }
 }
 
+/*main.vagues__Millieu{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: -100px;
+    @media screen and (min-width : $largeur__bureau) {
+        margin-top: -200px;
+    }
+
+}*/
 /* --------------------------------------------- composant blocflex */
 /******************************** Cours ***********************************/
 .blocflex__cours {

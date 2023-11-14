@@ -83,9 +83,10 @@
                 <h3>"Créez, Intégrez, Émerveillez </h3>
                 <h3> La Puissance du Multimédia!" </h3>
             </div>
-
+            
+            <div class="vagues__Millieu">
             <?php get_template_part('vagues-variantes/vaguesFrontMillieu')?> 
-
+            </div>
         </main>
        
     <?php get_footer();?>   

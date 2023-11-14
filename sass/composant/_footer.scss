@@ -99,29 +99,37 @@
         }
 
         .reseaux {
+          width: 20%; // Diminuer la largeur de la div
+          margin: auto; // Centrer la div
           position: absolute;
           display: flex;
           justify-content: center;
-          gap: 15px;
-          z-index: 2;
-          right: 50px;
+          right: 80px;
           margin-top: 50px;
-
-          .reseau {
-            width: 3em;
-            height: 3em;
-            border-radius: 100%;
-            background-color: #F1FAEE;
+          @media screen and (min-width : $largeur__bureau) {
+            right: 50%;
+            
           }
-  
-        }
+          @media screen and (min-width : $largeur__tablette) {
+            right: 30%;
+            
+          }
+
+          .reseau{
+          
+            margin: 20px;
+          }
+
+      }
+        
+          
         
       }
 
       .vaguesHautPiedPage{
         position:relative;
         width: 100%;
-        
+     
         z-index: 1;
        
       }

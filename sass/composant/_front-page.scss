@@ -19,9 +19,15 @@
       width: 100%;
       }
 
-      @media screen and (min-width : $largeur__tablette) {
+      @media screen and (max-width : $largeur__tablette) {
         width: 100%;
+        
         }
+        @media screen and (min-width : $largeur__tablette) {
+          width: 100%;
+          
+          }
+       
      
       
 
@@ -80,6 +86,17 @@
       @media screen and (max-width : $largeur__mobile) {
         display: none;
         }
+        @media screen and (max-width : $largeur__tablette) {
+          display: none;
+          }
+          @media screen and (min-width : $largeur__tablette) {
+            display: none;
+            }
+            @media screen and (min-width : $largeur__bureau) {
+             display: flex;
+              }
+           
+         
        
     }
 

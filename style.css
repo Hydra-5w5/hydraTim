@@ -601,6 +601,11 @@ a {
     width: 100%;
   }
 }
+@media screen and (max-width: 700px) {
+  .section__presentation .section__info {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 700px) {
   .section__presentation .section__info {
     width: 100%;
@@ -652,6 +657,21 @@ a {
 @media screen and (max-width: 425px) {
   .section__presentation .affiche__img img {
     display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section__presentation .affiche__img img {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .section__presentation .affiche__img img {
+    display: none;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .section__presentation .affiche__img img {
+    display: flex;
   }
 }
 
@@ -1096,7 +1116,7 @@ a {
 }
 @media screen and (min-width: 700px) {
   .section__presentation svg {
-    padding-top: 480px;
+    padding-top: 250px;
   }
 }
 

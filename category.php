@@ -57,7 +57,7 @@ get_header();
                 endif;
 
                 // Vérifie si la catégorie actuelle est "prof" ou "cours" pour afficher les boutons
-                if ($category->slug === 'profs' || $category->slug === 'temoignage') {
+                if ($category->slug === 'profs' || $category->slug === 'cours' ||$category->slug === 'temoignage') {
                     echo '<div class="btn__gauche">Précédent</div>';
                     echo '<div class="btn__droite">Suivant</div>';
                 }

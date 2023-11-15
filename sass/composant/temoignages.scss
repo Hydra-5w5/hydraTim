@@ -1,5 +1,5 @@
 .wp-block-embed figcaption {
-    width: 91.5%;
+    width: auto;
     height: 1.5em;
     background-color: #F1FAEE;
     color: #1E5076;
@@ -16,13 +16,36 @@
     
 }
 
+
 .class__temoignage{
     width: 24em;
 
+    
     @media screen and (min-width: $largeur__tablette) {
         width: 45em;
+        
     }
     @media screen and (min-width: $largeur__bureau) {
         width: 60em;
     }
+
+    figure{
+        
+        @media screen and (min-width: $largeur__tablette) {
+            width: 45em;
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    .btn__gauche, .btn__droite{
+        display: none;
+
+        @media screen and (min-width: $largeur__tablette) {
+            display: block;
+            
+        }
+    }
+
+    
 }

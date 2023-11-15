@@ -1,0 +1,25 @@
+/* width */
+.blocflex__galerie {
+  ::-webkit-scrollbar {
+      width: 20px;
+      background-color: #A8DADC;
+      border-radius: 0 0 10px 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #457B9D; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4080a8; 
+    }
+}

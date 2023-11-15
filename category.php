@@ -7,6 +7,10 @@ get_header();
 ?>
 
 <main class="site__main">
+
+<div class="vagues__general">
+<?php get_template_part('vagues-variantes/vaguesGeneral')?> 
+</div>
     <section class="section__categorie">
         <?php
         $category = get_queried_object();
@@ -53,7 +57,7 @@ get_header();
                 endif;
 
                 // Vérifie si la catégorie actuelle est "prof" ou "cours" pour afficher les boutons
-                if ($category->slug === 'profs') {
+                if ($category->slug === 'profs' || $category->slug === 'temoignage') {
                     echo '<div class="btn__gauche">Précédent</div>';
                     echo '<div class="btn__droite">Suivant</div>';
                 }
@@ -73,37 +77,9 @@ get_header();
             ?>
         </div>
 
-        <!-- Affiche les menus secondaires -->
-        <div class="conteneur__menu">
-            <?php
-                // Correspondance entre les catégories et les noms de menu
-                $menu_correspondance = array(
-                    'etudiants' => 'menu-etudiants',
-                    'cours' => 'menu-etudiants',
-                    'profs' => 'menu-etudiants',
-                    'futur' => 'menu-etudiants',
-                    'temoignage' => 'menu-etudiants',
-                    'web' => 'menu-projets',
-                    'jeux' => 'menu-projets',
-                    'videos' => 'menu-projets',
-                    'design' => 'menu-projets',
-                    '3d' => 'menu-projets'
-                    // Ajoutez d'autres correspondances au besoin
-                );
-
-                // Vérifiez si la catégorie a une correspondance de menu
-                if (array_key_exists($category->slug, $menu_correspondance) && $category->slug !== 'projets') {
-                    $menu_name = $menu_correspondance[$category->slug];
-                    // Affichez le menu spécifique ici
-                    wp_nav_menu(array(
-                        "menu" => $menu_name,
-                        "container" => "nav",
-                        "container_class" => "menu__secondaire"
-                    ));
-                }
-            ?>
-        </div>
     </section>
+
+
 </main>
 
 <?php get_footer();

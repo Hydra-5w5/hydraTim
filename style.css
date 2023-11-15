@@ -1187,6 +1187,7 @@ a {
 .vague__haut__pdp {
   z-index: 1;
   width: 100%;
+  display: none;
 }
 .vague__haut__pdp svg {
   width: 100%;

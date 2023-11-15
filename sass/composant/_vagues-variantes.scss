@@ -9,6 +9,7 @@
 .vague__haut__pdp {  
   z-index: 1; // Assure que la vague est en dessous des autres éléments
   width: 100%;
+  display: none;
   
   svg {
     width: 100%;

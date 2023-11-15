@@ -1,0 +1,30 @@
+/* Vagues Du site */
+
+/*Vagues Haut Front Page*/
+.section__presentation{
+
+
+   svg{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-top: 280px;
+    @media screen and (min-width : $largeur__tablette) {
+        
+        padding-top: 250px;
+      }
+     
+}
+}
+
+
+/*main.vagues__Millieu{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: -100px;
+    @media screen and (min-width : $largeur__bureau) {
+        margin-top: -200px;
+    }
+    
+}*/

@@ -7,6 +7,7 @@
 <?php
 get_header();
 ?>
+<?php get_template_part('vagues-variantes/vaguesGeneral')?> 
 <main class="site__main">
    <section class="recherche__section">
       <?php

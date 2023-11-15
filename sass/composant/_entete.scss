@@ -59,17 +59,22 @@
 
         .menu { // ul
           width: 50%;
-          background:#A8DADC;
+          height: 100%;
+          background:#457B9D;
+          border-bottom-left-radius: 30px ;
+          border-bottom-right-radius: 30px ;
+          
           display: flex;
           list-style-type: none;
           flex-direction: column;
           padding-right: 20px;
-          gap: 5px;
+          gap: 20px;
           padding: 10px;
           top: 3rem;
           right:0;
 
           @media screen and (min-width:$largeur__bureau) {
+           background: none;
             position : static;
             top: auto;
             right:auto;
@@ -81,43 +86,45 @@
             position: relative;
 
             a {
-              padding : 3px 5px;
+              
               text-decoration: none;
               color: #ffffff;
-              font-size: 1.1rem;
+              font-size: 1rem;
               font-weight: bold;
+              margin: 20px;
               transition: color 1s ease;
             }
 
-            a:hover {
-              color: #457B9D;
-              text-decoration: underline;
-            }
+            
 
             .sub-menu {
-              display: none;
+              
               flex-direction: column;
               align-items: center;
-              gap: 10px;
-              border-radius: 0 0 30px 30px;
-              position: absolute;
-              list-style: none;
-              width: 100%;
-              padding: 10px;
-              background-color: #F1FAEE;
-              border: 3px solid #457B9D;
               
-              a {
-                color: #457B9D;
+              background-color: #092749;
+              position:relative;
+              list-style: none;
+              width: 110%;
+              right: 20px;
+              padding: 10px;
+
+
+              @media screen and (min-width:$largeur__bureau) {
+             display: none;
+             }
+              
+              
+              a{
+                
+                color: #ffffff;
+                padding-top: 10px;
+               
               }
-              a:hover {
-                text-decoration: underline;
-              }
+              
             }
-            /* Afficher le sous-menu lorsque .menu-item est survolé */
-            &:hover .sub-menu {
-              display: flex;
-            }
+            
+           
           }
 
         } // FIN ul
@@ -128,8 +135,6 @@
 
       #cc__bouton__burger {
         display: none;
-        
-
       }
 
       .bouton__burger__conteneur {
@@ -167,10 +172,10 @@
       // menu burger checker
       #cc__bouton__burger:checked ~ .menu__entete {
         display: flex;
-        width: 100%;
+        width: 200%;
         height: 50%;
         position: fixed;
-        top: 115px;
+        top: 105px;
         text-align: center;
         z-index: 12;
         opacity: 1;

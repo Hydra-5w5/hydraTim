@@ -90,7 +90,7 @@
         padding-top: 20px;
 
         h2 {
-          color: #A8DADC;
+          color: #ffffff;
           padding-bottom: 10px;
         }
 
@@ -99,19 +99,39 @@
         }
 
         .reseaux {
+          width: 20%; // Diminuer la largeur de la div
+          margin: auto; // Centrer la div
+          position: absolute;
           display: flex;
           justify-content: center;
-          gap: 15px;
-
-          .reseau {
-            width: 3em;
-            height: 3em;
-            border-radius: 100%;
-            background-color: #F1FAEE;
+          right: 80px;
+          margin-top: 50px;
+          @media screen and (min-width : $largeur__bureau) {
+            right: 50%;
+            
           }
-  
-        }
+          @media screen and (min-width : $largeur__tablette) {
+            right: 30%;
+            
+          }
+
+          .reseau{
+          
+            margin: 20px;
+          }
+
+      }
         
+          
+        
+      }
+
+      .vaguesHautPiedPage{
+        position:relative;
+        width: 100%;
+     
+        z-index: 1;
+       
       }
 
 }

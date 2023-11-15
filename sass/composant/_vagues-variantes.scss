@@ -1,30 +1,62 @@
-/* Vagues Du site */
-
-/*Vagues Haut Front Page*/
-.section__presentation{
 
 
-   svg{
+.vague {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// vague du haut du pied de page
+.vague__haut__pdp {  
+  z-index: 1; // Assure que la vague est en dessous des autres éléments
+  width: 100%;
+  
+  svg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0; // Positionne le SVG juste au-dessus du conteneur
+    left: 0;
+    z-index: 2; // Assure que le SVG est au-dessus de la vague
+  }
+}
+
+.vague__haut__front {
     width: 100%;
     position: absolute;
-    z-index: 1;
-    padding-top: 280px;
-    @media screen and (min-width : $largeur__tablette) {
-        
+    bottom: 0;
+
+    svg {
+      width: 100%;
+      height: auto;
+      z-index: 1;
+      padding-top: 280px;
+      display: flex;
+      
+      @media screen and (min-width : $largeur__tablette) {
         padding-top: 250px;
       }
-     
-}
-}
-
-
-/*main.vagues__Millieu{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    margin-top: -100px;
-    @media screen and (min-width : $largeur__bureau) {
-        margin-top: -200px;
     }
-    
-}*/
+} 
+
+.vague__general {
+  position: absolute;
+  width: 100%;
+}
+
+// .vague__millieu__front {
+
+// }
+
+.vague__bas__pdp {
+  z-index: 1; // Assure que la vague est en dessous des autres éléments
+  width: 100%;
+
+  svg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 0; // Positionne la vague en bas du conteneur
+    left: 0;
+    z-index: 2; // Assure que le SVG est au-dessus de la vague
+  }
+}

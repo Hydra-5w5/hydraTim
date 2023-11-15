@@ -1,12 +1,42 @@
 
-  <footer class="site__footer">
-    
-      <?php 
-      if (!is_front_page()) {
-        get_template_part('vagues-variantes/vaguesHautPiedPage');
-      }
-      ?> 
-    </div>
+<footer class="site__footer">
+  <!-- Affiche les menus secondaires -->
+  <div class="conteneur__menu">
+    <?php
+        $category = get_queried_object();
+        // Correspondance entre les catégories et les noms de menu
+        $menu_correspondance = array(
+          'etudiants' => 'menu-etudiants',
+          'cours' => 'menu-etudiants',
+          'profs' => 'menu-etudiants',
+          'futur' => 'menu-etudiants',
+          'temoignage' => 'menu-etudiants',
+          'web' => 'menu-projets',
+          'jeux' => 'menu-projets',
+          'videos' => 'menu-projets',
+          'design' => 'menu-projets',
+          '3d' => 'menu-projets'
+          // Ajoutez d'autres correspondances au besoin
+        );
+
+        // Vérifiez si la catégorie a une correspondance de menu
+        if (array_key_exists($category->slug, $menu_correspondance) && $category->slug !== 'projets') {
+            $menu_name = $menu_correspondance[$category->slug];
+            // Affichez le menu spécifique ici
+            wp_nav_menu(array(
+              "menu" => $menu_name,
+              "container" => "nav",
+              "container_class" => "menu__secondaire"
+            ));
+        }
+    ?>
+  </div>
+  
+    <?php 
+    if (!is_front_page()) {
+      get_template_part('vagues-variantes/vaguesHautPiedPage');
+    }
+    ?> 
 
   <div class="contenu__footer">
     <div class="footer__logo">
@@ -35,12 +65,12 @@
       </form>
     </div>
   </div>
-  
+
 
   <div class="suivezNous section">
     <h2>Suivez Nous</h2>
     <div class="reseaux">
-      <div class="reseau"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="393.195" height="64.195" viewBox="0 0 393.195 64.195">
+      <!-- <div class="reseau"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="393.195" height="64.195" viewBox="0 0 393.195 64.195">
   <g id="Illustration_1" data-name="Illustration 1" transform="translate(31.598 31.598)">
     <g id="Groupe_165" data-name="Groupe 165" transform="translate(-31.598 -31.598)">
       <rect id="Rectangle_263" data-name="Rectangle 263" width="63.195" height="63.195" rx="11.869" fill="#161919"/>
@@ -87,23 +117,24 @@
       <path id="Tracé_143" data-name="Tracé 143" d="M45.11,15.879H17.915a7.834,7.834,0,0,0-7.834,7.833V37.606a7.834,7.834,0,0,0,7.834,7.833H45.11a7.834,7.834,0,0,0,7.833-7.833V23.712A7.834,7.834,0,0,0,45.11,15.879ZM27.442,35.93V25.091l10.684,5.42Z" transform="translate(0.596 0.939)" fill="#fff"/>
     </g>
   </g>
-</svg>
+  </svg>
 
 
-</a></div>
-      <div class="reseau"><a href="">
-</a></div>
-      <div class="reseau"><a href="">
-</a></div>
-      <div class="reseau"><a href="">
-</a></div>
-      <div class="reseau"><a href="">
-</a></div>
+    </a></div>
+          <div class="reseau"><a href="">
+    </a></div>
+          <div class="reseau"><a href="">
+    </a></div>
+          <div class="reseau"><a href="">
+    </a></div>
+          <div class="reseau"><a href="">
+    </a></div>
+        </div> -->
     </div>
   </div>
 
-  <?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 
+<?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 
 
-  </footer>
+</footer>
 
-  <?php wp_footer(); ?>
+<?php wp_footer(); ?>

@@ -15,16 +15,23 @@
                         <div class="btn"><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">informations supplémentaire</a></div>
                         <div class="btn"><a href="">explorer les thématiques</a></div>
                     </div>
+                   
                 </div>
 
                 <div class="affiche__img">
                     <img src="<?php header_image(); ?>" alt="">
                 </div>
+                <?php get_template_part('vagues-variantes/vaguesHautFront')?> 
+            </section>
+            <section>
+           
             </section>
 
             <div class="Conteneur__video">
                 <?php dynamic_sidebar( 'video_acc' ); ?>
             </div>
+            
+            
 
             <div class="thematiques-cours">
                 <h2>Thématiques De Cours</h2>
@@ -64,7 +71,7 @@
             </div>
 
             <div class="texte-descriptif">
-                <p>
+                <p class="texte">
                     Le multimédia fait référence à la combinaison de différents types de
                     médias, tels que le texte, l’image, la vidéo, l’audio et d’autres
                     éléments interactifs, dans un seul support ou système. Il vise à créer
@@ -72,12 +79,18 @@
                 </p>
             </div>
 
-            <div>
+            <div class="citation">
                 <h3>"Créez, Intégrez, Émerveillez </h3>
                 <h3> La Puissance du Multimédia!" </h3>
             </div>
-
+            
+            <div class="vagues__Millieu">
+            <?php get_template_part('vagues-variantes/vaguesFrontMillieu')?> 
+            </div>
         </main>
+       
+    <?php get_footer();?>   
 
-    <?php get_footer(); ?>   
+    
+
     

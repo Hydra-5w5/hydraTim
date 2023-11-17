@@ -1,9 +1,9 @@
 .site__footer {
-  background-color:  #154569;
+  background-color:  #A8DADC;
+  position: relative;
   height: auto;
   overflow: hidden;
   text-align: center;
-  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,11 +23,11 @@
     gap: 20px;
 
     h2 {
-      color: #A8DADC;
+      color: #1D3557;
     }
   
     a {
-      color: white;
+      color: rgb(255, 255, 255);
     }
 
     /************* VERSION TABLETTE *************/
@@ -62,11 +62,14 @@
     .recherche__footer {
 
       input {
-        background-color: #F1FAEE;
+        background-color: #1D3557;
+        border-radius: 30px;
         border: none;
+
       }
 
     }
+   
     /**** rejoindre ****/
     /*.rejoindre {
 
@@ -87,7 +90,7 @@
         padding-top: 20px;
 
         h2 {
-          color: #A8DADC;
+          color: #ffffff;
           padding-bottom: 10px;
         }
 
@@ -96,19 +99,39 @@
         }
 
         .reseaux {
+          width: 20%; // Diminuer la largeur de la div
+          margin: auto; // Centrer la div
+          position: absolute;
           display: flex;
           justify-content: center;
-          gap: 15px;
-
-          .reseau {
-            width: 3em;
-            height: 3em;
-            border-radius: 100%;
-            background-color: #F1FAEE;
+          right: 80px;
+          margin-top: 50px;
+          @media screen and (min-width : $largeur__bureau) {
+            right: 50%;
+            
           }
-  
-        }
+          @media screen and (min-width : $largeur__tablette) {
+            right: 30%;
+            
+          }
+
+          .reseau{
+          
+            margin: 20px;
+          }
+
+      }
         
+          
+        
+      }
+
+      .vaguesHautPiedPage{
+        position:relative;
+        width: 100%;
+     
+        z-index: 1;
+       
       }
 
 }

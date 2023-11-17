@@ -1,0 +1,43 @@
+/******************************** Evenement ***********************************/
+a {
+
+  .blocflex__evenement {
+    display: flex;
+    flex-direction: column;
+    background-color: #457B9D;
+    width: 450px;
+    height: 375px;
+    border-radius: 30px;
+    overflow: hidden;
+  
+    .blocflex__images {
+      height: 50%;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+    .blocflex__description {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      //h6 {}
+  
+      p {
+        text-align: center;
+      }
+  
+    }
+
+  }
+
+}

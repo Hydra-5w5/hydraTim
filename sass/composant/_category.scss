@@ -61,24 +61,29 @@
   .class__temoignage {
     flex-wrap: nowrap;
     
-    .btn__gauche {
-      background-color: red;
-      border: 1px solid black;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      cursor: pointer;
-    }	
+    .btn__gauche,
     .btn__droite {
-      background-color: red;
-      border: 1px solid black;
+      width: 0;
+      height: 0;
+      border-style: solid;
       z-index: 100;
       position: absolute;
       top: 50%;
-      right: 10px;
       cursor: pointer;
-    }	
+    }
+    
+    .btn__gauche {
+      border-width: 20px 30px 20px 0;
+      border-color: transparent #A8DADC transparent transparent;
+      left: 5em;
+    }
+    
+    .btn__droite {
+      border-width: 20px 0 20px 30px;
+      border-color: transparent transparent transparent #A8DADC;
+      right: 5em;
+    }
+    
 
 
     .triangle-btn {

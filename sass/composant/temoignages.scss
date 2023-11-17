@@ -41,7 +41,7 @@
     .btn__gauche, .btn__droite{
         display: none;
 
-        @media screen and (min-width: $largeur__tablette) {
+        @media screen and (min-width: $largeur__bureau) {
             display: block;
             
         }

@@ -895,6 +895,58 @@ a {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #3498db;
 }
+.section__categorie .class__temoignage {
+  flex-wrap: nowrap;
+}
+.section__categorie .class__temoignage .btn__gauche,
+.section__categorie .class__temoignage .btn__droite {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.section__categorie .class__temoignage .btn__gauche {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #A8DADC transparent transparent;
+  left: 5em;
+}
+.section__categorie .class__temoignage .btn__droite {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #A8DADC;
+  right: 5em;
+}
+.section__categorie .class__temoignage .triangle-btn {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  background-color: transparent; /* Set the desired background color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  color: white; /* Set the text color */
+  cursor: pointer;
+}
+.section__categorie .class__temoignage .triangle-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.section__categorie .class__temoignage .triangle-btn-left::before {
+  left: 10px; /* Adjust the distance from the left */
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #3498db transparent transparent;
+}
+.section__categorie .class__temoignage .triangle-btn-right::before {
+  right: 10px; /* Adjust the distance from the right */
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #3498db;
+}
 .section__categorie .class__cours {
   width: 80%;
 }
@@ -1131,6 +1183,27 @@ a {
   background: #4080a8;
 }
 
+/* width */
+.blocflex__galerie {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.blocflex__galerie ::-webkit-scrollbar {
+  width: 20px;
+  background-color: #A8DADC;
+}
+.blocflex__galerie ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.blocflex__galerie ::-webkit-scrollbar-thumb {
+  background: #457B9D;
+  border-radius: 10px;
+}
+.blocflex__galerie ::-webkit-scrollbar-thumb:hover {
+  background: #4080a8;
+}
+
 .boite__modale {
   transform: scale(0) translate(-50%, -50%);
   transform-origin: 50px 50px;
@@ -1263,6 +1336,55 @@ a {
 }
 .choix__projets .menu__choix .menu .design {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/graphic-design.png");
+}
+
+.wp-block-embed figcaption {
+  width: auto;
+  height: 1.5em;
+  background-color: #F1FAEE;
+  color: #1E5076;
+  margin-top: -0.3em;
+  padding-top: 0.5em;
+  padding-left: 2em;
+}
+@media screen and (min-width: 700px) {
+  .wp-block-embed figcaption {
+    width: 95.5%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .wp-block-embed figcaption {
+    width: 96.4%;
+  }
+}
+
+.class__temoignage {
+  width: 24em;
+}
+@media screen and (min-width: 700px) {
+  .class__temoignage {
+    width: 45em;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .class__temoignage {
+    width: 60em;
+  }
+}
+@media screen and (min-width: 700px) {
+  .class__temoignage figure {
+    width: 45em;
+    display: block;
+    width: 100%;
+  }
+}
+.class__temoignage .btn__gauche, .class__temoignage .btn__droite {
+  display: none;
+}
+@media screen and (min-width: 1080px) {
+  .class__temoignage .btn__gauche, .class__temoignage .btn__droite {
+    display: block;
+  }
 }
 
 .wp-block-embed figcaption {

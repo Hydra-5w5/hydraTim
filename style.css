@@ -846,23 +846,25 @@ a {
 .section__categorie .class__temoignage {
   flex-wrap: nowrap;
 }
-.section__categorie .class__temoignage .btn__gauche {
-  background-color: red;
-  border: 1px solid black;
+.section__categorie .class__temoignage .btn__gauche,
+.section__categorie .class__temoignage .btn__droite {
+  width: 0;
+  height: 0;
+  border-style: solid;
   z-index: 100;
   position: absolute;
   top: 50%;
-  left: 10px;
   cursor: pointer;
 }
+.section__categorie .class__temoignage .btn__gauche {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #A8DADC transparent transparent;
+  left: 5em;
+}
 .section__categorie .class__temoignage .btn__droite {
-  background-color: red;
-  border: 1px solid black;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  cursor: pointer;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #A8DADC;
+  right: 5em;
 }
 .section__categorie .class__temoignage .triangle-btn {
   position: relative;
@@ -1306,7 +1308,7 @@ a {
 .class__temoignage .btn__gauche, .class__temoignage .btn__droite {
   display: none;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1080px) {
   .class__temoignage .btn__gauche, .class__temoignage .btn__droite {
     display: block;
   }

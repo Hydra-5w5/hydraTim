@@ -20,12 +20,13 @@
     }
 
     p {
-      color: #A8DADC;
+      color: #ffffff;
       margin: 0;
     }
 
   }
-
+  
+  // LES BOUTONS POUR LES SESSIONS
   .btns__sessions{
     display: flex;
     justify-content: space-evenly;
@@ -58,161 +59,79 @@
     // margin-bottom: 100px;
   }
 
-  .class__profs {
-    
-    .btn__gauche {
-      background-color: red;
-      border: 1px solid black;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      cursor: pointer;
-    }	
-    .btn__droite {
-      background-color: red;
-      border: 1px solid black;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      cursor: pointer;
-    }	
-
+  //LES BOUTONS
+  .btn__gauche,
+  .btn__droite {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
   }
-  .class__temoignage {
-    flex-wrap: nowrap;
-    
-    .btn__gauche,
-    .btn__droite {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      cursor: pointer;
-    }
-    
-    .btn__gauche {
-      border-width: 20px 30px 20px 0;
-      border-color: transparent #A8DADC transparent transparent;
-      left: 5em;
-    }
-    
-    .btn__droite {
-      border-width: 20px 0 20px 30px;
-      border-color: transparent transparent transparent #A8DADC;
-      right: 5em;
-    }
-    
-
-
-    .triangle-btn {
-      position: relative;
-      display: inline-block;
-      margin: 10px;
-      background-color: transparent; /* Set the desired background color */
-      padding: 10px 20px; /* Adjust padding as needed */
-      border: none;
-      color: white; /* Set the text color */
-      cursor: pointer;
-    }
-
-    .triangle-btn::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0;
-      height: 0;
-      border-style: solid;
-    }
-
-    .triangle-btn-left::before {
-      left: 10px; /* Adjust the distance from the left */
-      border-width: 10px 20px 10px 0;
-      border-color: transparent #3498db transparent transparent;
-    }
-
-    .triangle-btn-right::before {
-      right: 10px; /* Adjust the distance from the right */
-      border-width: 10px 0 10px 20px;
-      border-color: transparent transparent transparent #3498db;
-    }
   
-
+  .btn__gauche {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #A8DADC transparent transparent;
+    left: 5em;
   }
-  .class__temoignage {
-    flex-wrap: nowrap;
-    
-    .btn__gauche,
-    .btn__droite {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      cursor: pointer;
-    }
-    
-    .btn__gauche {
-      border-width: 20px 30px 20px 0;
-      border-color: transparent #A8DADC transparent transparent;
-      left: 5em;
-    }
-    
-    .btn__droite {
-      border-width: 20px 0 20px 30px;
-      border-color: transparent transparent transparent #A8DADC;
-      right: 5em;
-    }
-    
-
-
-    .triangle-btn {
-      position: relative;
-      display: inline-block;
-      margin: 10px;
-      background-color: transparent; /* Set the desired background color */
-      padding: 10px 20px; /* Adjust padding as needed */
-      border: none;
-      color: white; /* Set the text color */
-      cursor: pointer;
-    }
-
-    .triangle-btn::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0;
-      height: 0;
-      border-style: solid;
-    }
-
-    .triangle-btn-left::before {
-      left: 10px; /* Adjust the distance from the left */
-      border-width: 10px 20px 10px 0;
-      border-color: transparent #3498db transparent transparent;
-    }
-
-    .triangle-btn-right::before {
-      right: 10px; /* Adjust the distance from the right */
-      border-width: 10px 0 10px 20px;
-      border-color: transparent transparent transparent #3498db;
-    }
   
+  .btn__droite {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #A8DADC;
+    right: 5em;
+  }
+  
+  .triangle-btn {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    background-color: transparent; /* Set the desired background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    color: white; /* Set the text color */
+    cursor: pointer;
+  }
 
+  .triangle-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
   }
-  .class__cours {
-    // flex-wrap: nowrap;
-    width: 80%;
+
+  .triangle-btn-left::before {
+    left: 10px; /* Adjust the distance from the left */
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #3498db transparent transparent;
   }
+
+  .triangle-btn-right::before {
+    right: 10px; /* Adjust the distance from the right */
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #3498db;
+  }
+  
+  // SECTION PROFS
   .class__profs {
     // flex-wrap: nowrap;
     align-items: center;
+  }
+
+  // SECTION TEMOIGNAGE
+  .class__temoignage{
+    flex-wrap: nowrap;
+    width: 90vw;
+  }
+
+  // SECTION COURS
+  .class__cours {
+    // flex-wrap: nowrap;
+    width: 80%;
   }
 
   .session1 {
@@ -233,70 +152,5 @@
   .session6 {
     display: none;
   }
-  // SECTION TEMOIGNAGE
-  .class__temoignage {
-    flex-wrap: nowrap;
-    width: 90vw;
-    
-    .btn__gauche {
-      background-color: red;
-      border: 1px solid black;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      cursor: pointer;
-    }	
-
-    .btn__droite {
-      background-color: red;
-      border: 1px solid black;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      cursor: pointer;
-    }	
-
-    .triangle-btn {
-      position: relative;
-      display: inline-block;
-      margin: 10px;
-      background-color: transparent; /* Set the desired background color */
-      padding: 10px 20px; /* Adjust padding as needed */
-      border: none;
-      color: white; /* Set the text color */
-      cursor: pointer;
-    }
-
-    .triangle-btn::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0;
-      height: 0;
-      border-style: solid;
-    }
-
-    .triangle-btn-left::before {
-      left: 10px; /* Adjust the distance from the left */
-      border-width: 10px 20px 10px 0;
-      border-color: transparent #3498db transparent transparent;
-    }
-
-    .triangle-btn-right::before {
-      right: 10px; /* Adjust the distance from the right */
-      border-width: 10px 0 10px 20px;
-      border-color: transparent transparent transparent #3498db;
-    }
   
-  }
-
-  .class__temoignage{
-    flex-wrap: nowrap;
-    width: 90vw;
-  }
-
-
 }

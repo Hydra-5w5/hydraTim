@@ -1,12 +1,10 @@
-
-
-.vague {
+.vague { // pour toute les vagues
   max-width: 100%;
   overflow-x: hidden;
 }
 
-// vague du haut du pied de page
-.vague__haut__pdp {  
+
+.vague__haut__pdp {  // vague du haut du pied de page 
   z-index: 1; // Assure que la vague est en dessous des autres éléments
   width: 100%;
   display: none;

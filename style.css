@@ -797,7 +797,7 @@ a {
   padding: 20px 0 20px 0;
 }
 .section__categorie .conteneur__texte p {
-  color: #A8DADC;
+  color: #ffffff;
   margin: 0;
 }
 .section__categorie .btns__sessions {
@@ -825,29 +825,8 @@ a {
   justify-content: center;
   gap: 30px;
 }
-.section__categorie .class__profs .btn__gauche {
-  background-color: red;
-  border: 1px solid black;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  cursor: pointer;
-}
-.section__categorie .class__profs .btn__droite {
-  background-color: red;
-  border: 1px solid black;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  cursor: pointer;
-}
-.section__categorie .class__temoignage {
-  flex-wrap: nowrap;
-}
-.section__categorie .class__temoignage .btn__gauche,
-.section__categorie .class__temoignage .btn__droite {
+.section__categorie .btn__gauche,
+.section__categorie .btn__droite {
   width: 0;
   height: 0;
   border-style: solid;
@@ -856,17 +835,17 @@ a {
   top: 50%;
   cursor: pointer;
 }
-.section__categorie .class__temoignage .btn__gauche {
+.section__categorie .btn__gauche {
   border-width: 20px 30px 20px 0;
   border-color: transparent #A8DADC transparent transparent;
   left: 5em;
 }
-.section__categorie .class__temoignage .btn__droite {
+.section__categorie .btn__droite {
   border-width: 20px 0 20px 30px;
   border-color: transparent transparent transparent #A8DADC;
   right: 5em;
 }
-.section__categorie .class__temoignage .triangle-btn {
+.section__categorie .triangle-btn {
   position: relative;
   display: inline-block;
   margin: 10px;
@@ -876,7 +855,7 @@ a {
   color: white; /* Set the text color */
   cursor: pointer;
 }
-.section__categorie .class__temoignage .triangle-btn::before {
+.section__categorie .triangle-btn::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -885,73 +864,25 @@ a {
   height: 0;
   border-style: solid;
 }
-.section__categorie .class__temoignage .triangle-btn-left::before {
+.section__categorie .triangle-btn-left::before {
   left: 10px; /* Adjust the distance from the left */
   border-width: 10px 20px 10px 0;
   border-color: transparent #3498db transparent transparent;
 }
-.section__categorie .class__temoignage .triangle-btn-right::before {
+.section__categorie .triangle-btn-right::before {
   right: 10px; /* Adjust the distance from the right */
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #3498db;
-}
-.section__categorie .class__temoignage {
-  flex-wrap: nowrap;
-}
-.section__categorie .class__temoignage .btn__gauche,
-.section__categorie .class__temoignage .btn__droite {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-}
-.section__categorie .class__temoignage .btn__gauche {
-  border-width: 20px 30px 20px 0;
-  border-color: transparent #A8DADC transparent transparent;
-  left: 5em;
-}
-.section__categorie .class__temoignage .btn__droite {
-  border-width: 20px 0 20px 30px;
-  border-color: transparent transparent transparent #A8DADC;
-  right: 5em;
-}
-.section__categorie .class__temoignage .triangle-btn {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-  background-color: transparent; /* Set the desired background color */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border: none;
-  color: white; /* Set the text color */
-  cursor: pointer;
-}
-.section__categorie .class__temoignage .triangle-btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-.section__categorie .class__temoignage .triangle-btn-left::before {
-  left: 10px; /* Adjust the distance from the left */
-  border-width: 10px 20px 10px 0;
-  border-color: transparent #3498db transparent transparent;
-}
-.section__categorie .class__temoignage .triangle-btn-right::before {
-  right: 10px; /* Adjust the distance from the right */
-  border-width: 10px 0 10px 20px;
-  border-color: transparent transparent transparent #3498db;
-}
-.section__categorie .class__cours {
-  width: 80%;
 }
 .section__categorie .class__profs {
   align-items: center;
+}
+.section__categorie .class__temoignage {
+  flex-wrap: nowrap;
+  width: 90vw;
+}
+.section__categorie .class__cours {
+  width: 80%;
 }
 .section__categorie .session1 {
   display: flex;
@@ -970,61 +901,6 @@ a {
 }
 .section__categorie .session6 {
   display: none;
-}
-.section__categorie .class__temoignage {
-  flex-wrap: nowrap;
-  width: 90vw;
-}
-.section__categorie .class__temoignage .btn__gauche {
-  background-color: red;
-  border: 1px solid black;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  cursor: pointer;
-}
-.section__categorie .class__temoignage .btn__droite {
-  background-color: red;
-  border: 1px solid black;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  cursor: pointer;
-}
-.section__categorie .class__temoignage .triangle-btn {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-  background-color: transparent; /* Set the desired background color */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border: none;
-  color: white; /* Set the text color */
-  cursor: pointer;
-}
-.section__categorie .class__temoignage .triangle-btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-.section__categorie .class__temoignage .triangle-btn-left::before {
-  left: 10px; /* Adjust the distance from the left */
-  border-width: 10px 20px 10px 0;
-  border-color: transparent #3498db transparent transparent;
-}
-.section__categorie .class__temoignage .triangle-btn-right::before {
-  right: 10px; /* Adjust the distance from the right */
-  border-width: 10px 0 10px 20px;
-  border-color: transparent transparent transparent #3498db;
-}
-.section__categorie .class__temoignage {
-  flex-wrap: nowrap;
-  width: 90vw;
 }
 
 .site__erreur {
@@ -1138,6 +1014,7 @@ a {
   width: 100%;
   z-index: 1;
 }
+
 .conteneur__menu {
   background-color: #457B9D;
   width: 100%;
@@ -1160,27 +1037,6 @@ a {
 }
 .conteneur__menu .menu__secondaire .menu .menu-item a {
   display: block;
-}
-
-/* width */
-.blocflex__galerie {
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-.blocflex__galerie ::-webkit-scrollbar {
-  width: 20px;
-  background-color: #A8DADC;
-}
-.blocflex__galerie ::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-.blocflex__galerie ::-webkit-scrollbar-thumb {
-  background: #457B9D;
-  border-radius: 10px;
-}
-.blocflex__galerie ::-webkit-scrollbar-thumb:hover {
-  background: #4080a8;
 }
 
 /* width */
@@ -1247,38 +1103,6 @@ a {
   z-index: 90;
 }
 
-.conteneur-boutons {
-  position: relative;
-  top: 11.5em;
-  right: 3.6em;
-  width: 110%;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.conteneur-boutons .gauche {
-  background-color: transparent;
-  width: 0;
-  height: 0;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-right: 30px solid blue;
-}
-.conteneur-boutons .droite {
-  background-color: transparent;
-  width: 0;
-  height: 0;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-left: 30px solid green;
-}
-
-.galerie {
-  width: auto;
-  overflow-x: scroll;
-}
-
 .choix__projets {
   width: 90vw;
 }
@@ -1338,55 +1162,325 @@ a {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/graphic-design.png");
 }
 
-.wp-block-embed figcaption {
-  width: auto;
-  height: 1.5em;
-  background-color: #F1FAEE;
-  color: #1E5076;
-  margin-top: -0.3em;
-  padding-top: 0.5em;
-  padding-left: 2em;
-}
-@media screen and (min-width: 700px) {
-  .wp-block-embed figcaption {
-    width: 95.5%;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .wp-block-embed figcaption {
-    width: 96.4%;
-  }
+.vague {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.class__temoignage {
-  width: 24em;
-}
-@media screen and (min-width: 700px) {
-  .class__temoignage {
-    width: 45em;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .class__temoignage {
-    width: 60em;
-  }
-}
-@media screen and (min-width: 700px) {
-  .class__temoignage figure {
-    width: 45em;
-    display: block;
-    width: 100%;
-  }
-}
-.class__temoignage .btn__gauche, .class__temoignage .btn__droite {
+.vague__haut__pdp {
+  z-index: 1;
+  width: 100%;
   display: none;
 }
-@media screen and (min-width: 1080px) {
-  .class__temoignage .btn__gauche, .class__temoignage .btn__droite {
-    display: block;
+.vague__haut__pdp svg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.vague__haut__front {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.vague__haut__front svg {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  padding-top: 280px;
+  display: flex;
+}
+@media screen and (min-width: 700px) {
+  .vague__haut__front svg {
+    padding-top: 250px;
   }
 }
 
+.vague__general {
+  position: absolute;
+  width: 100%;
+}
+
+.vague__bas__pdp {
+  z-index: 1;
+  width: 100%;
+}
+.vague__bas__pdp svg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* --------------------------------------------- composant blocflex */
+/******************************** Cours ***********************************/
+.blocflex__cours {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 285px;
+  height: 150px;
+}
+.blocflex__cours .sigle {
+  text-align: center;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #A8DADC;
+  justify-content: center;
+}
+.blocflex__cours .titre__cours {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  padding: 10px;
+  background-color: #F1FAEE;
+  color: #1E5076;
+}
+
+/******************************** Etudiants ***********************************/
+.blocflex__etudiants {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: #457B9D;
+  border-radius: 30px;
+}
+.blocflex__etudiants .cat__content {
+  line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
+  padding-left: 10px;
+  align-items: center;
+  align-self: center;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__etudiants .cat__content p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.blocflex__etudiants .cat__image {
+  border-radius: 0 30px 30px 0px;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__etudiants .cat__image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/******************************** Evenement ***********************************/
+a .blocflex__evenement {
+  display: flex;
+  flex-direction: column;
+  background-color: #457B9D;
+  width: 450px;
+  height: 375px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+a .blocflex__evenement .blocflex__images {
+  height: 50%;
+  width: 100%;
+}
+a .blocflex__evenement .blocflex__images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+a .blocflex__evenement .blocflex__description {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+a .blocflex__evenement .blocflex__description p {
+  text-align: center;
+}
+
+/******************************** galerie ***********************************/
+.blocflex__galerie {
+  width: 80vw;
+}
+.blocflex__galerie h3 {
+  margin-bottom: 3px;
+}
+.blocflex__galerie .wp-block-gallery {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+.blocflex__galerie .wp-block-gallery .wp-block-image {
+  flex: 0 0 80vw;
+  max-width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .blocflex__galerie .wp-block-gallery .wp-block-image {
+    flex: 0 0 40vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__galerie .wp-block-gallery .wp-block-image {
+    flex: 0 0 20vw;
+  }
+}
+.blocflex__galerie .wp-block-gallery .wp-block-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/******************************** Profs ***********************************/
+.blocflex__profs {
+  background-color: #457B9D;
+  border: 2px solid rgb(144, 182, 194);
+  display: none;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.blocflex__profs .sujet__profs {
+  background-color: #154569;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 15%;
+}
+.blocflex__profs .sujet__profs img {
+  width: 45px;
+  height: auto;
+}
+.blocflex__profs .photo__profs {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.blocflex__profs .photo__profs img {
+  width: 80%;
+  height: auto;
+  padding-top: 10px;
+  align-self: flex-start;
+}
+.blocflex__profs .info__profs {
+  flex-direction: column;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-right: 5px;
+  height: 85%;
+  justify-content: center;
+}
+.blocflex__profs .info__profs h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.blocflex__profs .info__profs p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.selectionne {
+  width: 750px;
+  height: 400px;
+}
+.selectionne .info__profs {
+  display: flex;
+}
+.selectionne .photo__profs {
+  width: 50%;
+}
+
+.non-selectionne {
+  width: 300px;
+  height: 400px;
+}
+.non-selectionne .info__profs {
+  display: none;
+}
+.non-selectionne .photo__profs {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .selectionne {
+    width: 750px;
+    height: 40000px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .non-selectionne {
+    width: 3000px;
+    height: 400px;
+  }
+}
+/******************************** Stage ***********************************/
+.blocflex__stage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: #457B9D;
+  border-radius: 30px;
+}
+.blocflex__stage .cat__content {
+  line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
+  align-items: center;
+  align-self: center;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__stage .cat__content p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.blocflex__stage .cat__image {
+  border-radius: 0 30px 30px 0px;
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__stage .cat__image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.blocflex__temoignage {
+  width: 100%;
+}
 .wp-block-embed figcaption {
   width: auto;
   height: 1.5em;
@@ -1405,6 +1499,10 @@ a {
   .wp-block-embed figcaption {
     width: 96.4%;
   }
+}
+
+.blocflex__temoignage {
+  width: 100%;
 }
 
 .class__temoignage {

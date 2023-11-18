@@ -1,0 +1,51 @@
+.wp-block-embed figcaption {
+    width: auto;
+    height: 1.5em;
+    background-color: #F1FAEE;
+    color: #1E5076;
+    margin-top: -0.3em; 
+    padding-top: 0.5em;
+    padding-left: 2em;
+
+    @media screen and (min-width: $largeur__tablette) {
+        width: 95.5%;
+    }
+    @media screen and (min-width: $largeur__bureau) {
+        width:96.4%;
+    }
+    
+}
+
+
+.class__temoignage{
+    width: 24em;
+
+    
+    @media screen and (min-width: $largeur__tablette) {
+        width: 45em;
+        
+    }
+    @media screen and (min-width: $largeur__bureau) {
+        width: 60em;
+    }
+
+    figure{
+        
+        @media screen and (min-width: $largeur__tablette) {
+            width: 45em;
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    .btn__gauche, .btn__droite{
+        display: none;
+
+        @media screen and (min-width: $largeur__bureau) {
+            display: block;
+            
+        }
+    }
+
+    
+}

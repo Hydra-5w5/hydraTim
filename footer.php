@@ -3,6 +3,7 @@
   <!-- Affiche les menus secondaires -->
   <div class="conteneur__menu">
     <?php
+      if (get_queried_object()) {
         $category = get_queried_object();
         // Correspondance entre les catégories et les noms de menu
         $menu_correspondance = array(
@@ -29,6 +30,7 @@
               "container_class" => "menu__secondaire"
             ));
         }
+      }
     ?>
   </div>
   
@@ -52,7 +54,7 @@
     <div class="rejoindre section">
       <h2>Nous Rejoindre</h2>
       <div class="liste__joindre">
-        <p><a href="#">Inscriprion</a></p>
+        <p><a href="#">Inscription</a></p>
         <p><a href="#">Visite Virtuelle</a></p>
         <p><a href="#">Porte Ouverte</a></p>
       </div>

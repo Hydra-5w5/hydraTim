@@ -62,9 +62,7 @@
 
     <div class="recherche__footer section">
       <h2>Recherche</h2>
-      <form class="rechercheBarre" action="">
-        <input type="text" name="" id=""&#x1F50D>
-      </form>
+      <?php  get_search_form(); ?> 
     </div>
   </div>
 

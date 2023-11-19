@@ -7,9 +7,11 @@
 <?php
 get_header();
 ?>
-<?php get_template_part('vagues-variantes/vaguesGeneral')?> 
 <main class="site__main">
    <section class="recherche__section">
+      <h2>Recherche</h2>
+      <h6>Retrouver ici tout ce que vous cherchez</h6>
+      <?php  get_search_form(); ?> 
       <?php
       if (have_posts()):
          while(have_posts()): the_post(); ?>

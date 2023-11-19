@@ -2,7 +2,7 @@
 .section__categorie {
   // padding: 20px 100px 20px 100px;
   display: flex;
-  min-height: 70vh;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -132,6 +132,15 @@
   .class__cours {
     // flex-wrap: nowrap;
     width: 80%;
+  }
+
+  // SECTION ETUDIANTS
+  .class__etudiants {
+    width: 90%;
+  }
+  // SECTION STAGE
+  .class__stage {
+    width: 90%;
   }
 
   .session1 {

@@ -10,8 +10,8 @@ get_header();
 <main class="site__main">
    <section class="recherche__section">
       <h2>Recherche</h2>
-      <?php  get_search_form(); ?> 
       <h6>Retrouver ici tout ce que vous cherchez</h6>
+      <?php  get_search_form(); ?> 
       <?php
       if (have_posts()):
          while(have_posts()): the_post(); ?>

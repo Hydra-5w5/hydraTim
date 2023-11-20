@@ -37,7 +37,12 @@ a {
       }
   
     }
+    transition: transform 0.3s ease;
 
   }
+
+  .blocflex__evenement:hover {
+    transform: scale(1.1);
+}
 
 }

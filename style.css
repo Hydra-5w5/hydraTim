@@ -1389,6 +1389,7 @@ a .blocflex__evenement {
   height: 375px;
   border-radius: 30px;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
 a .blocflex__evenement .blocflex__images {
   height: 50%;
@@ -1409,6 +1410,9 @@ a .blocflex__evenement .blocflex__description {
 }
 a .blocflex__evenement .blocflex__description p {
   text-align: center;
+}
+a .blocflex__evenement:hover {
+  transform: scale(1.1);
 }
 
 /******************************** galerie ***********************************/

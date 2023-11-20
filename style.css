@@ -327,7 +327,7 @@ template {
 /* --------------------------------------------- base */
 /* Mobile First - Tailles de police de base */
 h1 {
-  font-size: 3.75rem; /* Taille de police de base pour les écrans mobiles */
+  font-size: 2rem; /* Taille de police de base pour les écrans mobiles */
 }
 
 h2 {
@@ -335,47 +335,47 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.17rem;
 }
 
 h4 {
-  font-size: 1.875rem;
-}
-
-h5 {
   font-size: 1rem;
 }
 
+h5 {
+  font-size: 0.83rem;
+}
+
 h6 {
-  font-size: 1.25rem;
+  font-size: 0.67rem;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Tailles de police adaptatives avec clamp() pour les écrans plus larges (tablettes) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h1 {
-    font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+    font-size: clamp(3rem, 2vw, 3.75rem);
   }
   h2 {
-    font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+    font-size: clamp(2.25rem, 1.5vw, 2.5rem);
   }
   h3 {
-    font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+    font-size: clamp(1.8rem, 1.2vw, 2.1875rem);
   }
   h4 {
-    font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+    font-size: clamp(1.5rem, 1vw, 1.875rem);
   }
   h5 {
-    font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+    font-size: clamp(1.2rem, 0.8vw, 1.5625rem);
   }
   h6 {
-    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+    font-size: clamp(1rem, 0.6vw, 1.25rem);
   }
-  P {
-    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  p {
+    font-size: clamp(1.125rem, 1vw, 1.1rem);
   }
 }
 /* Styles de police et de texte communs */
@@ -602,12 +602,12 @@ a {
     width: 100%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .section__presentation .section__info {
     width: 100%;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .section__presentation .section__info {
     width: 100%;
   }
@@ -660,12 +660,12 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .section__presentation .affiche__img img {
     display: none;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .section__presentation .affiche__img img {
     display: none;
   }
@@ -738,7 +738,7 @@ a {
   padding-bottom: 80px;
   text-align: center;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .texte-descriptif p {
     width: 80%;
     margin: 0 auto;
@@ -780,8 +780,9 @@ a {
 /******************************** Categorie ***********************************/
 .section__categorie {
   display: flex;
-  min-height: 100vh;
+  min-height: 60vh;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
   overflow: hidden;
@@ -790,33 +791,18 @@ a {
 .section__categorie .conteneur__texte {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 500px;
+  height: auto;
   text-align: center;
 }
 .section__categorie .conteneur__texte h1 {
   padding: 20px 0 20px 0;
 }
 .section__categorie .conteneur__texte p {
-  color: #ffffff;
+  text-align: center;
+  width: 400px;
   margin: 0;
-}
-.section__categorie .btns__sessions {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-}
-.section__categorie .btns__sessions .btn__session {
-  background-color: #154569;
-  border-radius: 10px;
-  cursor: pointer;
-  user-select: none;
-}
-.section__categorie .btns__sessions .btn__session h4 {
-  padding: 5px;
-  color: #A8DADC;
-}
-.section__categorie .btns__sessions .selectionner {
-  background-color: rgb(137, 137, 137); /* Changez ceci en fonction de votre design */
 }
 .section__categorie .conteneur__bloc {
   display: flex;
@@ -889,6 +875,60 @@ a {
 }
 .section__categorie .class__stage {
   width: 90%;
+}
+.section__categorie .btns__sessions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 45px;
+  background-color: #F1FAEE;
+  border: #ffffff 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 30px;
+  gap: 10px;
+  overflow: hidden;
+  padding-right: 10px;
+}
+@media screen and (min-width: 1080px) {
+  .section__categorie .btns__sessions {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section__categorie .btns__sessions {
+    width: 30%;
+  }
+}
+.section__categorie .btns__sessions .titre__session {
+  color: #ffffff;
+  background-color: #154569;
+  border-radius: 30px;
+  padding: 15px;
+}
+.section__categorie .btns__sessions .btn__session {
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.section__categorie .btns__sessions .btn__session h4 {
+  padding: 5px;
+  color: #154569;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) {
+  .section__categorie .btns__sessions .btn__session h4 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section__categorie .btns__sessions .btn__session h4 {
+    font-size: 1.5rem;
+  }
+}
+.section__categorie .btns__sessions .selectionner h4 {
+  color: #457B9D;
 }
 .section__categorie .session1 {
   display: flex;
@@ -1083,7 +1123,7 @@ a {
     right: 50%;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .site__footer .suivezNous .reseaux {
     right: 30%;
   }
@@ -1288,7 +1328,7 @@ a {
   padding-top: 280px;
   display: flex;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .vague__haut__front svg {
     padding-top: 250px;
   }
@@ -1320,6 +1360,7 @@ a {
   justify-content: space-between;
   overflow: hidden;
   border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
   width: 285px;
   height: 150px;
@@ -1330,7 +1371,7 @@ a {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #A8DADC;
+  background-color: #154569;
   justify-content: center;
 }
 .blocflex__cours .titre__cours {
@@ -1343,6 +1384,9 @@ a {
   padding: 10px;
   background-color: #F1FAEE;
   color: #1E5076;
+}
+.blocflex__cours .titre__cours h6 {
+  padding: 5px;
 }
 
 /******************************** Etudiants ***********************************/
@@ -1429,7 +1473,7 @@ a .blocflex__evenement .blocflex__description p {
   flex: 0 0 80vw;
   max-width: 100%;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .blocflex__galerie .wp-block-gallery .wp-block-image {
     flex: 0 0 40vw;
   }
@@ -1530,13 +1574,13 @@ a .blocflex__evenement .blocflex__description p {
   width: 100%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .selectionne {
     width: 750px;
     height: 40000px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .non-selectionne {
     width: 3000px;
     height: 400px;
@@ -1654,7 +1698,7 @@ a .blocflex__evenement .blocflex__description p {
   padding-top: 0.5em;
   text-align: center;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .wp-block-embed figcaption {
     width: 100%;
     padding-left: none;
@@ -1674,7 +1718,7 @@ a .blocflex__evenement .blocflex__description p {
 .class__temoignage {
   width: 24em;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .class__temoignage {
     width: 45em;
   }
@@ -1684,7 +1728,7 @@ a .blocflex__evenement .blocflex__description p {
     width: 60em;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .class__temoignage figure {
     width: 45em;
     display: block;

@@ -6,6 +6,8 @@
   justify-content: space-between;
   overflow: hidden;
   border-radius: 30px;
+  // border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 
   width: 285px;
@@ -17,7 +19,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #A8DADC;
+    background-color: #154569;
     justify-content: center;
   }
 
@@ -31,6 +33,11 @@
     padding: 10px;
     background-color: #F1FAEE;
     color: #1E5076;
+
+    h6{
+      padding: 5px;
+    }
+
   }
 
 }

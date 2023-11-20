@@ -36,12 +36,23 @@ Text Domain: hydra-5w5
 @import "composant/barre-recherche";
 @import "composant/404";
 @import "composant/footer";
-@import "composant/blocflex";
 @import "composant/menu-secondaire";
 @import "composant/defilement";
 @import "composant/boite-modale";
 @import "composant/carrousel";
 @import "composant/choix-projets";
+@import "composant/vagues-variantes";
+/* --------------------------------------------- composant blocflex */
+@import "composant/blocflex/cours";
+@import "composant/blocflex/etudiants";
+@import "composant/blocflex/evenement";
+@import "composant/blocflex/galerie";
+@import "composant/blocflex/profs";
+@import "composant/blocflex/projets";
+@import "composant/blocflex/stage";
+@import "composant/blocflex/temoignage";
+
+
 
 /* --------------------------------------------- layout */
 @import "layout/layout";

@@ -2,8 +2,9 @@
 .section__categorie {
   // padding: 20px 100px 20px 100px;
   display: flex;
-  min-height: 70vh;
+  min-height: 60vh;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
   overflow: hidden;
@@ -12,7 +13,9 @@
   .conteneur__texte {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 500px;
+    height: auto;
     text-align: center;
     
     h1 {
@@ -20,31 +23,9 @@
     }
 
     p {
-      color: #A8DADC;
+      text-align: center;
+      width: 400px;
       margin: 0;
-    }
-
-  }
-
-  .btns__sessions{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-
-    .btn__session{
-      background-color: #154569;
-      border-radius: 10px;
-      cursor: pointer;
-      user-select: none;
-
-      h4{
-        padding: 5px;
-        color: #A8DADC;
-      }
-    }
-
-    .selectionner {
-      background-color: rgb(137, 137, 137); /* Changez ceci en fonction de votre design */
     }
 
   }
@@ -58,35 +39,157 @@
     // margin-bottom: 100px;
   }
 
-  .class__profs {
-    
-    .btn__gauche {
-      background-color: red;
-      border: 1px solid black;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      cursor: pointer;
-    }	
-    .btn__droite {
-      background-color: red;
-      border: 1px solid black;
-      z-index: 100;
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      cursor: pointer;
-    }	
-
+  //LES BOUTONS
+  .btn__gauche,
+  .btn__droite {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
   }
+  
+  .btn__gauche {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #A8DADC transparent transparent;
+    left: 5em;
+  }
+  
+  .btn__droite {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #A8DADC;
+    right: 5em;
+  }
+  
+  .triangle-btn {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    background-color: transparent; /* Set the desired background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    color: white; /* Set the text color */
+    cursor: pointer;
+  }
+
+  .triangle-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .triangle-btn-left::before {
+    left: 10px; /* Adjust the distance from the left */
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #3498db transparent transparent;
+  }
+
+  .triangle-btn-right::before {
+    right: 10px; /* Adjust the distance from the right */
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #3498db;
+  }
+
+  
+  // SECTION PROFS
+  .class__profs {
+    // flex-wrap: nowrap;
+    align-items: center;
+  }
+
+
+  // SECTION TEMOIGNAGE
+  .class__temoignage{
+    flex-wrap: nowrap;
+    width: 90vw;
+  }
+
+  // SECTION COURS
   .class__cours {
     // flex-wrap: nowrap;
     width: 80%;
   }
-  .class__profs {
-    // flex-wrap: nowrap;
+
+  // SECTION ETUDIANTS
+  .class__etudiants {
+    width: 90%;
+  }
+  // SECTION STAGE
+  .class__stage {
+    width: 90%;
+  }
+
+  // LES BOUTONS POUR LES SESSIONS
+  .btns__sessions{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    width: 90%;
+    height: 45px;
+    background-color: #F1FAEE;
+    border: #ffffff 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+    gap: 10px;
+    overflow: hidden;
+    padding-right: 10px;
+
+    @media screen and (min-width: $largeur__bureau) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: $grand__ecran) {
+      width: 30%;
+    }
+
+    //titre de la session
+    .titre__session{
+      color: #ffffff;
+      background-color: #154569;
+      
+      border-radius: 30px;
+      padding: 15px;
+    }
+
+    .btn__session{
+      //background-color: #154569;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+
+
+      h4{
+        padding: 5px;
+        color: #154569;
+        font-size: .9rem;
+
+        @media screen and (min-width: $largeur__tablette) {
+          font-size: 1.4rem;
+        }
+        @media screen and (min-width: $grand__ecran) {
+          font-size: 1.5rem;
+        }
+
+      }
+      
+    }
+
+    // si selectionner
+    .selectionner {
+
+      h4{
+        color: #457B9D;
+      }
+
+    }
+
   }
 
   .session1 {
@@ -108,9 +211,4 @@
     display: none;
   }
   
-
-  // .class__galerie {
-    
-  // }
-
 }

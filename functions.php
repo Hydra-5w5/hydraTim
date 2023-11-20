@@ -1,7 +1,7 @@
 <?php
 /**
 * L'ensemble des fonctions du thème 
-*/
+*/  
 
 /**
  * Ajouter le css

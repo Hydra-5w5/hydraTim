@@ -1,4 +1,4 @@
-  <article class="blocflex__profs">  
+<article class="blocflex__profs">  
     <div class="sujet__profs">
       <h3><?php the_field('sujet'); ?></h3> 
       <?php

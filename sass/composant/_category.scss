@@ -115,12 +115,14 @@
     border-width: 10px 0 10px 20px;
     border-color: transparent transparent transparent #3498db;
   }
+
   
   // SECTION PROFS
   .class__profs {
     // flex-wrap: nowrap;
     align-items: center;
   }
+
 
   // SECTION TEMOIGNAGE
   .class__temoignage{
@@ -161,5 +163,7 @@
   .session6 {
     display: none;
   }
+
   
+
 }

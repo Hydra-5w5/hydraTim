@@ -21,6 +21,7 @@ Text Domain: hydra-5w5
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -88,8 +89,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -654,8 +654,7 @@ a {
 .section__presentation .affiche__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 425px) {
   .section__presentation .affiche__img img {
@@ -913,6 +912,7 @@ a {
 
 .recherche__section {
   text-align: center;
+  background-color: rgba(0, 123, 255, 0.9450980392);
 }
 .recherche__section h2 {
   font-size: 2rem;
@@ -956,20 +956,56 @@ a {
   margin-bottom: 20px;
 }
 
-.recherche__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: red;
-}
-.recherche__section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
 }
 
-h2 {
-  color: blue;
+.recherche {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+.site__main {
+  /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
+}
+.site__main .recherche__input {
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px; /* Ajusté à la taille du bouton */
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  width: 70rem;
+  height: 3rem;
+}
+.site__main .recherche__input:focus {
+  color: #00B4CC;
+}
+.site__main .btn__recherche {
+  right: 2em;
+  position: relative;
+  width: 54px;
+  height: 50px;
+  border: 5px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 35%;
+}
+.site__main .wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .site__erreur {
@@ -1118,10 +1154,8 @@ h2 {
 .conteneur__menu {
   background-color: #457B9D;
   width: 100%;
-
   position: absolute;
   top: 0;
-
 }
 .conteneur__menu .menu__secondaire .menu {
   display: flex;
@@ -1158,7 +1192,6 @@ h2 {
   background: #457B9D;
   border-radius: 10px;
 }
-
 .blocflex__galerie ::-webkit-scrollbar-thumb:hover {
   background: #4080a8;
 }
@@ -1241,7 +1274,6 @@ h2 {
   background-size: 200px 200px;
   background-position: center;
 }
-
 .choix__projets .menu__choix .menu .menu-item a {
   display: flex;
   align-items: center;

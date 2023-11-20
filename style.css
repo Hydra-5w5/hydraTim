@@ -88,7 +88,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -653,7 +654,8 @@ a {
 .section__presentation .affiche__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 425px) {
   .section__presentation .affiche__img img {
@@ -952,6 +954,7 @@ a {
 .recherche__section {
   text-align: center;
 }
+
 .recherche__section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -993,6 +996,23 @@ a {
 .recherche__section article hr {
   margin-bottom: 20px;
 }
+
+.recherche__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: red;
+}
+.recherche__section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: blue;
+}
+
 
 .site__erreur {
   text-align: center;
@@ -1140,8 +1160,10 @@ a {
 .conteneur__menu {
   background-color: #457B9D;
   width: 100%;
+
   position: absolute;
   top: 0;
+
 }
 .conteneur__menu .menu__secondaire .menu {
   display: flex;
@@ -1178,9 +1200,12 @@ a {
   background: #457B9D;
   border-radius: 10px;
 }
+
+
 .blocflex__galerie ::-webkit-scrollbar-thumb:hover {
   background: #4080a8;
 }
+
 
 .boite__modale {
   transform: scale(0) translate(-50%, -50%);
@@ -1260,6 +1285,7 @@ a {
   background-size: 200px 200px;
   background-position: center;
 }
+
 .choix__projets .menu__choix .menu .menu-item a {
   display: flex;
   align-items: center;
@@ -1503,6 +1529,7 @@ a .blocflex__evenement .blocflex__description p {
   border-radius: 30px;
   overflow: hidden;
   cursor: pointer;
+
 }
 .blocflex__profs .sujet__profs {
   background-color: #154569;
@@ -1665,6 +1692,266 @@ a .blocflex__evenement .blocflex__description p {
   justify-content: space-between;
   background-color: #457B9D;
   border: 2px solid #ffffff;
+  border-radius: 30px;
+}
+.blocflex__stage .cat__content {
+  line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
+  align-items: center;
+  align-self: center;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__stage .cat__content p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.blocflex__stage .cat__image {
+  border-radius: 0 30px 30px 0px;
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__stage .cat__image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* --------------------------------------------- composant blocflex */
+/******************************** Cours ***********************************/
+.blocflex__cours {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 285px;
+  height: 150px;
+}
+.blocflex__cours .sigle {
+  text-align: center;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #A8DADC;
+  justify-content: center;
+}
+.blocflex__cours .titre__cours {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  padding: 10px;
+  background-color: #F1FAEE;
+  color: #1E5076;
+}
+
+/******************************** Etudiants ***********************************/
+.blocflex__etudiants {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: #457B9D;
+  border-radius: 30px;
+}
+.blocflex__etudiants .cat__content {
+  line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
+  padding-left: 10px;
+  align-items: center;
+  align-self: center;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__etudiants .cat__content p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.blocflex__etudiants .cat__image {
+  border-radius: 0 30px 30px 0px;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  width: 50%;
+}
+.blocflex__etudiants .cat__image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/******************************** Evenement ***********************************/
+a .blocflex__evenement {
+  display: flex;
+  flex-direction: column;
+  background-color: #457B9D;
+  width: 450px;
+  height: 375px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+a .blocflex__evenement .blocflex__images {
+  height: 50%;
+  width: 100%;
+}
+a .blocflex__evenement .blocflex__images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+a .blocflex__evenement .blocflex__description {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+a .blocflex__evenement .blocflex__description p {
+  text-align: center;
+}
+
+/******************************** galerie ***********************************/
+.blocflex__galerie {
+  width: 80vw;
+}
+.blocflex__galerie h3 {
+  margin-bottom: 3px;
+}
+.blocflex__galerie .wp-block-gallery {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+.blocflex__galerie .wp-block-gallery .wp-block-image {
+  flex: 0 0 80vw;
+  max-width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .blocflex__galerie .wp-block-gallery .wp-block-image {
+    flex: 0 0 40vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__galerie .wp-block-gallery .wp-block-image {
+    flex: 0 0 20vw;
+  }
+}
+.blocflex__galerie .wp-block-gallery .wp-block-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/******************************** Profs ***********************************/
+.blocflex__profs {
+  background-color: #457B9D;
+  display: none;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.blocflex__profs .sujet__profs {
+  background-color: #154569;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 15%;
+}
+.blocflex__profs .sujet__profs img {
+  width: 45px;
+  height: auto;
+}
+.blocflex__profs .photo__profs {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.blocflex__profs .photo__profs img {
+  width: 80%;
+  height: auto;
+  padding-top: 10px;
+  align-self: flex-start;
+}
+.blocflex__profs .info__profs {
+  flex-direction: column;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-right: 5px;
+  height: 85%;
+  justify-content: center;
+}
+.blocflex__profs .info__profs h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.blocflex__profs .info__profs p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.selectionne {
+  width: 750px;
+  height: 400px;
+}
+.selectionne .info__profs {
+  display: flex;
+}
+.selectionne .photo__profs {
+  width: 50%;
+}
+
+.non-selectionne {
+  width: 300px;
+  height: 400px;
+}
+.non-selectionne .info__profs {
+  display: none;
+}
+.non-selectionne .photo__profs {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .selectionne {
+    width: 750px;
+    height: 40000px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .non-selectionne {
+    width: 3000px;
+    height: 400px;
+  }
+}
+/******************************** Stage ***********************************/
+.blocflex__stage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: #457B9D;
   border-radius: 30px;
 }
 .blocflex__stage .cat__content {

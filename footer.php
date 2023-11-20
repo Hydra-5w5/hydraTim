@@ -1,12 +1,12 @@
 
   <footer class="site__footer">
-    
+    <div class="vagues__Haut__Pied__Page">
       <?php 
       if (!is_front_page()) {
         get_template_part('vagues-variantes/vaguesHautPiedPage');
       }
       ?> 
-    </div>
+  </div>
 
   <div class="contenu__footer">
     <div class="footer__logo">

@@ -111,6 +111,12 @@ get_header();
 
 
 </main>
-
+<div class="vagues__Haut__Pied__Page">
+      <?php 
+      if (!is_front_page()) {
+        get_template_part('vagues-variantes/vaguesHautPiedPage');
+      }
+      ?> 
+  </div>
 <?php get_footer();
 ?>

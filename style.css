@@ -1108,28 +1108,6 @@ a {
     margin-left: 20%;
   }
 }
-.site__footer .suivezNous .reseaux {
-  width: 20%;
-  margin: auto;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  right: 80px;
-  margin-top: 50px;
-}
-@media screen and (min-width: 1080px) {
-  .site__footer .suivezNous .reseaux {
-    right: 50%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .site__footer .suivezNous .reseaux {
-    right: 30%;
-  }
-}
-.site__footer .suivezNous .reseaux .reseau {
-  margin: 20px;
-}
 .site__footer .vagues__Haut__Pied__Page {
   background-color: #1D3557;
   position: relative;

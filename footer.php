@@ -70,7 +70,6 @@
 
   <div class="suivezNous section">
     <h2>Suivez Nous</h2>
-    <div class="reseaux">
 
     <?php wp_nav_menu(array(
         "menu" => "footer-icon",
@@ -78,7 +77,6 @@
         "container_class" => "menu__icon", //pour changer le nom de la class
     )); ?>
 
-    </div>
   </div>
 
 <?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 

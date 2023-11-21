@@ -1038,6 +1038,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /************* VERSION PC *************/
   /**** suivezNous ****/
 }
 @media screen and (min-width: 1080px) {
@@ -1098,6 +1099,7 @@ a {
 }
 .site__footer .suivezNous {
   padding-top: 20px;
+  /************* VERSION PC *************/
 }
 .site__footer .suivezNous h2 {
   color: #ffffff;
@@ -1108,12 +1110,28 @@ a {
     margin-left: 20%;
   }
 }
-.site__footer .vagues__Haut__Pied__Page {
-  background-color: #1D3557;
-  position: relative;
-  width: 100%;
-  bottom: 20px;
-  z-index: 1;
+.site__footer .suivezNous .menu__icon .menu {
+  /*Pour tout les les li*/
+  /*Pour le li instagram seulement*/
+  /*Pour le li facebook seulement*/
+  /*... mettre les autre*/
+}
+.site__footer .suivezNous .menu__icon .menu .menu-item {
+  list-style-type: none;
+}
+.site__footer .suivezNous .menu__icon .menu .menu-item a {
+  display: block;
+  color: rgba(0, 0, 0, 0);
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.site__footer .suivezNous .menu__icon .menu .instagram a {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/20230905_115806-scaled.jpg");
+}
+.site__footer .suivezNous .menu__icon .menu .facebook a {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/create-a-bleu-c-0.png");
 }
 
 .conteneur__menu {

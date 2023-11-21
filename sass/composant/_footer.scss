@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
 
+  /************* VERSION PC *************/
   @media screen and (min-width : $largeur__bureau) {
     align-items: flex-start;
     text-align: left;
@@ -85,36 +86,58 @@
     }*/
   }
 
-      /**** suivezNous ****/
-      .suivezNous {
-        padding-top: 20px;
+  /**** suivezNous ****/
+  .suivezNous {
+    padding-top: 20px;
 
-        h2 {
-          color: #ffffff;
-          padding-bottom: 10px;
-        }
+    h2 {
+      color: #ffffff;
+      padding-bottom: 10px;
+    }
 
-        @media screen and (min-width : $largeur__bureau) {
-          margin-left: 20%;
-        }
+    /************* VERSION PC *************/
+    @media screen and (min-width : $largeur__bureau) {
+      margin-left: 20%;
+    }
 
-        .reseaux {
-          .footer-icon {
-            
+    .menu__icon {//nav
+
+      .menu {// ul
+
+        /*Pour tout les les li*/
+        .menu-item {// li
+          list-style-type: none;
+
+          a {
+            // opacity: 0;                   
+            display: block;
+            color: rgba(0, 0, 0, 0);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+
           }
-      }
-        
-          
-        
-      }
+        }
 
-      .vagues__Haut__Pied__Page{
-        background-color: #1D3557;
-        position:relative;
-        width: 100%;
-        bottom:20px ;
-        z-index: 1;
-       
-      }
+        /*Pour le li instagram seulement*/ 
+        .instagram {
+          a {
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/20230905_115806-scaled.jpg");   
+          }
+        }
+        /*Pour le li facebook seulement*/ 
+        .facebook {
+          a {
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/create-a-bleu-c-0.png");
+          }
+        }
+        /*... mettre les autre*/
+      
+      }// fin du ul
+
+    }
+
+  }
 
 }

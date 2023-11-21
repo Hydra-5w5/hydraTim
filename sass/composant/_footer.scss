@@ -101,13 +101,16 @@
     }
 
     .menu__icon{//nav
-    
+     
 
       .menu {// ul
-
+        display: flex;
+        flex-direction: row;
+      
         /*Pour tout les les li*/
         .menu-item {// li
           list-style-type: none;
+          
 
           a {
             // opacity: 0;                   

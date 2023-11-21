@@ -1104,6 +1104,8 @@ a {
   }
 }
 .site__footer .suivezNous .menu__icon .menu {
+  display: flex;
+  flex-direction: row;
   /*Pour tout les les li*/
   /*Pour le li instagram seulement*/
   /*Pour le li facebook seulement*/

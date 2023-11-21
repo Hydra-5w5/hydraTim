@@ -1502,7 +1502,6 @@ a .blocflex__evenement:hover {
   justify-content: center;
   border-radius: 30px;
   overflow: hidden;
-  cursor: pointer;
 }
 .blocflex__profs .sujet__profs {
   background-color: #154569;
@@ -1556,10 +1555,10 @@ a .blocflex__evenement:hover {
   width: 750px;
   height: 400px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .selectionne {
     width: 750px;
-    height: 40000px;
+    height: 400px;
   }
 }
 .selectionne .info__profs {
@@ -1573,9 +1572,9 @@ a .blocflex__evenement:hover {
   width: 300px;
   height: 400px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .non-selectionne {
-    width: 3000px;
+    width: 300px;
     height: 400px;
   }
 }

@@ -1,7 +1,7 @@
 /******************************** Profs ***********************************/
 .blocflex__profs {
   background-color: #457B9D;
-  border: 2px solid rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   display: none;
   position: relative;
   flex-direction: row;
@@ -74,6 +74,11 @@
   width: 750px;
   height: 400px;
 
+  @media screen and (max-width : $largeur__tablette) {
+    width: 750px;
+    height: 40000px;
+  }
+
   .info__profs{
     display: flex;
   }
@@ -87,6 +92,11 @@
   width: 300px;
   height: 400px;
 
+  @media screen and (max-width : $largeur__tablette) {
+    width: 3000px;
+    height: 400px;
+  }
+
   .info__profs{
     display: none;
   }
@@ -95,18 +105,14 @@
   }
 }
 
-@media screen and (max-width : $largeur__tablette) {
-  .selectionne {
-    width: 750px;
-    height: 40000px;
-  }
 
-}
-@media screen and (max-width : $largeur__tablette) {
-  .non-selectionne {
-    width: 3000px;
-    height: 400px;
-  }
-}
+// @media screen and (max-width : $largeur__tablette) {
+//   .selectionne {
+//     width: 750px;
+//     height: 40000px;
+//   }
+
+// }
+// s
 
 

@@ -426,11 +426,7 @@ a {
   width: 85px;
   height: auto;
   padding-top: 10px;
-}
-@media screen and (min-width: 1080px) {
-  .site__entete .entete__nav .menu__logo .custom-logo-link img {
-    padding-left: 20px;
-  }
+  padding-left: 20px;
 }
 .site__entete .entete__nav .menu__nav {
   display: flex;
@@ -653,16 +649,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-@media screen and (max-width: 425px) {
-  .section__presentation .affiche__img img {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section__presentation .affiche__img img {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .section__presentation .affiche__img img {
@@ -790,6 +777,8 @@ a {
 .section__categorie .conteneur__texte {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 500px;
   height: auto;
@@ -802,6 +791,12 @@ a {
   text-align: center;
   width: 400px;
   margin: 0;
+  margin: 0 10px 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .section__categorie .conteneur__texte p {
+    width: 100%;
+  }
 }
 .section__categorie .conteneur__bloc {
   display: flex;
@@ -1249,8 +1244,8 @@ a {
   align-items: center;
   overflow: hidden;
   list-style: none;
-  background-color: #154569;
-  border: white 2px solid;
+  background-color: #1E5076;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   width: 300px;
   height: 400px;
   background-repeat: no-repeat;
@@ -1266,7 +1261,7 @@ a {
   width: 100%;
   height: 15%;
   text-align: center;
-  background-color: #457B9D;
+  background-color: #154569;
 }
 .choix__projets .menu__choix .menu .menu-item a::after {
   content: "";
@@ -1393,8 +1388,8 @@ a {
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  background-color: #457B9D;
-  border: 2px solid #ffffff;
+  background-color: #154569;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 30px;
 }
 .blocflex__etudiants .cat__content {
@@ -1426,10 +1421,12 @@ a .blocflex__evenement {
   display: flex;
   flex-direction: column;
   background-color: #457B9D;
-  width: 450px;
-  height: 375px;
+  width: 425px;
+  height: 350px;
   border-radius: 30px;
   overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: transform 0.3s ease;
 }
 a .blocflex__evenement .blocflex__images {
   height: 50%;
@@ -1448,8 +1445,14 @@ a .blocflex__evenement .blocflex__description {
   align-items: center;
   padding: 10px;
 }
+a .blocflex__evenement .blocflex__description h4 {
+  font-size: 1.1rem;
+}
 a .blocflex__evenement .blocflex__description p {
   text-align: center;
+}
+a .blocflex__evenement:hover {
+  transform: scale(1.1);
 }
 
 /******************************** galerie ***********************************/
@@ -1491,7 +1494,7 @@ a .blocflex__evenement .blocflex__description p {
 /******************************** Profs ***********************************/
 .blocflex__profs {
   background-color: #457B9D;
-  border: 2px solid rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   display: none;
   position: relative;
   flex-direction: row;
@@ -1553,6 +1556,12 @@ a .blocflex__evenement .blocflex__description p {
   width: 750px;
   height: 400px;
 }
+@media screen and (max-width: 768px) {
+  .selectionne {
+    width: 750px;
+    height: 40000px;
+  }
+}
 .selectionne .info__profs {
   display: flex;
 }
@@ -1564,6 +1573,12 @@ a .blocflex__evenement .blocflex__description p {
   width: 300px;
   height: 400px;
 }
+@media screen and (max-width: 768px) {
+  .non-selectionne {
+    width: 3000px;
+    height: 400px;
+  }
+}
 .non-selectionne .info__profs {
   display: none;
 }
@@ -1571,18 +1586,6 @@ a .blocflex__evenement .blocflex__description p {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .selectionne {
-    width: 750px;
-    height: 40000px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .non-selectionne {
-    width: 3000px;
-    height: 400px;
-  }
-}
 .blocflex__projets {
   position: relative;
 }
@@ -1596,7 +1599,6 @@ a .blocflex__evenement .blocflex__description p {
   overflow: hidden;
   cursor: pointer;
   justify-content: space-between;
-  border: 2px solid #ffffff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 15px;
 }
@@ -1660,8 +1662,8 @@ a .blocflex__evenement .blocflex__description p {
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  background-color: #457B9D;
-  border: 2px solid #ffffff;
+  background-color: #154569;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 30px;
 }
 .blocflex__stage .cat__content {

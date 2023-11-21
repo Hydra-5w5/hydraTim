@@ -12,7 +12,7 @@
         <?php the_post_thumbnail('medium_large') ?>
       </div>
       <div class="blocflex__description">
-        <h3><?= $titre; ?></h3>
+        <h4><?= $titre; ?></h4>
         <p><?= wp_trim_words(get_the_excerpt(), 20) ?></p>
       </div>
   </article>

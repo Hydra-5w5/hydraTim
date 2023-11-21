@@ -100,7 +100,8 @@
       margin-left: 20%;
     }
 
-    .menu__icon {//nav
+    .menu__icon{//nav
+    
 
       .menu {// ul
 
@@ -110,7 +111,7 @@
 
           a {
             // opacity: 0;                   
-            display: block;
+            display: flex;
             color: rgba(0, 0, 0, 0);
             height: 100px;
             width: 100px;
@@ -123,16 +124,32 @@
         /*Pour le li instagram seulement*/ 
         .instagram {
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/20230905_115806-scaled.jpg");   
+            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/instagram.png");   
           }
         }
         /*Pour le li facebook seulement*/ 
         .facebook {
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/create-a-bleu-c-0.png");
+            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/facebook.png");
           }
         }
-        /*... mettre les autre*/
+        .indeed{
+          a {
+            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Indeed.png");   
+          }
+        }
+        /*Pour le li facebook seulement*/ 
+        .youtube{
+          a {
+            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Youtube.png");
+          }
+        }
+        .behance{
+          a {
+            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Behance.png");   
+          }
+        }
+       
       
       }// fin du ul
 

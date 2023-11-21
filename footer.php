@@ -34,6 +34,7 @@
   <div class="suivezNous section">
     <h2>Suivez Nous</h2>
 
+    
     <?php wp_nav_menu(array(
         "menu" => "footer-icon",
         "container" => "nav",

@@ -1107,13 +1107,13 @@ a {
   /*Pour tout les les li*/
   /*Pour le li instagram seulement*/
   /*Pour le li facebook seulement*/
-  /*... mettre les autre*/
+  /*Pour le li facebook seulement*/
 }
 .site__footer .suivezNous .menu__icon .menu .menu-item {
   list-style-type: none;
 }
 .site__footer .suivezNous .menu__icon .menu .menu-item a {
-  display: block;
+  display: flex;
   color: rgba(0, 0, 0, 0);
   height: 100px;
   width: 100px;
@@ -1121,10 +1121,19 @@ a {
   background-repeat: no-repeat;
 }
 .site__footer .suivezNous .menu__icon .menu .instagram a {
-  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/20230905_115806-scaled.jpg");
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/instagram.png");
 }
 .site__footer .suivezNous .menu__icon .menu .facebook a {
-  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/create-a-bleu-c-0.png");
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/facebook.png");
+}
+.site__footer .suivezNous .menu__icon .menu .indeed a {
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Indeed.png");
+}
+.site__footer .suivezNous .menu__icon .menu .youtube a {
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Youtube.png");
+}
+.site__footer .suivezNous .menu__icon .menu .behance a {
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Behance.png");
 }
 
 .conteneur__menu {

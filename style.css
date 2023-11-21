@@ -766,11 +766,9 @@ a {
 /******************************** Categorie ***********************************/
 .section__categorie {
   display: flex;
-  min-height: 60vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
   overflow: hidden;
   position: relative;
 }
@@ -1132,7 +1130,6 @@ a {
 .conteneur__menu {
   background-color: #457B9D;
   width: 100%;
-  position: absolute;
   top: 0;
 }
 .conteneur__menu .menu__secondaire .menu {
@@ -1297,15 +1294,10 @@ a {
 .vague__haut__pdp {
   z-index: 1;
   width: 100%;
-  display: none;
-}
-.vague__haut__pdp svg {
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  z-index: 1;
+  display: flex;
 }
 
 .vague__haut__front {
@@ -1329,6 +1321,22 @@ a {
 .vague__general {
   position: absolute;
   width: 100%;
+}
+
+.vague__millieu__front {
+  width: 100%;
+}
+.vague__millieu__front svg {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  padding-top: 150px;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .vague__millieu__front svg {
+    padding-top: 250px;
+  }
 }
 
 .vague__bas__pdp {

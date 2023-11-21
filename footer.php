@@ -2,11 +2,7 @@
 
 <footer class="site__footer">
 
-  <?php 
-  if (!is_front_page()) {
-    get_template_part('vagues-variantes/vaguesHautPiedPage');
-  }
-  ?> 
+ 
 
   <div class="contenu__footer">
     <div class="footer__logo">
@@ -45,8 +41,6 @@
     )); ?>
 
   </div>
-
-<?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 
 
 </footer>
 

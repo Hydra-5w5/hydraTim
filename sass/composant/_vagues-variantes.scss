@@ -7,16 +7,14 @@
 .vague__haut__pdp {  // vague du haut du pied de page 
   z-index: 1; // Assure que la vague est en dessous des autres éléments
   width: 100%;
-  display: none;
   
-  svg {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0; // Positionne le SVG juste au-dessus du conteneur
-    left: 0;
-    z-index: 2; // Assure que le SVG est au-dessus de la vague
-  }
+  
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  display: flex;
+  
+ 
 }
 
 .vague__haut__front {
@@ -42,9 +40,22 @@
   width: 100%;
 }
 
-// .vague__millieu__front {
+ .vague__millieu__front {
+  width: 100%;
 
-// }
+ svg{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding-top: 150px;
+    display: flex;
+    
+    @media screen and (min-width : $largeur__tablette) {
+      padding-top: 250px;
+    }
+ }
+ 
+ }
 
 .vague__bas__pdp {
   z-index: 1; // Assure que la vague est en dessous des autres éléments

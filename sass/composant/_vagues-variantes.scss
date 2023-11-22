@@ -7,7 +7,9 @@
 .vague__haut__pdp {  // vague du haut du pied de page 
   z-index: 1; // Assure que la vague est en dessous des autres éléments
   width: 100%;
-  
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
   
   width: 100%;
   height: auto;

@@ -1,9 +1,5 @@
-
-
 <footer class="site__footer">
-
- 
-
+  
   <div class="contenu__footer">
     <div class="footer__logo">
       <?php the_custom_logo(); ?>

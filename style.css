@@ -854,6 +854,7 @@ a {
 }
 .section__categorie .class__profs {
   align-items: center;
+  margin-bottom: 100px;
 }
 .section__categorie .class__temoignage {
   flex-wrap: nowrap;
@@ -1139,15 +1140,27 @@ a {
 }
 
 .conteneur__menu {
-  background-color: #457B9D;
   width: 100%;
-  top: 0;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .conteneur__menu {
+    height: 75px;
+  }
+
 }
 .conteneur__menu .menu__secondaire .menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .conteneur__menu .menu__secondaire .menu {
+    flex-direction: row;
+  }
 }
 .conteneur__menu .menu__secondaire .menu .menu-item {
   text-align: center;

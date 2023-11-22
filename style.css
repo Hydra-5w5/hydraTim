@@ -766,11 +766,9 @@ a {
 /******************************** Categorie ***********************************/
 .section__categorie {
   display: flex;
-  min-height: 60vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
   overflow: hidden;
   position: relative;
 }
@@ -1107,16 +1105,18 @@ a {
   }
 }
 .site__footer .suivezNous .menu__icon .menu {
+  display: flex;
+  flex-direction: row;
   /*Pour tout les les li*/
   /*Pour le li instagram seulement*/
   /*Pour le li facebook seulement*/
-  /*... mettre les autre*/
+  /*Pour le li facebook seulement*/
 }
 .site__footer .suivezNous .menu__icon .menu .menu-item {
   list-style-type: none;
 }
 .site__footer .suivezNous .menu__icon .menu .menu-item a {
-  display: block;
+  display: flex;
   color: rgba(0, 0, 0, 0);
   height: 100px;
   width: 100px;
@@ -1124,10 +1124,19 @@ a {
   background-repeat: no-repeat;
 }
 .site__footer .suivezNous .menu__icon .menu .instagram a {
-  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/20230905_115806-scaled.jpg");
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/instagram.png");
 }
 .site__footer .suivezNous .menu__icon .menu .facebook a {
-  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/create-a-bleu-c-0.png");
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/facebook.png");
+}
+.site__footer .suivezNous .menu__icon .menu .indeed a {
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Indeed.png");
+}
+.site__footer .suivezNous .menu__icon .menu .youtube a {
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Youtube.png");
+}
+.site__footer .suivezNous .menu__icon .menu .behance a {
+  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Behance.png");
 }
 
 .conteneur__menu {
@@ -1140,6 +1149,7 @@ a {
   .conteneur__menu {
     height: 75px;
   }
+
 }
 .conteneur__menu .menu__secondaire .menu {
   display: flex;
@@ -1308,15 +1318,10 @@ a {
 .vague__haut__pdp {
   z-index: 1;
   width: 100%;
-  display: none;
-}
-.vague__haut__pdp svg {
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  z-index: 1;
+  display: flex;
 }
 
 .vague__haut__front {
@@ -1340,6 +1345,22 @@ a {
 .vague__general {
   position: absolute;
   width: 100%;
+}
+
+.vague__millieu__front {
+  width: 100%;
+}
+.vague__millieu__front svg {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  padding-top: 150px;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .vague__millieu__front svg {
+    padding-top: 250px;
+  }
 }
 
 .vague__bas__pdp {

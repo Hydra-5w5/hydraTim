@@ -2,11 +2,7 @@
 
 <footer class="site__footer">
 
-  <?php 
-  if (!is_front_page()) {
-    get_template_part('vagues-variantes/vaguesHautPiedPage');
-  }
-  ?> 
+ 
 
   <div class="contenu__footer">
     <div class="footer__logo">
@@ -38,6 +34,7 @@
   <div class="suivezNous section">
     <h2>Suivez Nous</h2>
 
+    
     <?php wp_nav_menu(array(
         "menu" => "footer-icon",
         "container" => "nav",
@@ -45,8 +42,6 @@
     )); ?>
 
   </div>
-
-<?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 
 
 </footer>
 

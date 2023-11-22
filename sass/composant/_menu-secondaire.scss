@@ -1,9 +1,8 @@
 .conteneur__menu {
   background-color: #457B9D;
   width: 100%;
-  height: 300px;
-  position: absolute;
-  bottom: 0;
+  //position: absolute;//pourquoi absolute?
+  top: 0;
 
   @media screen and (min-width : $largeur__tablette) {
     height: 75px;

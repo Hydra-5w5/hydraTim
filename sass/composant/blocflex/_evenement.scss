@@ -9,7 +9,7 @@ a {
     height: 375px;
     border-radius: 30px;
     overflow: hidden;
-  
+    transition: transform 0.3s ease;
     .blocflex__images {
       height: 50%;
       width: 100%;
@@ -21,7 +21,7 @@ a {
       }
 
     }
-
+    
     .blocflex__description {
       height: 50%;
       display: flex;
@@ -38,6 +38,11 @@ a {
   
     }
 
+    
+  }
+  .blocflex__evenement:hover {
+    transform: scale(1.2); 
+    background-color: #457B9D;
   }
 
 }

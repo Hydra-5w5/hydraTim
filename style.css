@@ -786,6 +786,12 @@ a {
   align-items: center;
   flex-direction: column;
 }
+.dans__article div p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
 /******************************** Categorie ***********************************/
 .section__categorie {

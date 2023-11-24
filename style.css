@@ -775,6 +775,16 @@ a {
 
 .dans__article {
   min-height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.dans__article div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /******************************** Categorie ***********************************/

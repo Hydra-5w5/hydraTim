@@ -51,7 +51,7 @@
 
   /**************** Gestion du menu secondaire ****************/
   let btn__gestion__menu = document.querySelector('.btn__gestion__menu');
-  let menuItems = document.querySelectorAll('.menu-item'); // Assuming your menu items have the class 'menu-item'
+  let menuItems = document.querySelectorAll('.menu__secondaire .menu-item'); // Assuming your menu items have the class 'menu-item'
 
   // Set initial button text to 'plus'
   if (btn__gestion__menu) { // Check if the element exists

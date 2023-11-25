@@ -47,6 +47,14 @@
 .vague__general {
   position: absolute;
   width: 100%;
+  svg {
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width : $largeur__bureau) {
+      width: auto;
+    }
+  }
 }
 
  .vague__millieu__front {

@@ -855,8 +855,14 @@ a {
   min-height: 50vh;
 }
 .section__categorie .class__profs {
+  flex-wrap: nowrap;
   align-items: center;
   margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .section__categorie .class__profs {
+    flex-wrap: wrap;
+  }
 }
 .section__categorie .class__temoignage {
   flex-wrap: nowrap;
@@ -1162,21 +1168,25 @@ a {
 .conteneur__menu .menu__secondaire .menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   justify-content: space-around;
+  overflow: hidden;
   align-items: center;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
   .conteneur__menu .menu__secondaire .menu {
     flex-direction: row;
+    border-radius: none;
   }
 }
 .conteneur__menu .menu__secondaire .menu .menu-item {
   text-align: center;
   display: none;
   background-color: #1E5076;
-  width: 80%;
+  width: 70%;
+  cursor: pointer;
+  user-select: none;
   padding: 10px 0 10px;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -1191,8 +1201,7 @@ a {
   display: block;
 }
 .conteneur__menu .menu__secondaire .menu .btn__gestion__menu {
-  cursor: pointer;
-  user-select: none;
+  background-color: #0C2447;
   display: block;
 }
 @media screen and (min-width: 768px) {
@@ -1393,6 +1402,15 @@ a {
   position: absolute;
   width: 100%;
 }
+.vague__general svg {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1080px) {
+  .vague__general svg {
+    width: auto;
+  }
+}
 
 .vague__millieu__front {
   width: 100%;
@@ -1580,11 +1598,24 @@ a .blocflex__evenement:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   display: none;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
   border-radius: 30px;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .blocflex__profs {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__profs {
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0;
+  }
 }
 .blocflex__profs .sujet__profs {
   background-color: #154569;
@@ -1596,30 +1627,75 @@ a .blocflex__evenement:hover {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 15%;
+  height: 8%;
+}
+@media screen and (min-width: 768px) {
+  .blocflex__profs .sujet__profs {
+    height: 12%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__profs .sujet__profs {
+    height: 15%;
+  }
 }
 .blocflex__profs .sujet__profs img {
   width: 45px;
   height: auto;
+  width: 25px;
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__profs .sujet__profs img {
+    width: 45px;
+  }
+}
+.blocflex__profs .sujet__profs h3 {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__profs .sujet__profs h3 {
+    font-size: 1.7rem;
+  }
 }
 .blocflex__profs .photo__profs {
   display: flex;
   width: 100%;
-  height: 70%;
-  align-items: flex-end;
+  padding: 20px;
+  background-color: #154569;
+  border-radius: 15px;
+  height: 50%;
+  align-items: center;
   justify-content: center;
+  overflow: hidden;
+  margin-top: 100px;
+}
+@media screen and (min-width: 768px) {
+  .blocflex__profs .photo__profs {
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    height: 75%;
+    background-color: rgba(250, 235, 215, 0);
+  }
 }
 .blocflex__profs .photo__profs img {
-  width: 80%;
+  width: 100%;
   height: auto;
-  padding-top: 10px;
   align-self: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .blocflex__profs .photo__profs img {
+    align-self: flex-start;
+    height: auto;
+    width: 80%;
+  }
 }
 .blocflex__profs .info__profs {
   flex-direction: column;
   align-self: flex-end;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
+  text-align: center;
   padding-right: 5px;
   height: 85%;
   justify-content: center;
@@ -1632,13 +1708,32 @@ a .blocflex__evenement:hover {
 .blocflex__profs .info__profs p {
   font-size: 0.9rem;
   margin: 0;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .blocflex__profs .info__profs p {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blocflex__profs .info__profs {
+    width: 50%;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .selectionne {
-  width: 750px;
-  height: 400px;
+  width: 91%;
+  height: 700px;
 }
 @media screen and (min-width: 768px) {
+  .selectionne {
+    width: 90%;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1080px) {
   .selectionne {
     width: 750px;
     height: 400px;
@@ -1652,13 +1747,13 @@ a .blocflex__evenement:hover {
 }
 
 .non-selectionne {
-  width: 300px;
-  height: 400px;
+  width: 150px;
+  height: 200px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .non-selectionne {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
   }
 }
 .non-selectionne .info__profs {

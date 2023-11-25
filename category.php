@@ -8,9 +8,14 @@ get_header();
 
 <main class="site__main">
 
-<div class="vagues__general">
-<?php get_template_part('vagues-variantes/vaguesGeneral')?> 
-</div>
+    <div class="vagues__general">
+        <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
+    </div>
+    <?php 
+        if (!is_front_page()) {
+            get_template_part('vagues-variantes/vaguesHautPiedPage');
+        }
+    ?>
     <section class="section__categorie">
         <?php
         $category = get_queried_object();
@@ -80,18 +85,10 @@ get_header();
             ?>
         </div>
 
-        <div class="vagues__Haut__Pied__Page">
-            <?php 
-                if (!is_front_page()) {
-                    get_template_part('vagues-variantes/vaguesHautPiedPage');
-                }
-            ?> 
-        </div>
-
         <!-- Affiche les menus secondaires -->
         <?php
         if (get_queried_object()) {
-            $category = get_queried_object();
+            // $category = get_queried_object();
             // Correspondance entre les catégories et les noms de menu
             $menu_correspondance = array(
             'etudiants' => 'menu-etudiants',
@@ -121,8 +118,7 @@ get_header();
         }
         ?>
 
-    </section>
-
+    </section> 
 </main>
 
 <?php get_footer();

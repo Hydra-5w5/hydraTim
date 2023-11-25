@@ -766,6 +766,7 @@ a {
 /******************************** Categorie ***********************************/
 .section__categorie {
   display: flex;
+  min-height: 92vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -1314,12 +1315,23 @@ a {
 }
 
 .vague__haut__pdp {
-  z-index: 1;
   width: 100%;
-  width: 100%;
+  position: absolute;
+  position: 0;
+  left: 0;
   height: auto;
-  z-index: 1;
+}
+.vague__haut__pdp svg {
   display: flex;
+  align-items: flex-end;
+}
+
+.monter {
+  bottom: 75px;
+}
+
+.normal {
+  bottom: 0;
 }
 
 .vague__haut__front {
@@ -1777,16 +1789,5 @@ a .blocflex__evenement:hover {
   background-color: #1D3557;
   color: white;
   font-family: "Poppins", sans-serif;
-}
-
-.recherche__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: red;
-}
-.recherche__section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

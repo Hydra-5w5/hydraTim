@@ -2,12 +2,13 @@
 .section__categorie {
   // padding: 20px 100px 20px 100px;
   display: flex;
-
+  min-height: 92vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   position: relative;
+  
   
   .conteneur__texte {
     display: flex;

@@ -1,5 +1,5 @@
 (function(){
-  // selection les articles de chachque session
+  /**************** selection les articles de chachque session ****************/
   let sessions = [
     document.querySelectorAll(".session1"),
     document.querySelectorAll(".session2"),
@@ -48,5 +48,39 @@
   if (boutons[0]) { // Vérifie si le premier bouton existe
     boutons[0].click();
   }
+
+  /**************** Gestion du menu secondaire ****************/
+  let btn__gestion__menu = document.querySelector('.btn__gestion__menu');
+  let menuItems = document.querySelectorAll('.menu-item'); // Assuming your menu items have the class 'menu-item'
+
+  // Set initial button text to 'plus'
+  if (btn__gestion__menu) { // Check if the element exists
+    btn__gestion__menu.textContent = 'plus';
+  }
+
+  btn__gestion__menu.addEventListener('click', function() {
+    // Change button text
+    this.textContent = this.textContent === 'moins' ? 'plus' : 'moins';
+
+    // Toggle visibility of other menu items on mobile screens
+    if (window.innerWidth < 768) {
+      menuItems.forEach(item => {
+        if (item !== btn__gestion__menu) { // Exclude the button
+          item.style.display = this.textContent === 'moins' ? 'block' : 'none';
+        }
+      });
+    }
+  });
+
+  // Show menu items when screen size is larger than mobile
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 768) {
+      menuItems.forEach(item => {
+        if (item !== btn__gestion__menu) { // Exclude the button
+          item.style.display = 'block';
+        }
+      });
+    }
+  });
 
 })();

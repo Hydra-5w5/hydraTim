@@ -72,18 +72,17 @@ get_header();
             ?>
         </div>
 
-        <div class="choix__projets">
-            <?php
-                // Affiche le menu de choix des projets
-                if($category->slug == 'projets') {
-                    wp_nav_menu(array(
-                        "menu" => "choix-projets",
-                        "container" => "nav",
-                        "container_class" => "menu__choix", //pour changer le nom de la class
-                    )); 
-                }
-            ?>
-        </div>
+        <?php
+            // Affiche le menu de choix des projets
+            if($category->slug == 'projets') {
+                echo '<div class="choix__projets">';
+                wp_nav_menu(array(
+                    "menu" => "choix-projets",
+                    "container" => "nav",
+                    "container_class" => "menu__choix", //pour changer le nom de la class
+                ));
+            }
+        ?>
 
         <!-- Affiche les menus secondaires -->
         <?php

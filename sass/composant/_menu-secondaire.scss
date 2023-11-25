@@ -12,7 +12,9 @@
     .menu { // ul
       display: flex;
       flex-direction: column;
+      gap: 10px;
       justify-content: space-around;
+      align-items: center;
       list-style: none;
 
       @media screen and (min-width : $largeur__tablette) {
@@ -22,11 +24,17 @@
 
       .menu-item { // li
         text-align: center;
+        display: none;
         background-color: #1E5076;
-        width: 15%;
+        width: 80%;
         padding: 10px 0 10px;
         border-radius: 10px;
         font-size: 1.2rem;
+
+        @media screen and (min-width : $largeur__tablette) {
+          width: 17%;
+          display: block;
+        }
 
         a { //lien
           display: block; 
@@ -34,39 +42,23 @@
 
       }
 
-    }
+      .btn__gestion__menu { // li
+        cursor: pointer;
+        user-select: none;
+        display: block;
 
+        @media screen and (min-width : $largeur__tablette) {
+          display: none;
+        }
+
+        a{
+          display: none;
+        }
+      }
+
+    }
   }
 }
-// .conteneur__menu {
-//   background-color: #457B9D;
-//   width: 100%;
-//   position: absolute;
-//   top: 0;
-  
-//   .menu__secondaire { // nav
-
-//     .menu { // ul
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: space-around;
-//       list-style: none;
-
-//       .menu-item { // li
-//         text-align: center;
-//         background-color: #1E5076;
-//         width: 15%;
-//         padding: 10px 0 10px;
-//         border-radius: 10px;
-//         font-size: 1.2rem;
-
-//         a { //lien
-//           display: block; 
-//         }
-
-//       }
-
-//     }
-
-//   }
+// @media screen and (min-width : $largeur__bureau) {
+//   flex-direction: row;
 // }

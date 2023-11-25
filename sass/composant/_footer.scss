@@ -4,6 +4,7 @@
   height: auto;
   overflow: hidden;
   text-align: center;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +22,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
+    z-index: 2;
 
     h2 {
       color: #fdfdfd;
@@ -89,6 +92,8 @@
   /**** suivezNous ****/
   .suivezNous {
     padding-top: 20px;
+    z-index: 2;
+    width: 100%;
 
     h2 {
       color: #ffffff;
@@ -116,8 +121,8 @@
             // opacity: 0;                   
             display: flex;
             color: rgba(0, 0, 0, 0);
-            height: 100px;
-            width: 100px;
+            height: 50px;
+            width: 50px;
             background-size: cover;
             background-repeat: no-repeat;
 
@@ -127,29 +132,29 @@
         /*Pour le li instagram seulement*/ 
         .instagram {
           a {
-            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/instagram.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/Instagram_icon.png");   
           }
         }
         /*Pour le li facebook seulement*/ 
         .facebook {
           a {
-            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/facebook.png");
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/2021_Facebook_icon.svg_.png");
           }
         }
-        .indeed{
+        .linkedin{
           a {
-            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Indeed.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/linkedin-icon-1024x1024-net2o24e.png");   
           }
         }
         /*Pour le li facebook seulement*/ 
         .youtube{
           a {
-            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Youtube.png");
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/youtube-round-2-icon-2048x2048-ayjtmdvq.png");
           }
         }
         .behance{
           a {
-            background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Behance.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/145799.png");   
           }
         }
        

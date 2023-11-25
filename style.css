@@ -766,7 +766,6 @@ a {
 /******************************** Categorie ***********************************/
 .section__categorie {
   display: flex;
-  min-height: 92vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -784,25 +783,18 @@ a {
   text-align: center;
 }
 .section__categorie .conteneur__texte h1 {
-  padding: 20px 0 20px 0;
+  padding: 50px 0 10px 0;
 }
 .section__categorie .conteneur__texte p {
   text-align: center;
   width: 400px;
   margin: 0;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 10px 10px;
 }
 @media screen and (min-width: 768px) {
   .section__categorie .conteneur__texte p {
     width: 100%;
   }
-}
-.section__categorie .conteneur__bloc {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
 }
 .section__categorie .btn__gauche,
 .section__categorie .btn__droite {
@@ -853,6 +845,15 @@ a {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #3498db;
 }
+.section__categorie .conteneur__bloc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 100px;
+  min-height: 50vh;
+}
 .section__categorie .class__profs {
   align-items: center;
   margin-bottom: 100px;
@@ -870,6 +871,9 @@ a {
 .section__categorie .class__stage {
   width: 90%;
 }
+.section__categorie .class__projets {
+  display: none;
+}
 .section__categorie .btns__sessions {
   display: flex;
   justify-content: space-between;
@@ -878,8 +882,8 @@ a {
   width: 90%;
   height: 45px;
   background-color: #F1FAEE;
-  border: #ffffff 1px solid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-bottom: 25px;
   border-radius: 30px;
   gap: 10px;
   overflow: hidden;
@@ -1029,6 +1033,7 @@ a {
   height: auto;
   overflow: hidden;
   text-align: center;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1048,7 +1053,9 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
+  z-index: 2;
   /************* VERSION TABLETTE *************/
   /************* VERSION PC *************/
   /**** logo footer ****/
@@ -1094,6 +1101,8 @@ a {
 }
 .site__footer .suivezNous {
   padding-top: 20px;
+  z-index: 2;
+  width: 100%;
   /************* VERSION PC *************/
 }
 .site__footer .suivezNous h2 {
@@ -1119,25 +1128,25 @@ a {
 .site__footer .suivezNous .menu__icon .menu .menu-item a {
   display: flex;
   color: rgba(0, 0, 0, 0);
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .site__footer .suivezNous .menu__icon .menu .instagram a {
-  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/instagram.png");
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/Instagram_icon.png");
 }
 .site__footer .suivezNous .menu__icon .menu .facebook a {
-  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/facebook.png");
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/2021_Facebook_icon.svg_.png");
 }
-.site__footer .suivezNous .menu__icon .menu .indeed a {
-  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Indeed.png");
+.site__footer .suivezNous .menu__icon .menu .linkedin a {
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/linkedin-icon-1024x1024-net2o24e.png");
 }
 .site__footer .suivezNous .menu__icon .menu .youtube a {
-  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Youtube.png");
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/youtube-round-2-icon-2048x2048-ayjtmdvq.png");
 }
 .site__footer .suivezNous .menu__icon .menu .behance a {
-  background-image: url("http://localhost/hydra5w5/wp-content/uploads/2023/11/Behance.png");
+  background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/145799.png");
 }
 
 .conteneur__menu {
@@ -1153,7 +1162,9 @@ a {
 .conteneur__menu .menu__secondaire .menu {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
@@ -1163,14 +1174,34 @@ a {
 }
 .conteneur__menu .menu__secondaire .menu .menu-item {
   text-align: center;
+  display: none;
   background-color: #1E5076;
-  width: 15%;
+  width: 80%;
   padding: 10px 0 10px;
   border-radius: 10px;
   font-size: 1.2rem;
 }
+@media screen and (min-width: 768px) {
+  .conteneur__menu .menu__secondaire .menu .menu-item {
+    width: 17%;
+    display: block;
+  }
+}
 .conteneur__menu .menu__secondaire .menu .menu-item a {
   display: block;
+}
+.conteneur__menu .menu__secondaire .menu .btn__gestion__menu {
+  cursor: pointer;
+  user-select: none;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .conteneur__menu .menu__secondaire .menu .btn__gestion__menu {
+    display: none;
+  }
+}
+.conteneur__menu .menu__secondaire .menu .btn__gestion__menu a {
+  display: none;
 }
 
 /* width */
@@ -1182,6 +1213,7 @@ a {
 .blocflex__galerie ::-webkit-scrollbar {
   width: 20px;
   background-color: #A8DADC;
+  border-radius: 10px;
 }
 .blocflex__galerie ::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -1239,9 +1271,11 @@ a {
 
 .choix__projets {
   width: 90vw;
+  min-height: 50vh;
 }
 .choix__projets .menu__choix {
   width: 100%;
+  padding-bottom: 100px;
 }
 .choix__projets .menu__choix .menu {
   display: flex;
@@ -1267,10 +1301,11 @@ a {
   background-color: #1E5076;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   width: 300px;
-  height: 400px;
+  height: 375px;
   background-repeat: no-repeat;
   background-size: 200px 200px;
   background-position: center;
+  transition: transform 0.3s ease;
 }
 .choix__projets .menu__choix .menu .menu-item a {
   display: flex;
@@ -1291,7 +1326,9 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: width 0.3s;
+}
+.choix__projets .menu__choix .menu .menu-item:hover {
+  transform: scale(1.1);
 }
 .choix__projets .menu__choix .menu .web {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/10/world-wide-web.png");
@@ -1359,31 +1396,29 @@ a {
 
 .vague__millieu__front {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
 }
 .vague__millieu__front svg {
   width: 100%;
   height: auto;
-  z-index: 1;
-  padding-top: 150px;
   display: flex;
 }
-@media screen and (min-width: 768px) {
-  .vague__millieu__front svg {
-    padding-top: 250px;
-  }
-}
-
 .vague__bas__pdp {
-  z-index: 1;
+  z-index: 0;
   width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .vague__bas__pdp svg {
   width: 100%;
   height: auto;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* --------------------------------------------- composant blocflex */
@@ -1394,8 +1429,9 @@ a {
   justify-content: space-between;
   overflow: hidden;
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   cursor: pointer;
+  transition: transform 0.3s ease;
   width: 285px;
   height: 150px;
 }
@@ -1421,6 +1457,10 @@ a {
 }
 .blocflex__cours .titre__cours h6 {
   padding: 5px;
+}
+
+.blocflex__cours:hover {
+  transform: scale(1.1);
 }
 
 /******************************** Etudiants ***********************************/
@@ -1510,6 +1550,7 @@ a .blocflex__evenement:hover {
   height: 300px;
   overflow-x: scroll;
   flex-wrap: nowrap;
+  padding: 5px;
 }
 .blocflex__galerie .wp-block-gallery .wp-block-image {
   flex: 0 0 80vw;

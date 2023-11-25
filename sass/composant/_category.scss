@@ -2,12 +2,13 @@
 .section__categorie {
   // padding: 20px 100px 20px 100px;
   display: flex;
-  min-height: 92vh;
+  // min-height: 92vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   position: relative;
+  // padding-bottom: 50px;
   
   
   .conteneur__texte {
@@ -21,29 +22,20 @@
     text-align: center;
     
     h1 {
-      padding: 20px 0 20px 0;
+      padding: 50px 0 10px 0;
     }
 
     p {
       text-align: center;
       width: 400px;
       margin: 0;
-      margin: 0 10px 0 10px;
+      margin: 0 10px 10px 10px;
 
       @media screen and (min-width : $largeur__tablette) {
         width: 100%;
       }
     }
 
-  }
-
-  .conteneur__bloc {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    // margin-bottom: 100px;
   }
 
   //LES BOUTONS
@@ -103,7 +95,17 @@
     border-color: transparent transparent transparent #3498db;
   }
 
-  
+  // CONTENEUR DES ARTICLES
+  .conteneur__bloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 100px;
+    min-height: 50vh;
+  }
+
   // SECTION PROFS
   .class__profs {
     // flex-wrap: nowrap;
@@ -128,10 +130,16 @@
   .class__etudiants {
     width: 90%;
   }
+
   // SECTION STAGE
   .class__stage {
     width: 90%;
   }
+
+  // SECTION PROJETS
+  .class__projets {
+    display: none;
+  }	
 
   // LES BOUTONS POUR LES SESSIONS
   .btns__sessions{
@@ -142,8 +150,9 @@
     width: 90%;
     height: 45px;
     background-color: #F1FAEE;
-    border: #ffffff 1px solid;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // border: #ffffff 1px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 25px;
     border-radius: 30px;
     gap: 10px;
     overflow: hidden;

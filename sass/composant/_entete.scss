@@ -100,32 +100,69 @@
             .sub-menu {
               
               flex-direction: column;
-              align-items: center;
-              
-              background-color: #092749;
+              align-items: left;
+              justify-content: space-between;
+              background-color: #154569;
               position:relative;
               list-style: none;
               width: 100%;
-              padding: 10px;
+              height: 100%;
+              padding-top: 50px;
 
               @media screen and (min-width:$largeur__bureau) {
-             display: none;
+              display: none;
              }
               
               
               a{
                 
-                color: #ffffff;
+                color:#ffffff;
                 padding-top: 10px;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+
+                @media screen and (min-width:$largeur__bureau) {
+                  color: #457B9D;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+
+                 }
+                
                
               }
+
+            
+             
               
             }
             
            
+
           }
 
         } // FIN ul
+
+        @media screen and (min-width:$largeur__bureau) {
+
+          .Futur__Etudiant:hover .sub-menu {
+            display: flex;
+            flex-direction:column;
+            align-items: left;
+            background-color: #F1FAEE;
+            border: 3px solid #457B9D;
+            border-radius: 30px;
+            position: absolute;
+            z-index: 10;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            padding-top: 30px;
+            width: 200%;
+            height: 300%;
+          }
+          
+           }
+       
     
       } // FIN navigation
 

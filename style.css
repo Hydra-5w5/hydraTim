@@ -1644,6 +1644,13 @@ a .blocflex__evenement:hover {
   border: 2px solid #ffffff;
   border-radius: 30px;
 }
+@media screen and (max-width: 425px) {
+  .blocflex__stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .blocflex__stage .cat__content {
   line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
   align-items: center;
@@ -1655,11 +1662,21 @@ a .blocflex__evenement:hover {
   text-align: center;
   font-size: 1.5rem;
 }
+@media screen and (max-width: 425px) {
+  .blocflex__stage .cat__content p {
+    font-size: 1rem;
+  }
+}
 .blocflex__stage .cat__image {
   border-radius: 0 30px 30px 0px;
   overflow: hidden;
-  height: 100%;
   width: 50%;
+}
+@media screen and (max-width: 425px) {
+  .blocflex__stage .cat__image {
+    width: 100%;
+    align-items: center;
+  }
 }
 .blocflex__stage .cat__image img {
   object-fit: cover;

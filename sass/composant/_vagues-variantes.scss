@@ -30,7 +30,11 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  display: none;
+  display: block;
+
+  @media screen and (min-width : $largeur__bureau) {
+    display: none;
+  }
 
   svg {
     width: 100%;
@@ -60,9 +64,9 @@
 
  .vague__millieu__front {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
   height: auto;
 
  svg{

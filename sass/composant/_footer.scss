@@ -96,21 +96,25 @@
     width: 100%;
 
     h2 {
+      text-align: center;
       color: #ffffff;
       padding-bottom: 10px;
     }
 
     /************* VERSION PC *************/
     @media screen and (min-width : $largeur__bureau) {
-      margin-left: 20%;
+      // margin-left: 20%;
     }
 
     .menu__icon{//nav
      
 
       .menu {// ul
+        padding: 0%;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        gap: 15px;
       
         /*Pour tout les les li*/
         .menu-item {// li

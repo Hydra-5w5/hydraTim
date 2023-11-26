@@ -19,6 +19,7 @@
       overflow: hidden;
       align-items: center;
       list-style: none;
+      padding: 0;
 
       @media screen and (min-width : $largeur__tablette) {
         flex-direction: row;
@@ -49,7 +50,7 @@
       }
 
       .btn__gestion__menu { // li 
-        background-color: #0C2447;
+        background-color: #1E5076;
         display: block;
 
         @media screen and (min-width : $largeur__tablette) {

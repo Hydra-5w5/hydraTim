@@ -1167,6 +1167,8 @@ a {
   }
 }
 .conteneur__menu .menu__secondaire .menu {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1175,6 +1177,7 @@ a {
 @media screen and (min-width: 768px) {
   .conteneur__menu .menu__secondaire .menu {
     flex-direction: row;
+    width: 20%;
   }
 }
 .conteneur__menu .menu__secondaire .menu .menu-item {
@@ -1184,9 +1187,6 @@ a {
   padding: 10px 0 10px;
   border-radius: 10px;
   font-size: 1.2rem;
-}
-.conteneur__menu .menu__secondaire .menu .menu-item a {
-  display: block;
 }
 
 /* width */
@@ -1371,11 +1371,6 @@ a {
   z-index: 1;
   padding-top: 150px;
   display: flex;
-}
-@media screen and (min-width: 768px) {
-  .vague__millieu__front svg {
-    padding-top: 250px;
-  }
 }
 
 .vague__bas__pdp {

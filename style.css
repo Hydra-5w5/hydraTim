@@ -761,6 +761,23 @@ a {
 
 .dans__article {
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  z-index: 4;
+  gap: 2rem;
+}
+.dans__article img {
+  padding-top: 50px;
+}
+.dans__article div p {
+  margin: 0;
+  text-align: center;
+}
+.dans__article h3 {
+  margin: 0;
+  text-align: center;
 }
 
 /******************************** Categorie ***********************************/

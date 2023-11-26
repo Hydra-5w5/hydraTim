@@ -1140,16 +1140,14 @@ a {
 }
 
 .conteneur__menu {
+  background-color: #457B9D;
   width: 100%;
-  height: 300px;
-  position: absolute;
-  bottom: 0;
+  top: 0;
 }
 @media screen and (min-width: 768px) {
   .conteneur__menu {
     height: 75px;
   }
-
 }
 .conteneur__menu .menu__secondaire .menu {
   display: flex;
@@ -1688,12 +1686,14 @@ a .blocflex__evenement:hover {
 
 /******************************** Stage ***********************************/
 .blocflex__stage {
+  gap: 20px;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
   justify-content: space-between;
   background-color: #154569;
+  border: solid 3px white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 30px;
 }

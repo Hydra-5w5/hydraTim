@@ -1295,7 +1295,26 @@ body {
   background: #4080a8;
 }
 
-.boite__modale {
+.conteneur__projet {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.conteneur__projet ::-webkit-scrollbar {
+  width: 20px;
+  background-color: #ffffff;
+}
+.conteneur__projet ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.conteneur__projet ::-webkit-scrollbar-thumb {
+  background: #6898b6;
+}
+.conteneur__projet ::-webkit-scrollbar-thumb:hover {
+  background: #4080a8;
+}
+
+.boite__modale, .info__projet {
   transform: scale(0) translate(-50%, -50%);
   transform-origin: 50px 50px;
   position: absolute;
@@ -1305,18 +1324,18 @@ body {
   background-color: #A8DADC;
   border-radius: 30px;
   border: #457B9D 3px solid;
-  z-index: 100;
+  z-index: 1200000;
   top: 50%;
   left: 50%;
 }
-.boite__modale h2 {
+.boite__modale h2, .info__projet h2 {
   color: #457B9D;
   padding-bottom: 50px;
 }
-.boite__modale h4 {
+.boite__modale h4, .info__projet h4 {
   color: #F1FAEE;
 }
-.boite__modale .btn__fermer {
+.boite__modale .btn__fermer, .info__projet .btn__fermer {
   position: absolute;
   top: 0;
   right: 0;
@@ -1325,6 +1344,14 @@ body {
   font-size: 3rem;
   cursor: pointer;
   margin: 0;
+}
+
+.info__projet {
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.info__projet .btn__fermer {
+  display: none;
 }
 
 .superposition {
@@ -1897,35 +1924,6 @@ a .blocflex__evenement:hover {
 .blocflex__projets .base__projet:hover p {
   height: 100%;
   width: 100%;
-}
-.blocflex__projets .info__projet {
-  display: none;
-  position: absolute;
-  width: 75%;
-  padding: 20px;
-  background-color: #A8DADC;
-  border-radius: 30px;
-  border: #457B9D 3px solid;
-  z-index: 100;
-  top: 50%;
-  left: 50%;
-}
-.blocflex__projets .info__projet h2 {
-  color: #457B9D;
-  padding-bottom: 50px;
-}
-.blocflex__projets .info__projet p {
-  color: #F1FAEE;
-}
-.blocflex__projets .info__projet .btn__fermer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  color: #F1FAEE;
-  font-size: 3rem;
-  cursor: pointer;
-  margin: 0;
 }
 
 /******************************** Stage ***********************************/

@@ -1,15 +1,19 @@
 /******************************** Stage ***********************************/
 .blocflex__stage {
-  gap: 20px;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  background-color: #154569;
-  border: solid 3px white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #457B9D;
+  border: 2px solid #ffffff;
   border-radius: 30px;
+
+  @media screen and (max-width:$largeur__mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
   .cat__content {
     line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
@@ -23,6 +27,10 @@
     p {
       text-align: center;
       font-size: 1.5rem;
+
+      @media screen and (max-width:$largeur__mobile) {
+       font-size: 1rem;
+        }
     }
 
   }
@@ -30,8 +38,13 @@
   .cat__image {
     border-radius: 0 30px 30px 0px;
     overflow: hidden;
-    height: 100%;
     width: 50%;
+
+    @media screen and (max-width:$largeur__mobile) {
+      width: 100%;
+      align-items: center;
+      }
+  
 
     img {
       object-fit: cover;

@@ -8,9 +8,14 @@ get_header();
 
 <main class="site__main">
 
-<div class="vagues__general">
-<?php get_template_part('vagues-variantes/vaguesGeneral')?> 
-</div>
+    <div class="vagues__general">
+        <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
+    </div>
+    <?php 
+        if (!is_front_page()) {
+            get_template_part('vagues-variantes/vaguesHautPiedPage');
+        }
+    ?>
     <section class="section__categorie">
         <?php
         $category = get_queried_object();
@@ -67,31 +72,22 @@ get_header();
             ?>
         </div>
 
-        <div class="choix__projets">
-            <?php
-                // Affiche le menu de choix des projets
-                if($category->slug == 'projets') {
-                    wp_nav_menu(array(
-                        "menu" => "choix-projets",
-                        "container" => "nav",
-                        "container_class" => "menu__choix", //pour changer le nom de la class
-                    )); 
-                }
-            ?>
-        </div>
-
-        <div class="vagues__Haut__Pied__Page">
-            <?php 
-                if (!is_front_page()) {
-                    get_template_part('vagues-variantes/vaguesHautPiedPage');
-                }
-            ?> 
-        </div>
+        <?php
+            // Affiche le menu de choix des projets
+            if($category->slug == 'projets') {
+                echo '<div class="choix__projets">';
+                wp_nav_menu(array(
+                    "menu" => "choix-projets",
+                    "container" => "nav",
+                    "container_class" => "menu__choix", //pour changer le nom de la class
+                ));
+            }
+        ?>
 
         <!-- Affiche les menus secondaires -->
         <?php
         if (get_queried_object()) {
-            $category = get_queried_object();
+            // $category = get_queried_object();
             // Correspondance entre les catégories et les noms de menu
             $menu_correspondance = array(
             'etudiants' => 'menu-etudiants',
@@ -121,8 +117,7 @@ get_header();
         }
         ?>
 
-    </section>
-
+    </section> 
 </main>
 
 <?php get_footer();

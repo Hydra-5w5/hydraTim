@@ -1,5 +1,5 @@
 .site__entete{ // entete du site
-
+ 
   /* ///////////////////////////////////// entete barre de navigation */
   .entete__nav { // barre de navigation
     position: sticky;
@@ -12,33 +12,33 @@
     align-items: center;
     background-color: #154569;
     margin: 0;
-
+ 
     @media screen and (min-width : $largeur__bureau) {
       flex-direction: row;
     }
     
     .menu__logo { // logo dans entete
-
+ 
       .custom-logo-link img { // logo
         width: 85px;
         height: auto;
         padding-top: 10px;
         padding-left: 20px;
         @media screen and (min-width : $largeur__bureau) {
-
+ 
         }
-
+ 
       }
-
+ 
     }
-
+ 
     .menu__nav { // nav avec bouton burger et recherche
       display : flex;
       flex-direction: row-reverse;
       align-items: center;
       justify-content: center;
       align-self: center;
-
+ 
       @media screen and (min-width : $largeur__bureau) {
           flex-direction: row;
           align-items: center;
@@ -46,17 +46,17 @@
           padding-top: 10px;
           border-left: none;
       }
-
+ 
       /* ////////////////////////////// menu entete */
       .menu__entete { // nav
         display: none;
         opacity: 0;
-
+ 
         @media screen and (min-width : $largeur__bureau) {
           display: flex;
           opacity: 1;
         }
-
+ 
         .menu { // ul
           width: 50%;
           height: 100%;
@@ -72,7 +72,7 @@
           padding: 10px;
           top: 3rem;
           right:0;
-
+ 
           @media screen and (min-width:$largeur__bureau) {
            background: none;
             position : static;
@@ -84,7 +84,7 @@
     
           .menu-item { // li
             position: relative;
-
+ 
             a {
               
               text-decoration: none;
@@ -94,9 +94,9 @@
               margin: 20px;
               transition: color 1s ease;
             }
-
+ 
             
-
+ 
             .sub-menu {
               
               flex-direction: column;
@@ -108,7 +108,7 @@
               width: 100%;
               height: 100%;
               padding-top: 50px;
-
+              
               @media screen and (min-width:$largeur__bureau) {
               display: none;
              }
@@ -121,31 +121,29 @@
                 padding-bottom: 10px;
                 margin-bottom: 20px;
 
+ 
                 @media screen and (min-width:$largeur__bureau) {
                   color: #457B9D;
+                  
                   &:hover {
                     text-decoration: underline;
                   }
-
-                 }
+ 
+                }
                 
-               
               }
 
-            
-             
-              
             }
             
-           
-
           }
-
+ 
         } // FIN ul
 
+ 
         @media screen and (min-width:$largeur__bureau) {
+ 
+          .futur__etudiants:hover .sub-menu {
 
-          .futur__etudiant:hover .sub-menu {
             display: flex;
             flex-direction:column;
             align-items: left;
@@ -161,24 +159,26 @@
             height: 300%;
           }
           
-           }
+
+        }
+
        
     
       } // FIN navigation
-
+ 
       /* ////////////////////////////// bouton burger */
-
+ 
       #cc__bouton__burger {
         display: none;
       }
-
+ 
       .bouton__burger__conteneur {
         padding: 20px;
-
+ 
         @media screen and (min-width:$largeur__bureau) {
           display: none;
         }
-
+ 
       }
       .bouton__burger__conteneur div {
         position: relative;
@@ -189,7 +189,7 @@
         transition: 0.3s ease;
         border-radius: 2px;
       }
-
+ 
       .bouton__burger__conteneur div:first-child {
         transform-origin: 0% 0%;
       }
@@ -203,7 +203,7 @@
         width: 30px;
         right: 10px;
       }
-
+ 
       // menu burger checker
       #cc__bouton__burger:checked ~ .menu__entete {
         display: flex;
@@ -215,7 +215,7 @@
         z-index: 12;
         opacity: 1;
         transition: opacity 5s;
-
+ 
         @media screen and (min-width:$largeur__bureau) {
           position: static;
         }
@@ -227,19 +227,19 @@
           left: 0;
           width: 100vw;
           height: 100vh;
-          overflow: hidden; 
-          background-color: rgb(0, 0, 0); 
-          z-index: 11; 
+          overflow: hidden;
+          background-color: rgb(0, 0, 0);
+          z-index: 11;
         }
       }
       #cc__bouton__burger:checked ~ .bouton__burger__conteneur {
         z-index: 12;
         position: fixed;
         right: 0;
-
+ 
       }
     } // FIN nav avec bouton burger
-
+ 
   } // FIN barre de navigation
-
+ 
 } // FIN site entete

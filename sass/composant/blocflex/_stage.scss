@@ -1,55 +1,78 @@
 /******************************** Stage ***********************************/
 .blocflex__stage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
+  overflow: hidden;
   width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  background-color: #457B9D;
-  border: 2px solid #ffffff;
+
+  height: 700px;
+  justify-content: center;
+  border-radius: 30px;
+  // background-color: #457B9D;
+  // border: 2px solid #ffffff;
+  background-color: #154569;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
   border-radius: 30px;
 
-  @media screen and (max-width:$largeur__mobile) {
-    display: flex;
-    flex-direction: column;
+  @media screen and (min-width: $largeur__bureau) {
+    flex-direction: row;
     align-items: center;
-    }
+  }
+
 
   .cat__content {
     line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
     //padding-left: 10px;
+    display: flex;
     align-items: center;
-    align-self: center;
-    height: 100%;
-    width: 50%;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
 
+    @media screen and (min-width: $largeur__bureau) {
+      width: 50%;
+      height: 100%;
+    }
 
     p {
       text-align: center;
-      font-size: 1.5rem;
 
-      @media screen and (max-width:$largeur__mobile) {
-       font-size: 1rem;
-        }
+      font-size: 1rem;
+
+      @media screen and (min-width: $largeur__tablette) {
+       font-size: 1.5rem;
+      }
     }
 
   }
 
   .cat__image {
-    border-radius: 0 30px 30px 0px;
     overflow: hidden;
-    width: 50%;
 
-    @media screen and (max-width:$largeur__mobile) {
-      width: 100%;
+    width: 100%;
+    height: 50%;
+
+    @media screen and (min-width:$largeur__bureau) {
+      width: 50%;
       align-items: center;
-      }
+
+      height: 100%;
+      display: flex;
+    }
   
 
     img {
-      object-fit: cover;
-      height: 100%;
-      // width: 100%;
+      object-fit: fill;
+      height: auto;
+      width: 100%;
+
+      @media screen and (min-width:$largeur__bureau) {
+        width: auto;
+        align-items: center;
+        height: 100%;
+      }
+
     }
 
   }

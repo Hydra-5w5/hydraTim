@@ -1,5 +1,5 @@
 (function(){
-  // selection les articles de chachque session
+  /**************** selection les articles de chachque session ****************/
   let sessions = [
     document.querySelectorAll(".session1"),
     document.querySelectorAll(".session2"),
@@ -47,6 +47,40 @@
   // Sélectionne le premier bouton par défaut
   if (boutons[0]) { // Vérifie si le premier bouton existe
     boutons[0].click();
+  }
+
+  /**************** Gestion du menu secondaire ****************/
+  let btn__gestion__menu = document.querySelector('.btn__gestion__menu');
+  let menuItems = document.querySelectorAll('.menu__secondaire .menu-item'); // Assuming your menu items have the class 'menu-item'
+
+  
+  if (btn__gestion__menu) { 
+    btn__gestion__menu.textContent = 'plus';
+
+    btn__gestion__menu.addEventListener('click', function() {
+    
+      this.textContent = this.textContent === 'moins' ? 'plus' : 'moins';
+  
+      
+      if (window.innerWidth < 768) {
+        menuItems.forEach(item => {
+          if (item !== btn__gestion__menu) { // Exclude the button
+            item.style.display = this.textContent === 'moins' ? 'block' : 'none';
+          }
+        });
+      }
+    });
+  
+    
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 768) {
+        menuItems.forEach(item => {
+          if (item !== btn__gestion__menu) { // Exclude the button
+            item.style.display = 'block';
+          }
+        });
+      }
+    });
   }
 
 })();

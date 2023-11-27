@@ -523,7 +523,7 @@ a {
   }
 }
 @media screen and (min-width: 1080px) {
-  .site__entete .entete__nav .menu__nav .menu__entete .Futur__Etudiant:hover .sub-menu {
+  .site__entete .entete__nav .menu__nav .menu__entete .futur__etudiant:hover .sub-menu {
     display: flex;
     flex-direction: column;
     align-items: left;

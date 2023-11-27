@@ -1,24 +1,47 @@
 .conteneur__menu {
   background-color: #457B9D;
+  align-self: flex-end;
   width: 100%;
-  position: absolute;
-  top: 0;
-  
+  //border-radius: 30px 30px 0 0;
+
+  @media screen and (min-width : $largeur__tablette) {
+    height: 75px;
+    //border-radius: 0;
+  }
+
   .menu__secondaire { // nav
 
     .menu { // ul
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      gap: 25px;
       justify-content: space-around;
+      overflow: hidden;
+      align-items: center;
       list-style: none;
+      padding: 0;
+
+      @media screen and (min-width : $largeur__tablette) {
+        flex-direction: row;
+        border-radius: none;
+      }
+
 
       .menu-item { // li
         text-align: center;
+        display: none;
         background-color: #1E5076;
-        width: 15%;
+        width: 70%;
+        cursor: pointer;
+        user-select: none;
         padding: 10px 0 10px;
         border-radius: 10px;
         font-size: 1.2rem;
+
+        @media screen and (min-width : $largeur__tablette) {
+          width: 17%;
+          display: block;
+        }
 
         a { //lien
           display: block; 
@@ -26,7 +49,21 @@
 
       }
 
-    }
+      .btn__gestion__menu { // li 
+        background-color: #1E5076;
+        display: block;
 
+        @media screen and (min-width : $largeur__tablette) {
+          display: none;
+        }
+
+        a{
+          display: none;
+        }
+      }
+    }
   }
 }
+// @media screen and (min-width : $largeur__bureau) {
+//   flex-direction: row;
+// }

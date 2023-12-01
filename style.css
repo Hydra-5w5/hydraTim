@@ -972,6 +972,14 @@ body {
 .site__main {
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
 }
+.site__main h2 {
+  font-size: 5em;
+  text-align: center;
+}
+.site__main h6 {
+  margin-top: 10px;
+  text-align: center;
+}
 .site__main .recherche__input {
   border: 3px solid #00B4CC;
   border-right: none;
@@ -1009,38 +1017,52 @@ body {
 }
 
 .site__erreur {
-  text-align: center;
-  background-color: rgb(251, 0, 0);
+  /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
 }
 .site__erreur h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 7em;
+  text-align: center;
+  color: red;
 }
-.site__erreur h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.site__erreur h6 {
+  margin-top: 10px;
+  text-align: center;
+  color: red;
 }
-.site__erreur .search-form {
-  display: inline-block;
+.site__erreur .recherche__input {
+  border: 3px solid red;
+  border-right: none;
+  padding: 5px;
+  height: 36px; /* Ajusté à la taille du bouton */
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  width: 70rem;
+  height: 3rem;
+}
+.site__erreur .recherche__input:focus {
+  color: #00B4CC;
+}
+.site__erreur .btn__recherche {
+  right: 2em;
   position: relative;
+  width: 54px;
+  height: 50px;
+  border: 5px solid red;
+  background: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 35%;
 }
-.site__erreur .search-form input[type=search] {
-  padding: 8px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.site__erreur .search-form button {
+.site__erreur .wrap {
+  width: 30%;
   position: absolute;
   top: 50%;
-  right: 8px;
-  transform: translateY(-50%);
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px;
-  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .site__footer {
@@ -1109,7 +1131,11 @@ body {
 .site__footer .contenu__footer .recherche__footer input {
   background-color: #1D3557;
   border-radius: 30px;
+  height: 2.4rem;
+  width: 18rem;
   border: none;
+  color: #ffffff;
+  outline: none;
 }
 .site__footer .suivezNous {
   padding-top: 20px;
@@ -1149,6 +1175,15 @@ body {
   position: relative;
   width: 100%;
   z-index: 1;
+}
+
+/************* BARRE DE RECHERCHE FOOTER *************/
+.btn__recherche {
+  right: 2em;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 5px;
 }
 
 .conteneur__menu {

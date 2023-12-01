@@ -64,8 +64,11 @@
       input {
         background-color: #1D3557;
         border-radius: 30px;
+        height: 2.4rem;
+        width: 18rem;
         border: none;
-
+        color: #ffffff;
+        outline: none;
       }
 
     }
@@ -135,3 +138,17 @@
       }
 
 }
+
+
+ /************* BARRE DE RECHERCHE FOOTER *************/
+
+      
+       .btn__recherche {
+        right: 2em;
+        position: absolute;
+        background: none;
+        border: none;
+        right: 5px;
+
+    }
+  

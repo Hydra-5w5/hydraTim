@@ -16,6 +16,16 @@ body {
 
 .site__main {
 
+  h2 {
+    font-size: 5em;
+    text-align: center;
+  }
+  
+  h6 {
+    margin-top: 10px;
+    text-align: center;
+  }
+
     .recherche__input {
         border: 3px solid #00B4CC;
         border-right: none;
@@ -56,3 +66,4 @@ body {
       }
 
     }	
+

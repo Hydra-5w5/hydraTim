@@ -1,40 +1,57 @@
-.site__erreur {
-  text-align: center;
-  background-color: rgb(251, 0, 0);
+.site__erreur{
 
+         
   h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 7em;
+    text-align: center;
+    color: red;
+  }
+  
+  h6 {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
   }
 
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-
-  .search-form {
-    display: inline-block;
-    position: relative;
-
-    input[type="search"] {
-      padding: 8px;
-      width: 200px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+  .recherche__input {
+      border: 3px solid red;
+      border-right: none;
+      padding: 5px;
+      height: 36px; /* Ajusté à la taille du bouton */
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #9DBFAF;
+      width: 70rem;
+      height: 3rem;
+    
+      &:focus {
+        color: #00B4CC;
+      }
     }
-
-    button {
+    
+     .btn__recherche {
+      right: 2em;
+      position: relative;
+      width: 54px;
+      height: 50px;
+      border: 5px solid red;
+      background: red;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 35%;
+  }
+    /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
+    .wrap {
+      width: 30%;
       position: absolute;
       top: 50%;
-      right: 8px;
-      transform: translateY(-50%);
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      padding: 8px;
-      cursor: pointer;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-  }
-}
 
+  }	
+
+  

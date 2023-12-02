@@ -20,7 +20,7 @@ get_header();
          <article>
             <h5><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5>
             <?php echo wp_trim_words(get_the_excerpt(), 60) ?>
-            <hr>
+            <!-- <hr> -->
          </article>
          <?php endwhile; ?>
       <?php endif; ?>

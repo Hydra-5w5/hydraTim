@@ -1020,7 +1020,7 @@ body {
 .site__main article {
   background-color: #00B4CC; /* Couleur du fond */
   border: 1px solid #00B4CC; /* Bordure de 1 pixel solide de la même couleur */
-  border-radius: 10px; /* Rayon de 5 pixels pour le fond arrondi */
+  border-radius: 15px; /* Rayon de 5 pixels pour le fond arrondi */
   padding: 15px; /* Ajoute un peu d'espace intérieur pour le contenu */
   width: 70%;
   margin: 20px auto;
@@ -1028,9 +1028,6 @@ body {
 }
 .site__main article h5 {
   margin-bottom: 5px; /* Ajoute de l'espace en bas entre le titre et le contenu */
-}
-.site__main article hr {
-  margin-top: 5px; /* Ajoute de l'espace en haut de la ligne horizontale */
 }
 .site__main .article:first-child {
   margin-top: 20px; /* Ajoute de l'espace en haut du premier article */
@@ -1156,6 +1153,7 @@ body {
   border-radius: 30px;
   height: 2.4rem;
   width: 18rem;
+  padding: 1rem;
   border: none;
   color: #ffffff;
   outline: none;

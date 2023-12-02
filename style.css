@@ -965,12 +965,14 @@ body {
   width: 100%;
   position: relative;
   display: flex;
+  margin-bottom: 20px;
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
 }
 
 .site__main {
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
+  /* Arrangement des suggestions barre de recherche */
 }
 .site__main h2 {
   font-size: 5em;
@@ -1014,6 +1016,27 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.site__main article {
+  background-color: #00B4CC; /* Couleur du fond */
+  border: 1px solid #00B4CC; /* Bordure de 1 pixel solide de la même couleur */
+  border-radius: 10px; /* Rayon de 5 pixels pour le fond arrondi */
+  padding: 15px; /* Ajoute un peu d'espace intérieur pour le contenu */
+  width: 70%;
+  margin: 20px auto;
+  color: #fff; /* Couleur du texte */
+}
+.site__main article h5 {
+  margin-bottom: 5px; /* Ajoute de l'espace en bas entre le titre et le contenu */
+}
+.site__main article hr {
+  margin-top: 5px; /* Ajoute de l'espace en haut de la ligne horizontale */
+}
+.site__main .article:first-child {
+  margin-top: 20px; /* Ajoute de l'espace en haut du premier article */
+}
+.site__main .article:last-child {
+  margin-bottom: 20px; /* Ajoute de l'espace en bas entre le dernier article et la section pied de page */
 }
 
 .site__erreur {

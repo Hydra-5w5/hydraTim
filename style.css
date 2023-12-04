@@ -740,8 +740,10 @@ a {
 .texte__descriptif {
   margin-top: 100px;
   margin-left: 20px;
-  padding-bottom: 80px;
   text-align: center;
+  padding: 10px 10px 100px 10px;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .texte__descriptif p {
@@ -765,6 +767,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 300px;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 1080px) {
   .citation {
@@ -1123,12 +1128,11 @@ body {
 }
 
 .site__footer {
-  background-color: #A8DADC;
+  background-color: #457B9D;
   position: relative;
   height: auto;
   overflow: hidden;
   text-align: center;
-  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1170,10 +1174,15 @@ body {
   }*/
 }
 .site__footer .contenu__footer h2 {
-  color: #fdfdfd;
+  color: #ffffff;
 }
 .site__footer .contenu__footer a {
-  color: rgb(255, 255, 255);
+  color: #1D3557;
+  font-weight: bold;
+}
+.site__footer .contenu__footer p {
+  color: #1D3557;
+  font-weight: bold;
 }
 @media screen and (min-width: 1080px) {
   .site__footer .contenu__footer {
@@ -1198,12 +1207,17 @@ body {
   padding-top: 20px;
   z-index: 2;
   width: 100%;
-  /************* VERSION PC *************/
 }
 .site__footer .suivezNous h2 {
   text-align: center;
   color: #ffffff;
   padding-bottom: 10px;
+  /************* VERSION PC *************/
+}
+@media screen and (min-width: 768px) {
+  .site__footer .suivezNous h2 {
+    color: #ffffff;
+  }
 }
 .site__footer .suivezNous .menu__icon .menu {
   padding: 0%;
@@ -1226,6 +1240,12 @@ body {
   width: 50px;
   background-size: cover;
   background-repeat: no-repeat;
+  user-select: none;
+  filter: brightness(0.5);
+  transition: filter 0.5s ease-in-out;
+}
+.site__footer .suivezNous .menu__icon .menu .menu-item a:hover {
+  filter: none;
 }
 .site__footer .suivezNous .menu__icon .menu .instagram a {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/Instagram_icon.png");
@@ -1479,7 +1499,7 @@ body {
 .vague__haut__pdp {
   width: 100%;
   position: absolute;
-  position: 0;
+  bottom: 0;
   left: 0;
   height: auto;
 }
@@ -1488,14 +1508,6 @@ body {
   align-items: flex-end;
   width: 100%;
   height: auto;
-}
-
-.monter {
-  bottom: 75px;
-}
-
-.normal {
-  bottom: 0;
 }
 
 .vague__haut__front {
@@ -1538,6 +1550,9 @@ body {
 
 .vague__millieu__front {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   height: auto;
 }
 .vague__millieu__front svg {
@@ -1545,6 +1560,7 @@ body {
   height: auto;
   display: flex;
 }
+
 .vague__bas__pdp {
   z-index: 0;
   width: 100%;
@@ -2094,6 +2110,7 @@ a .blocflex__evenement:hover {
   height: 300px;
   margin-bottom: 10px;
   cursor: pointer;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .theme {

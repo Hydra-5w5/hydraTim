@@ -65,13 +65,17 @@
     right: 0;
     height: auto;
 
-  svg{
-      width: 100%;
-      height: auto;
-      // z-index: 1;
-      // padding-top: 150px;
-      display: flex;
+ svg{
+    width: 100%;
+    height: auto;
+    // z-index: 1;
+    // padding-top: 150px;
+    display: flex;
+    
+    @media screen and (min-width : $largeur__tablette) {
+      // padding-top: 250px;
     }
+ }
  
   }
 

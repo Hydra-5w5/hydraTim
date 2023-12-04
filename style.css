@@ -524,7 +524,9 @@ a {
   }
 }
 @media screen and (min-width: 1080px) {
+
   .site__entete .entete__nav .menu__nav .menu__entete .futur__etudiants:hover .sub-menu {
+
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -785,6 +787,7 @@ a {
 
 .dans__article {
   min-height: 50vh;
+
   position: relative;
   padding-top: 40px;
   display: flex;
@@ -802,6 +805,7 @@ a {
   font-weight: 300;
   text-align: center;
   margin-bottom: 2rem;
+
 }
 
 /******************************** Categorie ***********************************/
@@ -1265,8 +1269,10 @@ body {
 
 .conteneur__menu {
   background-color: #457B9D;
+
   align-self: flex-end;
   width: 100%;
+
 }
 @media screen and (min-width: 768px) {
   .conteneur__menu {
@@ -1274,6 +1280,8 @@ body {
   }
 }
 .conteneur__menu .menu__secondaire .menu {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -1286,6 +1294,7 @@ body {
 @media screen and (min-width: 768px) {
   .conteneur__menu .menu__secondaire .menu {
     flex-direction: row;
+
     border-radius: none;
   }
 }
@@ -1300,6 +1309,7 @@ body {
   border-radius: 10px;
   font-size: 1.2rem;
 }
+
 @media screen and (min-width: 768px) {
   .conteneur__menu .menu__secondaire .menu .menu-item {
     width: 17%;
@@ -1321,6 +1331,7 @@ body {
 .conteneur__menu .menu__secondaire .menu .btn__gestion__menu a {
   display: none;
 }
+
 
 /* width */
 .blocflex__galerie, .thematiques-cours {
@@ -1693,9 +1704,9 @@ a .blocflex__evenement {
   background-color: #457B9D;
   width: 400px;
   height: 325px;
+
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: transform 0.3s ease;
 }
 a .blocflex__evenement .blocflex__images {
@@ -1714,9 +1725,6 @@ a .blocflex__evenement .blocflex__description {
   justify-content: center;
   align-items: center;
   padding: 10px;
-}
-a .blocflex__evenement .blocflex__description h4 {
-  font-size: 1.1rem;
 }
 a .blocflex__evenement .blocflex__description p {
   text-align: center;
@@ -1979,6 +1987,7 @@ a .blocflex__evenement:hover {
   flex-direction: column-reverse;
   overflow: hidden;
   width: 100%;
+
   height: 700px;
   justify-content: center;
   border-radius: 30px;
@@ -1986,9 +1995,11 @@ a .blocflex__evenement:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 30px;
 }
+
 @media screen and (min-width: 1080px) {
   .blocflex__stage {
     flex-direction: row;
+
     align-items: center;
   }
 }
@@ -2015,6 +2026,16 @@ a .blocflex__evenement:hover {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 425px) {
+  .blocflex__stage .cat__content p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .blocflex__stage .cat__content p {
+    font-size: 1rem;
+  }
+}
 .blocflex__stage .cat__image {
   overflow: hidden;
   width: 100%;
@@ -2026,6 +2047,20 @@ a .blocflex__evenement:hover {
     align-items: center;
     height: 100%;
     display: flex;
+  }
+
+}
+@media screen and (max-width: 425px) {
+  .blocflex__stage .cat__image {
+    width: 100%;
+    align-items: center;
+  }
+
+}
+@media screen and (max-width: 425px) {
+  .blocflex__stage .cat__image {
+    width: 100%;
+    align-items: center;
   }
 }
 .blocflex__stage .cat__image img {

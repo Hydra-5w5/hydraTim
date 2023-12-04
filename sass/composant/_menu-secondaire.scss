@@ -12,6 +12,8 @@
   .menu__secondaire { // nav
 
     .menu { // ul
+      width : 100%; 
+      height: 100%;
       display: flex;
       flex-direction: column;
       gap: 25px;
@@ -24,6 +26,7 @@
       @media screen and (min-width : $largeur__tablette) {
         flex-direction: row;
         border-radius: none;
+
       }
 
 
@@ -52,6 +55,7 @@
       .btn__gestion__menu { // li 
         background-color: #1E5076;
         display: block;
+
 
         @media screen and (min-width : $largeur__tablette) {
           display: none;

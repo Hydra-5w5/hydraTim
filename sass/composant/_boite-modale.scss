@@ -1,4 +1,4 @@
-.boite__modale {
+.boite__modale, .info__projet {
   transform: scale(0) translate(-50%, -50%);
   transform-origin: 50px 50px;
   position: absolute;
@@ -9,7 +9,7 @@
   background-color: #A8DADC;
   border-radius: 30px;
   border: #457B9D 3px solid;
-  z-index: 100;
+  z-index: 1200000;
   top: 50%;
   left: 50%;
 
@@ -34,6 +34,18 @@
   }
 
 }
+.info__projet {
+  max-height: 70vh;
+  overflow-y: scroll;
+  .btn__fermer {
+    display: none;
+  }
+  // .fff {
+  //   // overflow-y: scroll;
+  //   height: 100%;
+  // }
+}
+
 .superposition {
   position : fixed;
   top : 0;

@@ -5,11 +5,15 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #457B9D;
-    width: 450px;
-    height: 375px;
+    width: 400px;
+    height: 325px;
     border-radius: 30px;
     overflow: hidden;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+
     .blocflex__images {
       height: 50%;
       width: 100%;
@@ -30,7 +34,7 @@ a {
       align-items: center;
       padding: 10px;
 
-      //h6 {}
+      h4 {font-size: 1.1rem;}
   
       p {
         text-align: center;
@@ -43,6 +47,10 @@ a {
   .blocflex__evenement:hover {
     transform: scale(1.2); 
     background-color: #457B9D;
+  }
+
+  .blocflex__evenement:hover {
+    transform: scale(1.1);
   }
 
 }

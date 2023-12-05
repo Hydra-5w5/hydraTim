@@ -1,3 +1,23 @@
 .dans__article {
   min-height: 50vh;
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+    p{
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+   
+  }
 }

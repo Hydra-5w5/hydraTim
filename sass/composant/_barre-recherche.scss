@@ -27,20 +27,20 @@ body {
   }
 
   .recherche__input {
-      border: 1px solid #457B9D;
-      border-right: none;
-      padding: 5px;
-      height: 36px; /* Ajusté à la taille du bouton */
-      border-radius: 20px 0 0 20px;
-      outline: none;
-      color: #9DBFAF;
-      width: 70rem;
-      height: 4rem;
-    
-      &:focus {
-        color: #00B4CC;
-      }
+    border: 1px solid #457B9D;
+    border-right: none;
+    padding: 5px;
+    height: 36px; /* Ajusté à la taille du bouton */
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #9DBFAF;
+    width: 70rem;
+    height: 4rem;
+  
+    &:focus {
+      color: #00B4CC;
     }
+  }
     
   .btn__recherche {
     right: 2rem;

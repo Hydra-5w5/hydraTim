@@ -54,11 +54,11 @@
  
         @media screen and (min-width : $largeur__bureau) {
           display: flex;
+          align-items: center;
           opacity: 1;
         }
  
         .menu { // ul
-          width: 50%;
           height: 100%;
           background:#457B9D;
           border-bottom-left-radius: 30px ;

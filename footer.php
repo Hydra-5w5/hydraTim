@@ -1,6 +1,7 @@
 <footer class="site__footer">
-  <?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 
+<?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 
   <div class="contenu__footer">
+
     <div class="footer__logo">
       <?php the_custom_logo(); ?>
     </div>

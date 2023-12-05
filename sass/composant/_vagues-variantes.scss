@@ -58,14 +58,14 @@
   }
 }
 
-  .vague__millieu__front {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: auto;
+.vague__millieu__front {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
 
- svg{
+  svg{
     width: 100%;
     height: auto;
     // z-index: 1;
@@ -75,9 +75,9 @@
     @media screen and (min-width : $largeur__tablette) {
       // padding-top: 250px;
     }
- }
- 
   }
+
+}
 
 .vague__bas__pdp {
   z-index: 0; // Assure que la vague est en dessous des autres éléments

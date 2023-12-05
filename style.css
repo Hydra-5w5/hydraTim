@@ -996,7 +996,9 @@ a {
 
 .recherche__section {
   text-align: center;
-  background-color: rgba(0, 123, 255, 0.9450980392);
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
 }
 .recherche__section h2 {
   font-size: 2rem;
@@ -1056,6 +1058,14 @@ body {
 .site__main {
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
 }
+.site__main h2 {
+  font-size: 5em;
+  text-align: center;
+}
+.site__main h6 {
+  margin-top: 10px;
+  text-align: center;
+}
 .site__main .recherche__input {
   border: 3px solid #00B4CC;
   border-right: none;
@@ -1093,38 +1103,62 @@ body {
 }
 
 .site__erreur {
-  text-align: center;
-  background-color: rgb(251, 0, 0);
+  height: 70vh;
+  /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
+}
+.site__erreur .info__erreur {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 .site__erreur h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 7em;
+  text-align: center;
+  color: red;
 }
-.site__erreur h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.site__erreur h6 {
+  margin-top: 10px;
+  text-align: center;
+  color: red;
 }
-.site__erreur .search-form {
-  display: inline-block;
+.site__erreur .recherche__input {
+  border: 3px solid red;
+  border-right: none;
+  padding: 5px;
+  height: 36px; /* Ajusté à la taille du bouton */
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  width: 70rem;
+  height: 3rem;
+}
+.site__erreur .recherche__input:focus {
+  color: #00B4CC;
+}
+.site__erreur .btn__recherche {
+  right: 2em;
   position: relative;
+  width: 54px;
+  height: 50px;
+  border: 5px solid red;
+  background: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 35%;
 }
-.site__erreur .search-form input[type=search] {
-  padding: 8px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.site__erreur .search-form button {
+.site__erreur .wrap {
+  width: 30%;
   position: absolute;
   top: 50%;
-  right: 8px;
-  transform: translateY(-50%);
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px;
-  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .site__footer {
@@ -1177,11 +1211,11 @@ body {
   color: #ffffff;
 }
 .site__footer .contenu__footer a {
-  color: #1D3557;
+  color: #ffffff;
   font-weight: bold;
 }
 .site__footer .contenu__footer p {
-  color: #1D3557;
+  color: #ffffff;
   font-weight: bold;
 }
 @media screen and (min-width: 1080px) {
@@ -1261,6 +1295,15 @@ body {
 }
 .site__footer .suivezNous .menu__icon .menu .behance a {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/145799.png");
+}
+
+/************* BARRE DE RECHERCHE FOOTER *************/
+.btn__recherche {
+  right: 2em;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 5px;
 }
 
 .conteneur__menu {
@@ -2130,6 +2173,13 @@ a .blocflex__evenement:hover {
 
 /* --------------------------------------------- layout */
 .site__main {
+  background-color: #1D3557;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.site__erreur {
   background-color: #1D3557;
   color: white;
   font-family: "Poppins", sans-serif;

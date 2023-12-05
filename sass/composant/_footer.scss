@@ -30,12 +30,12 @@
     }
   
     a {
-      color: #1D3557;
+      color: #ffffff;
       font-weight: bold;
     }
 
     p {
-      color: #1D3557;
+      color: #ffffff;
       font-weight: bold;
     }
 
@@ -179,5 +179,15 @@
     }
 
   }
+
+}
+
+ /************* BARRE DE RECHERCHE FOOTER *************/
+ .btn__recherche {
+  right: 2em;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 5px;
 
 }

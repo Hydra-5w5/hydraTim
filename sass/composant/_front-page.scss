@@ -59,7 +59,7 @@ position: relative;
         align-items: center;
         padding: 5px;
         border-radius: 15px;
-
+        transition: transform 0.3s ease;
         a {
           // display: block;
           text-align: center;
@@ -67,6 +67,10 @@ position: relative;
           font-weight: bold;
           font-size: 1.2rem;
         }
+        
+      }
+      .btn:hover{
+        transform: scale(1.2); 
       }
 
       

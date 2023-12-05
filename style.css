@@ -639,12 +639,16 @@ a {
   align-items: center;
   padding: 5px;
   border-radius: 15px;
+  transition: transform 0.3s ease;
 }
 .section__presentation .section__info .conteneur__btn .btn a {
   text-align: center;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+}
+.section__presentation .section__info .conteneur__btn .btn:hover {
+  transform: scale(1.2);
 }
 .section__presentation .affiche__img {
   height: 95vh;

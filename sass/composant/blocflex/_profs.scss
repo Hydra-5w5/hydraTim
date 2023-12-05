@@ -10,17 +10,7 @@
   gap: 10px;
   border-radius: 30px;
   overflow: hidden;
-
-  @media screen and (min-width : $largeur__tablette) {
-    flex-direction: row;
-  }
-
-  @media screen and (min-width : $largeur__bureau) {
-    justify-content: center;
-    align-items: flex-end;
-    gap: 0;
-  }
-
+  cursor: pointer;
   .sujet__profs {
     background-color: #154569;
     width: 100%;
@@ -61,6 +51,7 @@
     }
 
   }
+  
 
   .photo__profs {
     display: flex;
@@ -132,6 +123,7 @@
 
 }
 
+
 .selectionne {
   width: 91%;
   height: 700px;  
@@ -152,7 +144,7 @@
   .photo__profs {
     width: 50%;
   }
-
+  
 }
 
 .non-selectionne {

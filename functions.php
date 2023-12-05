@@ -138,3 +138,10 @@ function enregistrer_sidebar() {
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
 
+
+/* ------------------------------------------ fficher uniquement les catégories dans le formulaire de recherche */
+
+
+
+
+

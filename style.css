@@ -454,11 +454,11 @@ a {
 @media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav .menu__entete {
     display: flex;
+    align-items: center;
     opacity: 1;
   }
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu {
-  width: 50%;
   height: 100%;
   background: #457B9D;
   border-bottom-left-radius: 30px;

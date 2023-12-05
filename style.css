@@ -2081,7 +2081,7 @@ a .blocflex__evenement:hover {
 }
 
 .theme {
-  flex: 0 0 85vw;
+  flex: 0 0 75vw;
   display: flex;
   justify-content: center;
   align-items: center;

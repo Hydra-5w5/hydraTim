@@ -54,11 +54,11 @@
  
         @media screen and (min-width : $largeur__bureau) {
           display: flex;
+          align-items: center;
           opacity: 1;
         }
  
         .menu { // ul
-          width: 50%;
           height: 100%;
           background:#457B9D;
           border-bottom-left-radius: 30px ;
@@ -108,7 +108,7 @@
               width: 100%;
               height: 100%;
               padding-top: 50px;
- 
+              
               @media screen and (min-width:$largeur__bureau) {
               display: none;
              }
@@ -120,6 +120,7 @@
                 padding-top: 10px;
                 padding-bottom: 10px;
                 margin-bottom: 20px;
+
  
                 @media screen and (min-width:$largeur__bureau) {
                   color: #457B9D;
@@ -137,10 +138,12 @@
           }
  
         } // FIN ul
+
  
         @media screen and (min-width:$largeur__bureau) {
  
           .futur__etudiants:hover .sub-menu {
+
             display: flex;
             flex-direction:column;
             align-items: left;
@@ -156,7 +159,9 @@
             height: 300%;
           }
           
+
         }
+
        
     
       } // FIN navigation

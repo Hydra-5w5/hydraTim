@@ -10,7 +10,8 @@
   height: 300px;
   margin-bottom: 10px;
   cursor: pointer;
-
+  z-index: 2;
+  
   @media screen and (min-width : $largeur__tablette) {
     flex: 0 0 calc((85vw / 2) - 20px);
   }

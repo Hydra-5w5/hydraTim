@@ -1,28 +1,8 @@
-<?php 
-  if (get_queried_object()) {
-    $category = get_queried_object();
-    // Correspondance entre les catégories et les noms de menu
-    $menu_correspondance = array(
-    'etudiants' => 'menu-etudiants',
-    'cours' => 'menu-etudiants',
-    'profs' => 'menu-etudiants',
-    'futur' => 'menu-etudiants',
-    'temoignage' => 'menu-etudiants',
-    'web' => 'menu-projets',
-    'jeux' => 'menu-projets',
-    'videos' => 'menu-projets',
-    'design' => 'menu-projets',
-    '3d' => 'menu-projets'
-    );
-  }
-?>
-
-
-<div class="vague vague__haut__pdp <?= (array_key_exists($category->slug, $menu_correspondance)) ? 'monter' : 'normal' ?>">
+<div class="vague vague__haut__pdp">
   <svg xmlns="http://www.w3.org/2000/svg" width="1962.458" height="335.774" viewBox="0 0 1962.458 335.774">
     <path id="Tracé_28" data-name="Tracé 28" d="M3948,738s-736.137,72.027-1006.3,218.41-956.156,68.886-956.156,68.886v44.776H3948Z" transform="translate(-1985.542 -738)" fill="#1e5076"/>
     <path id="Tracé_115" data-name="Tracé 115" d="M3948,738s-736.137,54.722-1006.3,165.935-956.156,52.336-956.156,52.336v34.018H3948Z" transform="translate(-1985.542 -654.515)" fill="#457b9d"/>
-    <path id="Tracé_309" data-name="Tracé 309" d="M3948,738s-736.137,25.43-1006.3,77.113-956.156,24.321-956.156,24.321v15.809H3948Z" transform="translate(-1985.542 -519.47)" fill="#a8dadc"/>
+    <path id="Tracé_309" data-name="Tracé 309" d="M3948,738s-736.137,25.43-1006.3,77.113-956.156,24.321-956.156,24.321v15.809H3948Z" transform="translate(-1985.542 -519.47)" fill="#457B9D"/>
   </svg>
 </div>
 

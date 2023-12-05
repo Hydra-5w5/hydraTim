@@ -7,15 +7,15 @@ get_header();
 ?>
 
 <main class="site__main">
-
-    <div class="vagues__general">
-        <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
-    </div>
     <?php 
         if (!is_front_page()) {
             get_template_part('vagues-variantes/vaguesHautPiedPage');
         }
     ?>
+    <div class="vagues__general">
+        <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
+    </div>
+
     <section class="section__categorie">
         <?php
         $category = get_queried_object();
@@ -82,39 +82,6 @@ get_header();
                     "container_class" => "menu__choix", //pour changer le nom de la class
                 ));
             }
-        ?>
-
-        <!-- Affiche les menus secondaires -->
-        <?php
-        if (get_queried_object()) {
-            // $category = get_queried_object();
-            // Correspondance entre les catégories et les noms de menu
-            $menu_correspondance = array(
-            'etudiants' => 'menu-etudiants',
-            'cours' => 'menu-etudiants',
-            'profs' => 'menu-etudiants',
-            'futur' => 'menu-etudiants',
-            'temoignage' => 'menu-etudiants',
-            'web' => 'menu-projets',
-            'jeux' => 'menu-projets',
-            'videos' => 'menu-projets',
-            'design' => 'menu-projets',
-            '3d' => 'menu-projets'
-            // Ajoutez d'autres correspondances au besoin
-            );
-
-            // Vérifiez si la catégorie a une correspondance de menu
-            if (array_key_exists($category->slug, $menu_correspondance) && $category->slug !== 'projets') {
-                $menu_name = $menu_correspondance[$category->slug];
-                echo '<div class="conteneur__menu">';
-                wp_nav_menu(array(
-                "menu" => $menu_name,
-                "container" => "nav",
-                "container_class" => "menu__secondaire"
-                ));
-                echo '</div>';
-            }
-        }
         ?>
 
     </section> 

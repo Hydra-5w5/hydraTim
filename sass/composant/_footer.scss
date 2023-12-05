@@ -1,10 +1,9 @@
 .site__footer {
-  background-color:  #A8DADC;
+  background-color: #457B9D;
   position: relative;
   height: auto;
   overflow: hidden;
   text-align: center;
-  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,11 +26,17 @@
     z-index: 2;
 
     h2 {
-      color: #fdfdfd;
+      color: #ffffff;
     }
   
     a {
-      color: rgb(255, 255, 255);
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    p {
+      color: #ffffff;
+      font-weight: bold;
     }
 
     /************* VERSION TABLETTE *************/
@@ -99,11 +104,11 @@
       text-align: center;
       color: #ffffff;
       padding-bottom: 10px;
-    }
-
-    /************* VERSION PC *************/
-    @media screen and (min-width : $largeur__bureau) {
-      // margin-left: 20%;
+      
+      /************* VERSION PC *************/
+      @media screen and (min-width : $largeur__tablette) {
+        color: #ffffff;
+      }
     }
 
     .menu__icon{//nav
@@ -129,7 +134,12 @@
             width: 50px;
             background-size: cover;
             background-repeat: no-repeat;
-
+            user-select: none;
+            filter: brightness(0.5);
+            transition: filter .5s ease-in-out;
+          }
+          a:hover {
+            filter: none;
           }
         }
 
@@ -137,6 +147,7 @@
         .instagram {
           a {
             background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/Instagram_icon.png");   
+
           }
         }
         /*Pour le li facebook seulement*/ 
@@ -168,5 +179,15 @@
     }
 
   }
+
+}
+
+ /************* BARRE DE RECHERCHE FOOTER *************/
+ .btn__recherche {
+  right: 2em;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 5px;
 
 }

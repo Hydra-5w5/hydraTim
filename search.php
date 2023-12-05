@@ -8,6 +8,8 @@
 get_header();
 ?>
 <main class="site__main">
+   <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
+   <?php get_template_part('vagues-variantes/vaguesHautPiedPage'); ?>
    <section class="recherche__section">
       <h2>Recherche</h2>
      

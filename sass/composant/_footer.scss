@@ -1,5 +1,5 @@
 .site__footer {
-  background-color:  #A8DADC;
+  background-color: #457B9D;
   position: relative;
   height: auto;
   overflow: hidden;
@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
 
+  /************* VERSION PC *************/
   @media screen and (min-width : $largeur__bureau) {
     align-items: flex-start;
     text-align: left;
@@ -20,14 +21,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
+    z-index: 2;
 
     h2 {
-      color: #fdfdfd;
+      color: #ffffff;
     }
   
     a {
-      color: rgb(255, 255, 255);
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    p {
+      color: #ffffff;
+      font-weight: bold;
     }
 
     /************* VERSION TABLETTE *************/
@@ -66,7 +75,6 @@
         border-radius: 30px;
         height: 2.4rem;
         width: 18rem;
-        padding: 1rem;
         border: none;
         color: #ffffff;
         outline: none;
@@ -89,54 +97,101 @@
     }*/
   }
 
-      /**** suivezNous ****/
-      .suivezNous {
-        padding-top: 20px;
+  /**** suivezNous ****/
+  .suivezNous {
+    padding-top: 20px;
+    z-index: 2;
+    width: 100%;
 
-        h2 {
-          color: #ffffff;
-          padding-bottom: 10px;
-        }
-
-        @media screen and (min-width : $largeur__bureau) {
-          margin-left: 20%;
-        }
-
-        .reseaux {
-          width: 20%; // Diminuer la largeur de la div
-          margin: auto; // Centrer la div
-          position: absolute;
-          display: flex;
-          justify-content: center;
-          right: 80px;
-          margin-top: 50px;
-          @media screen and (min-width : $largeur__bureau) {
-            right: 50%;
-            
-          }
-          @media screen and (min-width : $largeur__tablette) {
-            right: 30%;
-            
-          }
-
-          .reseau{
-          
-            margin: 20px;
-          }
-
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      padding-bottom: 10px;
+      
+      /************* VERSION PC *************/
+      @media screen and (min-width : $largeur__tablette) {
+        color: #ffffff;
       }
-        
-          
-        
-      }
+    }
 
-      .vaguesHautPiedPage{
-        position:relative;
-        width: 100%;
+    .menu__icon{//nav
      
-        z-index: 1;
+
+      .menu {// ul
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+      
+        /*Pour tout les les li*/
+        .menu-item {// li
+          list-style-type: none;
+          
+
+          a {
+            // opacity: 0;                   
+            display: flex;
+            color: rgba(0, 0, 0, 0);
+            height: 50px;
+            width: 50px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            user-select: none;
+            filter: brightness(0.5);
+            transition: filter .5s ease-in-out;
+          }
+          a:hover {
+            filter: none;
+          }
+        }
+
+        /*Pour le li instagram seulement*/ 
+        .instagram {
+          a {
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/Instagram_icon.png");   
+
+          }
+        }
+        /*Pour le li facebook seulement*/ 
+        .facebook {
+          a {
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/2021_Facebook_icon.svg_.png");
+          }
+        }
+        .linkedin{
+          a {
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/linkedin-icon-1024x1024-net2o24e.png");   
+          }
+        }
+        /*Pour le li facebook seulement*/ 
+        .youtube{
+          a {
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/youtube-round-2-icon-2048x2048-ayjtmdvq.png");
+          }
+        }
+        .behance{
+          a {
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/145799.png");   
+          }
+        }
        
-      }
+      
+      }// fin du ul
+
+    }
+
+  }
+
+}
+
+ /************* BARRE DE RECHERCHE FOOTER *************/
+ .btn__recherche {
+  right: 2em;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 5px;
 
 }
 

@@ -1,5 +1,5 @@
 (function(){
-  // selection les articles de chachque session
+  /**************** selection les articles de chachque session ****************/
   let sessions = [
     document.querySelectorAll(".session1"),
     document.querySelectorAll(".session2"),
@@ -43,10 +43,5 @@
       });
     } 
   });
-
-  // Sélectionne le premier bouton par défaut
-  if (boutons[0]) { // Vérifie si le premier bouton existe
-    boutons[0].click();
-  }
 
 })();

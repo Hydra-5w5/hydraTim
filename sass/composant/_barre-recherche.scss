@@ -9,7 +9,6 @@ body {
   width: 100%;
   position: relative;
   display: flex;
-  margin-bottom: 20px;
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
 }
@@ -27,75 +26,42 @@ body {
     text-align: center;
   }
 
-    .recherche__input {
-        border: 3px solid #00B4CC;
-        border-right: none;
-        padding: 5px;
-        height: 36px; /* Ajusté à la taille du bouton */
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        color: #9DBFAF;
-        width: 70rem;
-        height: 3rem;
-      
-        &:focus {
-          color: #00B4CC;
-        }
-      }
-
-      
-      
-       .btn__recherche {
-        right: 2em;
-        position: relative;
-        width: 54px;
-        height: 50px;
-        border: 5px solid #00B4CC;
-        background: #00B4CC;
-        text-align: center;
-        color: #fff;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        font-size: 20px;
-        border-radius: 35%;
+  .recherche__input {
+    border: 1px solid #457B9D;
+    border-right: none;
+    padding: 5px;
+    height: 36px; /* Ajusté à la taille du bouton */
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #9DBFAF;
+    width: 70rem;
+    height: 4rem;
+  
+    &:focus {
+      color: #00B4CC;
     }
-      /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
-      .wrap {
-        width: 30%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+  }
+    
+  .btn__recherche {
+    right: 2rem;
+    position: relative;
+    padding: 20px;
+    height: 4rem;
+    border: 1px solid #A8DADC;
+    background:#A8DADC;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
+  .wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-      /* Arrangement des suggestions barre de recherche */
-
-      article {
-        background-color: #00B4CC; /* Couleur du fond */
-        border: 1px solid #00B4CC; /* Bordure de 1 pixel solide de la même couleur */
-        border-radius: 15px; /* Rayon de 5 pixels pour le fond arrondi */
-        padding: 15px; /* Ajoute un peu d'espace intérieur pour le contenu */
-        width: 70%;
-        margin: 20px auto;
-        color: #fff; /* Couleur du texte */
-      }
-      
-      article h5 {
-        margin-bottom: 5px; /* Ajoute de l'espace en bas entre le titre et le contenu */
-      }
-      
-      // article hr {
-      //   margin-top: 5px; /* Ajoute de l'espace en haut de la ligne horizontale */
-      // }
-      
-      .article:first-child {
-        margin-top: 20px; /* Ajoute de l'espace en haut du premier article */
-      }
-
-      .article:last-child {
-        margin-bottom: 20px; /* Ajoute de l'espace en bas entre le dernier article et la section pied de page */
-      }
-      
-
-    }	
-
+}	

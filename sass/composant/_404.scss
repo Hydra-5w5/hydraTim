@@ -1,6 +1,17 @@
 .site__erreur{
+  height: 70vh;
 
-         
+
+  .info__erreur {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+
   h1 {
     font-size: 7em;
     text-align: center;

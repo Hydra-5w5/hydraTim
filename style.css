@@ -996,6 +996,12 @@ a {
 
 .recherche__section {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  gap: 20px;
   min-height: 100vh;
   position: relative;
   z-index: 2;
@@ -1030,16 +1036,30 @@ a {
   padding: 8px;
   cursor: pointer;
 }
+.recherche__section article {
+  background-color: #457B9D;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 15px;
+  padding: 8px;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .recherche__section article {
+    width: 60%;
+  }
+}
+.recherche__section article a {
+  display: block;
+  padding: 30px;
+}
+.recherche__section article hr {
+  display: none;
+}
 .recherche__section article h5 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+  font-size: 1.4rem;
 }
 .recherche__section article p {
   font-size: 1rem;
-  margin-bottom: 10px;
-}
-.recherche__section article hr {
-  margin-bottom: 20px;
 }
 
 body {
@@ -1067,32 +1087,31 @@ body {
   text-align: center;
 }
 .site__main .recherche__input {
-  border: 3px solid #00B4CC;
+  border: 1px solid #457B9D;
   border-right: none;
   padding: 5px;
   height: 36px; /* Ajusté à la taille du bouton */
-  border-radius: 5px 0 0 5px;
+  border-radius: 20px 0 0 20px;
   outline: none;
   color: #9DBFAF;
   width: 70rem;
-  height: 3rem;
+  height: 4rem;
 }
 .site__main .recherche__input:focus {
   color: #00B4CC;
 }
 .site__main .btn__recherche {
-  right: 2em;
+  right: 2rem;
   position: relative;
-  width: 54px;
-  height: 50px;
-  border: 5px solid #00B4CC;
-  background: #00B4CC;
+  padding: 20px;
+  height: 4rem;
+  border: 1px solid #A8DADC;
+  background: #A8DADC;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
-  border-radius: 35%;
+  border-radius: 20px;
 }
 .site__main .wrap {
   width: 30%;
@@ -1235,7 +1254,11 @@ body {
 .site__footer .contenu__footer .recherche__footer input {
   background-color: #1D3557;
   border-radius: 30px;
+  height: 2.4rem;
+  width: 18rem;
   border: none;
+  color: #ffffff;
+  outline: none;
 }
 .site__footer .suivezNous {
   padding-top: 20px;

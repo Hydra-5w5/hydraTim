@@ -1,5 +1,11 @@
 .recherche__section {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  gap: 20px;
   min-height: 100vh;
   position: relative;
   z-index: 2;
@@ -40,18 +46,34 @@
   }
 
   article {
+    background-color: #457B9D;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
+    padding: 8px;
+    width: 90%;
+
+    @media screen and (min-width : $largeur__tablette) {
+      width: 60%;
+    }
+
+    a {
+      display: block;
+      padding: 30px;
+    }
+
+    hr {
+      display: none;
+    }
+
     h5 {
-      font-size: 1.2rem;
-      margin-bottom: 5px;
+      font-size: 1.4rem;
+      // margin-bottom: 5px;
     }
 
     p {
       font-size: 1rem;
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
     }
-
-    hr {
-      margin-bottom: 20px;
-    }
+    
   }
 }

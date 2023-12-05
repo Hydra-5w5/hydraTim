@@ -21,8 +21,8 @@ get_header();
          while(have_posts()): the_post(); ?>
          <article>
             <h5><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5>
-            <?php echo wp_trim_words(get_the_excerpt(), 60) ?>
-            <hr>
+            <!-- <?php echo wp_trim_words(get_the_excerpt(), 60) ?>
+            <hr> -->
          </article>
          <?php endwhile; ?>
       <?php endif; ?>

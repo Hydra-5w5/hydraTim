@@ -666,6 +666,7 @@ a {
   align-items: center;
   padding: 5px;
   border-radius: 15px;
+  transition: transform 0.3s ease;
 }
 .section__presentation .section__info .conteneur__btn .btn a {
   text-align: center;
@@ -673,13 +674,31 @@ a {
   font-weight: bold;
   font-size: 1.2rem;
 }
+.section__presentation .section__info .conteneur__btn .btn:hover {
+  transform: scale(1.2);
+}
 .section__presentation .affiche__img {
   z-index: 2;
   height: calc(100vh - 100px);
   width: 100%;
+
   display: none;
   justify-content: center;
   background-color: #0C2447;
+  
+    height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 425px) {
+  .section__presentation .affiche__img img {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section__presentation .affiche__img img {
+    display: none;
+  }
+
 }
 .section__presentation .affiche__img img {
   width: 80%;
@@ -1121,6 +1140,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
+
 .site__erreur {
   height: 70vh;
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
@@ -1338,6 +1358,9 @@ body {
   .conteneur__menu {
     height: 75px;
   }
+  position: absolute;
+  top: 0;
+
 }
 .conteneur__menu .menu__secondaire .menu {
   width: 100%;
@@ -1408,6 +1431,7 @@ body {
   background: #457B9D;
   border-radius: 10px;
 }
+
 .blocflex__galerie ::-webkit-scrollbar-thumb:hover, .thematiques-cours ::-webkit-scrollbar-thumb:hover {
   background: #4080a8;
 }
@@ -1432,6 +1456,7 @@ body {
 }
 
 .boite__modale, .info__projet {
+
   transform: scale(0) translate(-50%, -50%);
   transform-origin: 50px 50px;
   position: absolute;
@@ -1763,6 +1788,7 @@ a .blocflex__evenement {
   border-radius: 30px;
   overflow: hidden;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
   transition: transform 0.3s ease;
 }
 a .blocflex__evenement .blocflex__images {
@@ -1787,6 +1813,7 @@ a .blocflex__evenement .blocflex__description p {
 }
 a .blocflex__evenement:hover {
   transform: scale(1.1);
+
 }
 
 /******************************** galerie ***********************************/
@@ -1850,6 +1877,7 @@ a .blocflex__evenement:hover {
     align-items: flex-end;
     gap: 0;
   }
+
 }
 .blocflex__profs .sujet__profs {
   background-color: #154569;
@@ -2103,6 +2131,7 @@ a .blocflex__evenement:hover {
     align-items: center;
     height: 100%;
   }
+
 }
 
 .wp-block-embed figcaption {
@@ -2207,4 +2236,5 @@ a .blocflex__evenement:hover {
   color: white;
   font-family: "Poppins", sans-serif;
   position: relative;
+
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-.theme {
+.theme,.theme-nom,.theme-description {
   flex: 0 0 calc(75vw / 1);
   display: flex;
   justify-content: center;
@@ -10,7 +10,9 @@
   height: 300px;
   margin-bottom: 10px;
   cursor: pointer;
-
+  perspective: 600px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
   @media screen and (min-width : $largeur__tablette) {
     flex: 0 0 calc((85vw / 2) - 20px);
   }
@@ -26,4 +28,19 @@
   p {
     display: none;
   }
+  .theme-nom,.theme-description{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .theme-nom{
+  backface-visibility: hidden;
 }
+.theme-description{
+  transform: rotateY( 180deg );
+  backface-visibility: hidden;
+}
+}.est-tourne{
+  transform: rotateY(180deg);
+}
+

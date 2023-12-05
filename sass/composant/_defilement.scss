@@ -23,6 +23,9 @@
       background: #4080a8; 
   }
 }
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
 
 .conteneur__projet {
   ::-webkit-scrollbar {

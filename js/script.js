@@ -82,7 +82,7 @@
       }
     });
   }
-
+///////////////// ANIMATION DE LA SECTION "THEMATIQUES" DE LA PAGE D'ACCUEIL */
   if(document.querySelector('.theme')){
     document.querySelectorAll('.theme').forEach(theme => {
       theme.addEventListener('mousedown', function() {

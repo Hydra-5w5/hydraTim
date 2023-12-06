@@ -1772,6 +1772,7 @@ a .blocflex__evenement:hover {
   border-radius: 30px;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 .blocflex__profs .sujet__profs {
   background-color: #154569;
@@ -1880,6 +1881,7 @@ a .blocflex__evenement:hover {
 }
 
 .selectionne {
+  position: relative;
   width: 91%;
   height: 700px;
 }
@@ -1900,6 +1902,16 @@ a .blocflex__evenement:hover {
 }
 .selectionne .photo__profs {
   width: 50%;
+}
+
+.droite {
+  left: -100px;
+  transform: translate(100px);
+}
+
+.gauche {
+  left: 100px;
+  transform: translate(-100px);
 }
 
 .non-selectionne {

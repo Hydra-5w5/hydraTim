@@ -135,7 +135,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             user-select: none;
-            filter: brightness(0.5);
+            filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='white'><feColorMatrix type='matrix' values='1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 0'/></filter></svg>#white");
             transition: filter .5s ease-in-out;
           }
           a:hover {

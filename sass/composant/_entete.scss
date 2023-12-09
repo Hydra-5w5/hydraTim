@@ -92,10 +92,29 @@
               font-size: 1rem;
               font-weight: bold;
               margin: 20px;
-              transition: color 1s ease;
+              transition: color 0.3s ease, border-bottom 0.3s ease;
+              
             }
- 
-            
+            a::before {
+              content: '';
+              position: absolute;
+              width: 80%;
+              height: 3px;
+              bottom: 0;
+              left: 0;
+              background-color: #A8DADC;
+              visibility: hidden;
+              transform: scaleX(0);
+              transition: transform 0.3s ease, visibility 0.3s ease;
+            }
+            a:hover::before {
+              visibility: visible;
+              transform: scaleX(1);
+            }
+
+          a:hover {
+            color: #E63946;
+          }
  
             .sub-menu {
               

@@ -44,4 +44,18 @@
     } 
   });
 
+  ///////////////// ANIMATION DE LA SECTION "THEMATIQUES" DE LA PAGE D'ACCUEIL */
+  if(document.querySelector('.theme')){
+    document.querySelectorAll('.theme').forEach(theme => {
+      theme.addEventListener('mousedown', function() {
+        theme.classList.toggle('est-tourne');
+        
+        if(theme.classList.contains('est-tourne')){
+          console.log("est tourner");
+        }
+          
+      });
+    });
+  }
+
 })();

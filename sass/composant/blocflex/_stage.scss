@@ -25,6 +25,7 @@
     line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
     //padding-left: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 50%;
@@ -36,12 +37,12 @@
     }
 
     p {
-      text-align: center;
-
+      text-align: left;
       font-size: 1rem;
+      padding: 15px;
 
       @media screen and (min-width: $largeur__tablette) {
-       font-size: 1.5rem;
+       font-size: 1.3rem;
       }
     }
 

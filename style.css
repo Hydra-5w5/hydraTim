@@ -21,7 +21,6 @@ Text Domain: hydra-5w5
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -925,6 +924,12 @@ a {
 .section__categorie .class__projets {
   display: none;
 }
+.section__categorie .class__evenements {
+  padding: 0 10px 100px 10px;
+}
+.section__categorie .class__galerie {
+  padding-bottom: 200px;
+}
 .section__categorie .btns__sessions {
   display: flex;
   justify-content: space-between;
@@ -960,11 +965,17 @@ a {
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
+  transition: all 0.3s ease-in-out;
 }
 .section__categorie .btns__sessions .btn__session h4 {
   padding: 5px;
   color: #154569;
   font-size: 0.9rem;
+  transition: all 1s ease-in-out;
+}
+.section__categorie .btns__sessions .btn__session h4:hover {
+  color: #4b95c3;
+  transform: scale(1.1);
 }
 @media screen and (min-width: 768px) {
   .section__categorie .btns__sessions .btn__session h4 {
@@ -977,7 +988,8 @@ a {
   }
 }
 .section__categorie .btns__sessions .selectionner h4 {
-  color: #457B9D;
+  color: #61a8d4;
+  transform: scale(1.3);
 }
 .section__categorie .session1 {
   display: flex;
@@ -1066,11 +1078,6 @@ a {
   font-size: 1rem;
 }
 
-body {
-  background: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
-}
-
 .recherche {
   width: 100%;
   position: relative;
@@ -1083,7 +1090,6 @@ body {
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
 }
 .site__main h2 {
-  font-size: 5em;
   text-align: center;
 }
 .site__main h6 {
@@ -1333,6 +1339,15 @@ body {
   right: 5px;
 }
 
+/************* BARRE DE RECHERCHE FOOTER *************/
+.btn__recherche {
+  right: 2em;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 5px;
+}
+
 .conteneur__menu {
   background-color: #457B9D;
   align-self: flex-end;
@@ -1424,55 +1439,63 @@ body {
 .conteneur__projet ::-webkit-scrollbar {
   width: 20px;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 .conteneur__projet ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 .conteneur__projet ::-webkit-scrollbar-thumb {
-  background: #6898b6;
+  background: #A8DADC;
+  border-radius: 10px;
 }
 .conteneur__projet ::-webkit-scrollbar-thumb:hover {
-  background: #4080a8;
+  background: #91c3c5;
 }
 
 .boite__modale, .info__projet {
   transform: scale(0) translate(-50%, -50%);
   transform-origin: 50px 50px;
-  position: absolute;
+  position: fixed;
   transition: transform 0.5s;
   width: 75%;
   padding: 20px;
-  background-color: #A8DADC;
+  background-color: #457B9D;
   border-radius: 30px;
-  border: #457B9D 3px solid;
+  border: #326889 3px solid;
   z-index: 1200000;
   top: 50%;
   left: 50%;
 }
+@media screen and (min-width: 1080px) {
+  .boite__modale, .info__projet {
+    width: 950px;
+  }
+}
 .boite__modale h2, .info__projet h2 {
-  color: #457B9D;
+  color: #ffffff;
   padding-bottom: 50px;
 }
 .boite__modale h4, .info__projet h4 {
   color: #F1FAEE;
 }
 .boite__modale .btn__fermer, .info__projet .btn__fermer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
+  padding: 5px;
   color: #F1FAEE;
   font-size: 3rem;
   cursor: pointer;
   margin: 0;
+  display: flex;
+  justify-content: end;
 }
 
-.info__projet {
-  max-height: 70vh;
-  overflow-y: scroll;
-}
 .info__projet .btn__fermer {
   display: none;
+}
+.info__projet .div__scroll {
+  max-height: 70vh;
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
 }
 
 .superposition {
@@ -1520,7 +1543,7 @@ body {
   width: 300px;
   height: 375px;
   background-repeat: no-repeat;
-  background-size: 200px 200px;
+  background-size: 70% auto;
   background-position: center;
   transition: transform 0.3s ease;
 }
@@ -1723,12 +1746,13 @@ body {
   }
 }
 .blocflex__etudiants .cat__content p {
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
+  padding: 15px;
 }
 @media screen and (min-width: 768px) {
   .blocflex__etudiants .cat__content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .blocflex__etudiants .cat__image {
@@ -1761,7 +1785,7 @@ body {
 a .blocflex__evenement {
   display: flex;
   flex-direction: column;
-  background-color: #457B9D;
+  background-color: #154569;
   width: 400px;
   height: 325px;
   border-radius: 30px;
@@ -1787,11 +1811,7 @@ a .blocflex__evenement .blocflex__description {
   padding: 10px;
 }
 a .blocflex__evenement .blocflex__description p {
-  text-align: center;
-}
-a .blocflex__evenement:hover {
-  transform: scale(1.2);
-  background-color: #457B9D;
+  text-align: left;
 }
 a .blocflex__evenement:hover {
   transform: scale(1.1);
@@ -2013,13 +2033,19 @@ a .blocflex__evenement:hover {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 375px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   overflow: hidden;
   cursor: pointer;
   justify-content: space-between;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 15px;
+}
+@media screen and (min-width: 500px) {
+  .blocflex__projets .base__projet {
+    width: 375px;
+    height: 250px;
+  }
 }
 .blocflex__projets .base__projet p {
   display: flex;
@@ -2067,6 +2093,7 @@ a .blocflex__evenement:hover {
 .blocflex__stage .cat__content {
   line-height: 2; /* Augmentez cette valeur pour un espacement plus grand entre les lignes */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 50%;
@@ -2079,12 +2106,13 @@ a .blocflex__evenement:hover {
   }
 }
 .blocflex__stage .cat__content p {
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
+  padding: 15px;
 }
 @media screen and (min-width: 768px) {
   .blocflex__stage .cat__content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .blocflex__stage .cat__image {

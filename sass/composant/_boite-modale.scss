@@ -1,20 +1,24 @@
 .boite__modale, .info__projet {
   transform: scale(0) translate(-50%, -50%);
   transform-origin: 50px 50px;
-  position: absolute;
+  position: fixed;
   transition: transform .5s;
   width: 75%;
-  // height: 65%;
+  // height: 100%;
   padding: 20px;
-  background-color: #A8DADC;
+  background-color: #457B9D;
   border-radius: 30px;
-  border: #457B9D 3px solid;
+  border: #326889 3px solid;
   z-index: 1200000;
   top: 50%;
   left: 50%;
 
+  @media screen and (min-width: $largeur__bureau) {
+    width: 950px;
+  }
+
   h2 {
-    color: #457B9D;
+    color: #ffffff;
     padding-bottom: 50px;
   }
 
@@ -23,27 +27,33 @@
   }
 
   .btn__fermer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
+    padding: 5px;
     color: #F1FAEE;
     font-size: 3rem;
     cursor: pointer;
     margin: 0;
+    display: flex;
+    justify-content: end;
   }
 
 }
 .info__projet {
-  max-height: 70vh;
-  overflow-y: scroll;
+  // max-height: 70vh;
+  // overflow-y: scroll;
+
   .btn__fermer {
     display: none;
   }
-  // .fff {
-  //   // overflow-y: scroll;
-  //   height: 100%;
-  // }
+  .div__scroll {
+    max-height: 70vh;
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 10px; // Ajoutez cette ligne
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
 }
 
 .superposition {

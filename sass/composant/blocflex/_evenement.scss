@@ -4,7 +4,7 @@ a {
   .blocflex__evenement {
     display: flex;
     flex-direction: column;
-    background-color: #457B9D;
+    background-color: #154569;
     width: 400px;
     height: 325px;
     border-radius: 30px;
@@ -36,16 +36,12 @@ a {
       //h6 {}
   
       p {
-        text-align: center;
+        text-align: left;
       }
   
     }
 
     
-  }
-  .blocflex__evenement:hover {
-    transform: scale(1.2); 
-    background-color: #457B9D;
   }
 
   .blocflex__evenement:hover {

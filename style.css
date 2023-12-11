@@ -803,13 +803,18 @@ a {
 }
 
 .dans__article {
+  border: solid 5px white;
+  border-radius: 15%;
   min-height: 50vh;
   position: relative;
-  padding-top: 40px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 3rem;
+}
+.dans__article img {
+  padding-left: 20px;
 }
 .dans__article div {
   display: flex;

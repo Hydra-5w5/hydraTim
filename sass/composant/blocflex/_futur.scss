@@ -1,0 +1,49 @@
+.blocflex__futur {
+  background-color: #154569;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 80vw;
+  padding: 20px;
+  border-radius: 15px;
+
+  @media screen and (min-width : $largeur__tablette) {
+    width: 70vw;
+  }
+  @media screen and (min-width : $grand__ecran) {
+    width: 700px;
+    height: 400px;
+  }
+
+  h2 {
+
+  }
+
+  .info__futur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      color: #A8DADC;
+      font-weight: bold;
+      text-align: center;
+      font-size: .7rem;
+
+      @media screen and (min-width : $largeur__tablette) {
+        font-size: 1rem;
+      }
+
+    }
+  
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li {
+
+      }
+    }
+
+  }
+
+
+}

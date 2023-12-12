@@ -1,59 +1,58 @@
-.wp-block-embed figcaption {
-    width: auto;
-    height: 1.5em;
-    background-color: #F1FAEE;
-    color: #1E5076;
-    margin-top: -0.3em; 
-    padding-top: 0.5em;
-    font-size: .7rem;
+.blocflex__temoignage {
+    padding: 20px;
+    height: 275px;
+    background-color: #154569;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
 
-    text-align: center;
-
-    @media screen and (min-width: $largeur__tablette) {
-        width: 100%;
-        padding-left: none;
-        font-size: 1rem;
-    }
-    @media screen and (min-width: $largeur__bureau) {
-        width:100%;
-        padding-left: none;
-
-    }
-    
-}
-
-.blocflex__temoignage{
-    width: 100%;
-}
-
-.class__temoignage{
-    width: 24em;
-
-    @media screen and (min-width: $largeur__tablette) {
-        width: 45em;
-        
-    }
-    @media screen and (min-width: $largeur__bureau) {
-        width: 60em;
+    @media screen and (min-width : $largeur__mobile) {
+        width: 80vw;
     }
 
-    figure{
-        
-        @media screen and (min-width: $largeur__tablette) {
-            width: 45em;
-            display: block;
+    @media screen and (min-width : $largeur__tablette) {
+        width: 70vw;
+    }
+
+    @media screen and (min-width : $grand__ecran) {
+       width: 900px;
+    }
+
+    .blocflex__temoignage__img {
+        position: absolute;
+        top: -65px;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 50%;
+        border: 3px solid #A8DADC;
+        height: 90px;
+        width: 90px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
             width: 100%;
+            object-fit: cover;
         }
-    }
-    
-    .btn__gauche, .btn__droite{
-        display: none;
 
-        @media screen and (min-width: $largeur__bureau) {
-            display: block;
-            
-        }
     }
 
-    
+    h2 {
+        margin-top: 30px;
+    }
+
+    .poste {
+        font-size: .9rem;
+        color: #A8DADC;
+        font-weight: bold;
+    }
+
+    p {
+
+    }
 }

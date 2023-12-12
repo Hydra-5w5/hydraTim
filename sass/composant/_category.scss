@@ -145,6 +145,16 @@
     display: none;
   }	
 
+  // SECTION EVENEMENTS
+  .class__evenements {
+    padding: 0 10px 100px 10px;
+  }	
+
+  // SECTION GALERIE
+  .class__galerie {
+    padding-bottom: 200px;
+  }	
+
   // LES BOUTONS POUR LES SESSIONS
   .btns__sessions{
     display: flex;
@@ -184,12 +194,20 @@
       border-radius: 10px;
       cursor: pointer;
       user-select: none;
+      transition: all .3s ease-in-out;
+
 
 
       h4{
         padding: 5px;
         color: #154569;
         font-size: .9rem;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+          color: #4b95c3;
+          transform: scale(1.1);
+        }
 
         @media screen and (min-width: $largeur__tablette) {
           font-size: 1.4rem;
@@ -206,7 +224,8 @@
     .selectionner {
 
       h4{
-        color: #457B9D;
+        color: #61a8d4;
+        transform: scale(1.3);
       }
 
     }

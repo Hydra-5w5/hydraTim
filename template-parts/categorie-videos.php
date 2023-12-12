@@ -7,8 +7,10 @@
   </article>
   <div class="info__projet">
     <div class="btn__fermer">&#10005;</div>
-    <h2><?php the_title(); ?></h2>
-    <div><?php the_content(); ?></div>
+    <div class="div__scroll">
+      <h2><?php the_title(); ?></h2>
+      <div><?php the_content(); ?></div>
+    </div>
   </div>
 </div>
 <div class="superposition"></div>

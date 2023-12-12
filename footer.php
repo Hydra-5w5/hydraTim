@@ -16,7 +16,7 @@
       <h2>Nous Rejoindre</h2>
       <div class="liste__joindre">
         <p><a href="#">Inscription</a></p>
-        <p><a href="#">Visite Virtuelle</a></p>
+        <p><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">informations supplémentaire</a></p>
         <p><a href="#">Porte Ouverte</a></p>
       </div>
     </div>

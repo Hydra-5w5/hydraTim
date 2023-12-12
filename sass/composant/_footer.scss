@@ -138,41 +138,40 @@
             background-size: cover;
             background-repeat: no-repeat;
             user-select: none;
-            filter: brightness(0.5);
-            transition: filter .5s ease-in-out;
+            transition: transform .5s ease-in-out;
           }
           a:hover {
-            filter: none;
+            transform: scale(1.1);
           }
         }
 
         /*Pour le li instagram seulement*/ 
         .instagram {
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/Instagram_icon.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/insta.png");   
 
           }
         }
         /*Pour le li facebook seulement*/ 
         .facebook {
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/2021_Facebook_icon.svg_.png");
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/facebook.png");
           }
         }
         .linkedin{
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/linkedin-icon-1024x1024-net2o24e.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/linkedin.png");   
           }
         }
         /*Pour le li facebook seulement*/ 
         .youtube{
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/youtube-round-2-icon-2048x2048-ayjtmdvq.png");
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/ytb.png");
           }
         }
         .behance{
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/145799.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/behance.png");   
           }
         }
        
@@ -195,17 +194,4 @@
 
 }
 
-
- /************* BARRE DE RECHERCHE FOOTER *************/
-
-      
-       .btn__recherche {
-        
-        right: 2em;
-        position: absolute;
-        background: none;
-        border: none;
-        right: 5px;
-
-    }
   

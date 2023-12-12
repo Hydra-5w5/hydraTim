@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-body {
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
-}
+// body {
+//   background: #f2f2f2;
+//   font-family: 'Open Sans', sans-serif;
+// }
 
 .recherche {
   width: 100%;
@@ -17,7 +17,7 @@ body {
 .site__main {
 
   h2 {
-    font-size: 5em;
+    // font-size: 5em;
     text-align: center;
   }
   
@@ -27,34 +27,33 @@ body {
   }
 
   .recherche__input {
-      border: 3px solid #00B4CC;
-      border-right: none;
-      padding: 5px;
-      height: 36px; /* Ajusté à la taille du bouton */
-      border-radius: 5px 0 0 5px;
-      outline: none;
-      color: #9DBFAF;
-      width: 70rem;
-      height: 3rem;
-    
-      &:focus {
-        color: #00B4CC;
-      }
+    border: 1px solid #457B9D;
+    border-right: none;
+    padding: 5px;
+    height: 36px; /* Ajusté à la taille du bouton */
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #9DBFAF;
+    width: 70rem;
+    height: 4rem;
+  
+    &:focus {
+      color: #00B4CC;
     }
+  }
     
   .btn__recherche {
-    right: 2em;
+    right: 2rem;
     position: relative;
-    width: 54px;
-    height: 50px;
-    border: 5px solid #00B4CC;
-    background: #00B4CC;
+    padding: 20px;
+    height: 4rem;
+    border: 1px solid #A8DADC;
+    background:#A8DADC;
     text-align: center;
     color: #fff;
-    border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
-    border-radius: 35%;
+    border-radius: 20px;
   }
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
   .wrap {

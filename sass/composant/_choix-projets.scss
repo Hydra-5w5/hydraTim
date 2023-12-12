@@ -29,12 +29,12 @@
         list-style: none;
         background-color: #1E5076;
         // border: 1px rgb(30, 23, 99) solid;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         width: 300px;
         height: 375px;
         
         background-repeat: no-repeat;
-        background-size: 200px 200px;
+        background-size: 70% auto;
         background-position: center;
         
         transition: transform 0.3s ease;

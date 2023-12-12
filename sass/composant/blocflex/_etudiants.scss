@@ -10,7 +10,7 @@
   // background-color: #457B9D;
   // border: 2px solid #ffffff;
   background-color: #154569;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
   border-radius: 30px;
 
@@ -34,11 +34,12 @@
     }
 
     p {
-      text-align: center;
+      text-align: left;
       font-size: 1rem;
+      padding: 15px;
 
       @media screen and (min-width: $largeur__tablette) {
-       font-size: 1.5rem;
+       font-size: 1.3rem;
       }
     }
 

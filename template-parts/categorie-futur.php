@@ -1,10 +1,4 @@
-<?php 
-  /**
-  * «template part» gabarit categorie-galerie permet d'afficher la galerie d'un article
-  * cet article contient uniquement une galerie
-  *
-  */
-?>
-<article class="blocflex__temoignage">
-    <div><?php the_content(); ?></div>
+<article class="blocflex__futur">
+    <h2><?php the_title(); ?></h2>
+    <div class="info__futur"><?php the_content(); ?></div>
 </article>

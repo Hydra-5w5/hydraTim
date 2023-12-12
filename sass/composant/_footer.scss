@@ -73,8 +73,11 @@
       input {
         background-color: #1D3557;
         border-radius: 30px;
+        height: 2.4rem;
+        width: 18rem;
         border: none;
-
+        color: #ffffff;
+        outline: none;
       }
 
     }
@@ -135,41 +138,42 @@
             background-size: cover;
             background-repeat: no-repeat;
             user-select: none;
-            filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='white'><feColorMatrix type='matrix' values='1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 0'/></filter></svg>#white");
-            transition: filter .5s ease-in-out;
+
+            transition: transform .5s ease-in-out;
+
           }
           a:hover {
-            filter: none;
+            transform: scale(1.1);
           }
         }
 
         /*Pour le li instagram seulement*/ 
         .instagram {
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/Instagram_icon.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/insta.png");   
 
           }
         }
         /*Pour le li facebook seulement*/ 
         .facebook {
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/2021_Facebook_icon.svg_.png");
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/facebook.png");
           }
         }
         .linkedin{
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/linkedin-icon-1024x1024-net2o24e.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/linkedin.png");   
           }
         }
         /*Pour le li facebook seulement*/ 
         .youtube{
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/youtube-round-2-icon-2048x2048-ayjtmdvq.png");
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/ytb.png");
           }
         }
         .behance{
           a {
-            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/145799.png");   
+            background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/12/behance.png");   
           }
         }
        
@@ -191,3 +195,5 @@
   right: 5px;
 
 }
+
+  

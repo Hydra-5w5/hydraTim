@@ -44,4 +44,28 @@
     } 
   });
 
+  ///////////////// ANIMATION DE LA SECTION "THEMATIQUES" DE LA PAGE D'ACCUEIL */
+  if(document.querySelector('.theme')){
+    document.querySelectorAll('.theme').forEach(theme => {
+      theme.addEventListener('mousedown', function() {
+        theme.classList.toggle('est-tourne');
+        
+        if(theme.classList.contains('est-tourne')){
+          console.log("est tourner");
+        }
+          
+      });
+    });
+  }
+
+  let divTheme = document.querySelector('.cours'); // Remplacez '.cours' par le sélecteur de votre divTheme
+
+  if (divTheme) {
+    divTheme.addEventListener('scroll', function() {
+      if (divTheme.scrollLeft + divTheme.offsetWidth >= divTheme.scrollWidth) {
+        divTheme.scrollLeft = 0;
+      }
+    });
+  }
+
 })();

@@ -40,10 +40,13 @@
       align-self: center;
 
       @media screen and (min-width : $largeur__bureau) {
+
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
         border-left: none;
+
+
       }
 
       /* Menu dans l'entête */
@@ -56,6 +59,7 @@
           align-items: center;
           opacity: 1;
         }
+
 
         @keyframes slideIn {
           0% {
@@ -70,6 +74,33 @@
           background: #457B9D;
           border-bottom-left-radius: 30px;
           border-bottom-right-radius: 30px;
+
+ 
+
+        @keyframes slideIn {
+          0% {
+              transform: translateX(100%);
+          }
+          100% {
+              transform: translateX(0);
+          }
+      }
+      
+      .menu { // ul
+          // ... autres styles ...
+
+          @media screen and (max-width : $largeur__bureau) {
+            animation: slideIn 0.5s forwards;
+          }
+          
+      }
+        .menu { // ul
+          width: 50%;
+          height: 120%;
+          background:#457B9D;
+          border-bottom-left-radius: 30px ;
+          border-bottom-right-radius: 30px ;
+
           display: flex;
           list-style-type: none;
           flex-direction: column;
@@ -77,8 +108,10 @@
           gap: 20px;
           padding: 10px;
 
+
           top: 5rem;
           right: 0;
+
 
           @media screen and (min-width:$largeur__bureau) {
             background: none;
@@ -126,6 +159,7 @@
             .sub-menu { // Sous-menu
               flex-direction: column;
               justify-content: space-between;
+
               align-items: center;
               // position: r;
               top: 38px;
@@ -136,6 +170,7 @@
               // padding-top: 50px;
               padding-left: 0;
               // right: 20px;
+
 
               @media screen and (min-width:$largeur__bureau) {
                 display: none;
@@ -184,12 +219,14 @@
           /* Styles pour le survol sur les futurs étudiants */
           .futur__etudiants:hover .sub-menu {
 
+
             width: 100%;
             height: 250px;
             display: flex;
             flex-direction: column;
             // align-items: center;
             justify-content: space-around;
+
             background-color: #F1FAEE;
             border: 3px solid #457B9D;
             border-radius: 0 0 30px 30px ;
@@ -197,6 +234,12 @@
             z-index: 10;
             opacity: 1;
             transition: opacity 0.5s ease;
+
+
+           
+          }
+          
+
 
             //padding-top: 30px;
           }
@@ -212,6 +255,9 @@
       .bouton__burger__conteneur {
         padding: 20px;
         
+
+ 
+
         @media screen and (min-width:$largeur__bureau) {
           display: none;
         }
@@ -247,10 +293,12 @@
       /* Menu burger checker */
       #cc__bouton__burger:checked ~ .menu__entete {
         display: flex;
+
         width: 100%;
         height: 50%;
         position: fixed;
         top: 0;
+
 
         text-align: center;
         z-index: 12;
@@ -282,7 +330,9 @@
       #cc__bouton__burger:checked ~ .bouton__burger__conteneur {
         z-index: 12;
         position: fixed;
-        right: 0;
+
+        right:0;
+
       }
     }
   }

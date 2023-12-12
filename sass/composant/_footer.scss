@@ -138,7 +138,9 @@
             background-size: cover;
             background-repeat: no-repeat;
             user-select: none;
+
             transition: transform .5s ease-in-out;
+
           }
           a:hover {
             transform: scale(1.1);

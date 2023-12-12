@@ -13,6 +13,7 @@
 
   @media screen and (min-width : $largeur__tablette) {
     flex-direction: row;
+    align-items: flex-end;
   }
 
   @media screen and (min-width : $largeur__bureau) {

@@ -46,20 +46,37 @@
     border-style: solid;
     z-index: 100;
     position: absolute;
-    top: 50%;
+    top: 5%;
     cursor: pointer;
+
+    @media screen and (min-width : $largeur__tablette) {
+      top: 8%;
+    }
+
   }
   
   .btn__gauche {
     border-width: 20px 30px 20px 0;
-    border-color: transparent #A8DADC transparent transparent;
-    left: 5em;
+    border-color: transparent #ffffff transparent transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    left: 10%;
+
+    @media screen and (min-width : $largeur__tablette) {
+      left: 25%;
+    }
+
   }
   
   .btn__droite {
     border-width: 20px 0 20px 30px;
-    border-color: transparent transparent transparent #A8DADC;
-    right: 5em;
+    border-color: transparent transparent transparent #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    right: 10%;
+
+    @media screen and (min-width : $largeur__tablette) {
+      right: 25%;
+    }
+
   }
   
   .triangle-btn {
@@ -120,8 +137,14 @@
 
   // SECTION TEMOIGNAGE
   .class__temoignage{
+    gap: 10px;
     flex-wrap: nowrap;
-    width: 90vw;
+    margin-top: 60px;
+
+    @media screen and (min-width: $largeur__tablette) {
+      gap: 30px;
+    }
+
   }
 
   // SECTION COURS

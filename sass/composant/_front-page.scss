@@ -1,103 +1,102 @@
 .section__presentation {
+  //background: linear-gradient(0deg, rgba(21,69,105,1) 0%, rgba(29,53,87,1) 100%);
+
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 133px);
   width: 100%;
   position: relative;
+  overflow: hidden;
+
+
+  .vague__general {
+    top: 0;
+    height: 100%;
+
+    svg {
+      width: auto;
+      height: 70%;
+    }
+  }
+
   
-  .section__info {
+  .titre {
+    height: 20%;
+    background-color: #1E5076;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 30px;
-    width: 50%;
-    height: calc(100vh - 100px);
-    overflow: hidden;
-    background-color: #F1FAEE;
-    color: #0077B6;
-
-    @media screen and (max-width : $largeur__mobile) {
-      width: 100%;
-    }
-
-    @media screen and (max-width : $largeur__tablette) {
-      width: 100%;  
-    }
-
-    @media screen and (min-width : $largeur__tablette) {
-      width: 100%;
-          
-    }
-       
-     
-      
-
+    align-items: center;
     h3 {
       text-align: center;
-      width: 75%;
+      // width: 75%;
       font-size: 1.5rem;
       
     }
 
-    .conteneur__btn {
-      display: flex;
-      gap: 30px;
-      margin: 10px;
-      flex-direction: column;
-      z-index: 2;
-      padding-bottom: 30px;
-
-      @media screen and (min-width : $largeur__bureau) {
-        flex-direction: row;
-      }
-    
-      .btn {
-        width: 250px;
-        height: 75px;
-        background-color: #457B9D;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        border-radius: 15px;
-        transition: transform 0.3s ease;
-        a {
-          // display: block;
-          text-align: center;
-          color: white;
-          font-weight: bold;
-          font-size: 1.2rem;
-        }
-        
-      }
-      .btn:hover{
-        transform: scale(1.2); 
-      }
-    }
   }
 
   .affiche__img { 
     // height: 95vh;
     z-index: 2;
-    height: calc(100vh - 100px);
-    width: 100%;
-    display: none;
+    height: 80%;
+    // width: 100%;
+    display: flex;
     justify-content: center;
-    background-color: #0C2447;
+    // background-color: #0C2447;
+
+    @media screen and (min-width : $largeur__bureau) {
+      height: 80%;
+    }
      
     img {
-      width: 80%;
-      height: auto;
+      width: auto;
+      height: 100%;
       object-fit: cover;
       display: flex;
     }
-
-    @media screen and (min-width : $largeur__bureau) {
-      display: flex;
-    } 
   }
   
 }
 
+.conteneur__texte__acc {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: #154569;
+
+  @media screen and (min-width : $largeur__bureau) {
+    flex-direction: row;
+    height: 250px;
+  }
+
+  .texte__descriptif {
+    padding: 15px;
+
+    @media screen and (min-width : $largeur__bureau) {
+      width: 33%;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+      padding: 10px;
+    }
+
+  }
+
+  .texte__descriptif:nth-child(2){
+    background-color: #457B9D;
+  }
+
+}
 
 
 /* Ajuster la largeur maximale de la vidéo */
@@ -106,18 +105,22 @@
   margin: 0 auto; /* Centre la vidéo horizontalement */
   position: relative;
   display: block;
-  margin-top: 50px;
+  margin-top: 100px;
+  padding-bottom: 200px;
 
   @media screen and (min-width : $largeur__bureau) {
     max-width: 70vw;
   }
 
   iframe {
+    background-color: #154569;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px ;
     width: 100%;
     height: calc(100vw * 9 / 16); /* Calculez la hauteur en fonction du rapport 16:9 */
 
     @media screen and (min-width : $largeur__bureau) {
       height: calc(70vw * 9 / 16); /* Calculez la hauteur en fonction du rapport 16:9 */
+      padding: 15px;
     }
 
   }
@@ -133,63 +136,21 @@
   .cours {
     margin-top: 2em;
     //ackground-color: #0f2038;
-    padding: 5px;
-    width: 85vw;
-    height: 100%; /* Limite la hauteur du conteneur à 100vh */
+    width: 90vw;
+    height: auto;
+    // height: 100%; /* Limite la hauteur du conteneur à 100vh */
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    gap: 20px;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-}
-
-.texte__descriptif {
-  margin-top: 100px;
-  margin-left: 20px;
-  text-align: center;
-  padding: 10px 10px 100px 10px;
-  position: relative;
-  z-index: 2;
-
- p {
-  @media screen and (min-width : $largeur__tablette) {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  @media screen and (min-width : $largeur__bureau) {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.5rem;
-  }
- }
-
-}
-.citation{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 300px;
-  position: relative;
-  z-index: 2;
-  
-  @media screen and (min-width : $largeur__bureau) {
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
-    margin: 0 20px;
+
+    @media screen and (min-width : $largeur__tablette) {
+      flex-direction: row;
+    }
+  
   }
 
-
-  h3{
-    margin: 10px;
-  }
 }
+

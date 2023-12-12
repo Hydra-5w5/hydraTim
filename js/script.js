@@ -58,4 +58,14 @@
     });
   }
 
+  let divTheme = document.querySelector('.cours'); // Remplacez '.cours' par le sélecteur de votre divTheme
+
+  if (divTheme) {
+    divTheme.addEventListener('scroll', function() {
+      if (divTheme.scrollLeft + divTheme.offsetWidth >= divTheme.scrollWidth) {
+        divTheme.scrollLeft = 0;
+      }
+    });
+  }
+
 })();

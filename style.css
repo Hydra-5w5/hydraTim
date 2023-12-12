@@ -445,7 +445,6 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-
     border-left: none;
   }
 }
@@ -468,18 +467,27 @@ a {
     transform: translateX(0);
   }
 }
-
 .site__entete .entete__nav .menu__nav .menu__entete .menu {
-
+  background: #457B9D;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @media screen and (max-width: 1080px) {
-  .site__entete .entete__nav .menu__nav .menu__entete .menu {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu {
     animation: slideIn 0.5s forwards;
   }
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu {
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu {
   width: 50%;
   height: 120%;
-
   background: #457B9D;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -489,13 +497,12 @@ a {
   padding-right: 20px;
   gap: 20px;
   padding: 10px;
-
   top: 5rem;
   right: 0;
   /* Styles pour chaque élément de la liste */
 }
 @media screen and (min-width: 1080px) {
-  .site__entete .entete__nav .menu__nav .menu__entete .menu {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu {
     background: none;
     position: static;
     top: auto;
@@ -504,10 +511,10 @@ a {
     transform: translateX(0);
   }
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item {
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item {
   position: relative;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a {
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item a {
   text-decoration: none;
   padding-bottom: 30px;
   color: #ffffff;
@@ -517,7 +524,7 @@ a {
   transition: color 1s ease;
   position: relative;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a::after {
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -529,14 +536,13 @@ a {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover::after {
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu {
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item .sub-menu {
   flex-direction: column;
   justify-content: space-between;
-
   align-items: center;
   top: 38px;
   list-style: none;
@@ -544,15 +550,14 @@ a {
   height: 100%;
   padding-left: 0;
   /* Styles pour les liens du sous-menu */
-
 }
 @media screen and (min-width: 1080px) {
-  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item .sub-menu {
     display: none;
     position: absolute;
   }
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a {
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item .sub-menu a {
   color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -560,10 +565,10 @@ a {
   position: relative;
 }
 @media screen and (min-width: 1080px) {
-  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item .sub-menu a {
     color: #457B9D;
   }
-  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a::after {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item .sub-menu a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -575,24 +580,21 @@ a {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a:hover::after {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu .menu-item .sub-menu a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
 }
 @media screen and (min-width: 1080px) {
-  .site__entete .entete__nav .menu__nav .menu__entete {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu {
     /* Styles pour le survol sur les futurs étudiants */
   }
-  .site__entete .entete__nav .menu__nav .menu__entete .futur__etudiants:hover .sub-menu {
-
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .futur__etudiants:hover .sub-menu {
     width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-
     background-color: #F1FAEE;
     border: 3px solid #457B9D;
     border-radius: 0 0 30px 30px;
@@ -600,7 +602,6 @@ a {
     z-index: 10;
     opacity: 1;
     transition: opacity 0.5s ease;
-
   }
 }
 .site__entete .entete__nav .menu__nav #cc__bouton__burger {
@@ -638,12 +639,10 @@ a {
 }
 .site__entete .entete__nav .menu__nav #cc__bouton__burger:checked ~ .menu__entete {
   display: flex;
-
   width: 100%;
   height: 50%;
   position: fixed;
   top: 0;
-
   text-align: center;
   z-index: 12;
   opacity: 1;
@@ -724,7 +723,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-
   background-color: #154569;
 }
 @media screen and (min-width: 1080px) {
@@ -732,7 +730,6 @@ a {
     flex-direction: row;
     height: 250px;
   }
-
 }
 .conteneur__texte__acc .texte__descriptif {
   padding: 15px;
@@ -1356,9 +1353,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   user-select: none;
-
   transition: transform 0.5s ease-in-out;
-
 }
 .site__footer .suivezNous .menu__icon .menu .menu-item a:hover {
   transform: scale(1.1);
@@ -1830,9 +1825,7 @@ a .blocflex__evenement {
   height: 325px;
   border-radius: 30px;
   overflow: hidden;
-
   box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
   transition: transform 0.3s ease;
 }
 a .blocflex__evenement .blocflex__images {
@@ -1854,10 +1847,6 @@ a .blocflex__evenement .blocflex__description {
 }
 a .blocflex__evenement .blocflex__description p {
   text-align: left;
-}
-a .blocflex__evenement:hover {
-  transform: scale(1.2);
-  background-color: #457B9D;
 }
 a .blocflex__evenement:hover {
   transform: scale(1.1);
@@ -2186,7 +2175,6 @@ a .blocflex__evenement:hover {
     align-items: center;
     height: 100%;
   }
-
 }
 
 .blocflex__temoignage {

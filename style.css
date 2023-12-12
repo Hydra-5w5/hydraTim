@@ -1806,7 +1806,7 @@ a .blocflex__evenement:hover {
 .blocflex__profs {
   background-color: #457B9D;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  display: none;
+  opacity: 0;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -1815,7 +1815,11 @@ a .blocflex__evenement:hover {
   border-radius: 30px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.5s ease;
+  transition: opacity 0.5s ease;
+  width: 150px;
+  height: 200px;
+  visibility: hidden;
+  z-index: 0;
 }
 .blocflex__profs .sujet__profs {
   background-color: #154569;
@@ -1924,9 +1928,10 @@ a .blocflex__evenement:hover {
 }
 
 .selectionne {
-  position: relative;
+  position: absolute;
   width: 91%;
   height: 700px;
+  right: 20em;
 }
 @media screen and (min-width: 768px) {
   .selectionne {
@@ -1947,16 +1952,6 @@ a .blocflex__evenement:hover {
   width: 50%;
 }
 
-.droite {
-  left: -100px;
-  transform: translate(100px);
-}
-
-.gauche {
-  left: 100px;
-  transform: translate(-100px);
-}
-
 .non-selectionne {
   width: 150px;
   height: 200px;
@@ -1972,6 +1967,18 @@ a .blocflex__evenement:hover {
 }
 .non-selectionne .photo__profs {
   width: 100%;
+}
+
+.blocflex__profs.fade-in {
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+}
+
+.blocflex__profs.fade-out {
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
 }
 
 .blocflex__projets {

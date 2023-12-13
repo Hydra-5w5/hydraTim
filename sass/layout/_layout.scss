@@ -13,3 +13,14 @@
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
+
+.site__single {
+  background-color: #1D3557;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

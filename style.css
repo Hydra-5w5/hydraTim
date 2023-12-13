@@ -822,9 +822,9 @@ a {
 .dans__article {
   width: 80vw;
   left: 10%;
-  min-height: 50vh;
+  height: 80vh;
   position: relative;
-  padding-left: 30px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -834,28 +834,45 @@ a {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 15px;
 }
-@media screen and (max-width: 425px) {
-  .dans__article {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media screen and (max-width: 768px) {
   .dans__article {
     display: flex;
     flex-direction: column;
   }
 }
-.dans__article div {
+.dans__article .image__single {
+  width: 50%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .dans__article .image__single {
+    width: 100%;
+    height: 35%;
+  }
+}
+.dans__article .image__single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dans__article .texte__single {
+  width: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+  padding: 15px;
 }
-.dans__article div p {
-  font-size: 1.3rem;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 2rem;
+.dans__article .texte__single p {
+  text-align: left;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .dans__article .texte__single {
+    width: 100%;
+    height: 65%;
+  }
 }
 
 /******************************** Categorie ***********************************/
@@ -1697,6 +1714,8 @@ a {
 .vague__general {
   position: absolute;
   width: 100%;
+  top: 0;
+  right: 0;
 }
 .vague__general svg {
   width: 100%;
@@ -2368,4 +2387,15 @@ a .blocflex__evenement:hover {
   color: white;
   font-family: "Poppins", sans-serif;
   position: relative;
+}
+
+.site__single {
+  background-color: #1D3557;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

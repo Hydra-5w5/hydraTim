@@ -535,7 +535,7 @@ a {
   height: 2px;
   top: 20px;
   left: 0;
-  background-color: #457B9D;
+  background-color: #ffffff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

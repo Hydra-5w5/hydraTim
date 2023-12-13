@@ -918,11 +918,6 @@ a {
   align-items: center;
   margin-bottom: 100px;
 }
-@media screen and (min-width: 768px) {
-  .section__categorie .class__profs {
-    flex-wrap: wrap;
-  }
-}
 .section__categorie .class__temoignage {
   flex-wrap: nowrap;
   width: 90vw;
@@ -1816,10 +1811,16 @@ a .blocflex__evenement:hover {
   overflow: hidden;
   cursor: pointer;
   transition: opacity 0.5s ease;
-  width: 150px;
-  height: 200px;
+  width: 15em;
+  height: 20em;
   visibility: hidden;
   z-index: 0;
+}
+@media screen and (min-width: 1080px) {
+  .blocflex__profs {
+    width: 150px;
+    height: 200px;
+  }
 }
 .blocflex__profs .sujet__profs {
   background-color: #154569;
@@ -1931,7 +1932,6 @@ a .blocflex__evenement:hover {
   position: absolute;
   width: 91%;
   height: 700px;
-  right: 20em;
 }
 @media screen and (min-width: 768px) {
   .selectionne {
@@ -1943,6 +1943,7 @@ a .blocflex__evenement:hover {
   .selectionne {
     width: 750px;
     height: 400px;
+    right: 20em;
   }
 }
 .selectionne .info__profs {
@@ -1979,6 +1980,58 @@ a .blocflex__evenement:hover {
   opacity: 0;
   z-index: 0;
   visibility: hidden;
+}
+
+.class__profs {
+  margin-top: 12em;
+}
+.class__profs .btn__gauche, .class__profs .btn__droite {
+  display: none !important;
+}
+@media screen and (min-width: 1080px) {
+  .class__profs .btn__gauche, .class__profs .btn__droite {
+    display: flex !important;
+  }
+}
+
+.indication-swipe {
+  position: relative;
+  z-index: 1;
+  right: 68em;
+  bottom: 23.5em;
+  text-align: center;
+  width: 24em;
+  height: 3em;
+  margin-bottom: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: chocolate;
+  border-radius: 20px;
+}
+@media screen and (min-width: 1080px) {
+  .indication-swipe {
+    display: none;
+  }
+}
+
+.fleche {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: inline-block;
+  margin: 0 10px;
+  animation: bounce 1s infinite;
+}
+
+.fleche-gauche {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #333;
+}
+
+.fleche-droite {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #333 transparent transparent;
 }
 
 .blocflex__projets {

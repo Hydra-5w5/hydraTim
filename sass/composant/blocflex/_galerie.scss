@@ -1,0 +1,40 @@
+/******************************** galerie ***********************************/
+.blocflex__galerie {
+  width: 80vw;
+  
+  h3 {
+    margin-bottom: 3px;
+  }
+  
+  .wp-block-gallery {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    padding: 5px;
+
+    .wp-block-image {
+      flex: 0 0 calc(80vw / 1);      
+      max-width: 100%;
+
+      @media screen and (min-width: $largeur__tablette) {
+        flex: 0 0 calc(80vw / 2); 
+      }
+  
+      @media screen and (min-width: $largeur__bureau) {
+        flex: 0 0 calc(80vw / 4);
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      
+    }
+  }
+
+}

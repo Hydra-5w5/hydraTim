@@ -1,6 +1,26 @@
 .site__main {
-  background-color: #340044;
+  background-color: #1D3557;
   color: white;
-  // min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  min-height: 70vh;
   // padding: 15px;
+}
+
+.site__erreur {
+  background-color: #1D3557;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.site__single {
+  background-color: #1D3557;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

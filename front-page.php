@@ -7,67 +7,74 @@
     <?php get_header(); ?>    
 
         <main class="site__main">
-
-            <div class=" <?= is_front_page() ? "affiche__img" : "cache__img" ?>">
-                <img src="<?php header_image(); ?>" alt="">
-            </div>
-
-            <div class="Conteneur__video">
-                <?php dynamic_sidebar( 'video_acc' ); ?>
-            </div>
-
-            <div class="thematiques-cours">
-                <h2>Thématiques De Cours</h2>
-                <div class="cours">
-                    <div class="boite">
-                        <h5>Conception Web</h5>
+            <?php get_template_part('vagues-variantes/vaguesFrontMillieu'); ?>
+            <section class="section-accueil">
+    
+                <section class="section__presentation">
+                    <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
+                    <div class="affiche__img">
+                        <img src="<?php header_image(); ?>" alt="">
                     </div>
-
-                    <div class="boite">
-                        <h5>Programmation</h5>
+                    <div class="titre">
+                        <h3>Découvrez la technique d'integration multimédia du Collège Maisonneuve </h3>
                     </div>
+                </section>
 
-                    <div class="boite">
-                        <h5>Codage Créatif</h5>
-                    </div>
+                <div class="conteneur__texte__acc">
+                    <?php
+                        // La requête
+                        $args = array(
+                            'post_type' => 'post', 
+                            'category_name' => 'accueil' 
+                        );
+                        $query = new WP_Query($args);
 
-                    <div class="boite">
-                        <h5>Design et Illustration</h5>
-                    </div>
+                        // La boucle
+                        if ($query->have_posts()) {
+                            while ($query->have_posts()) {
+                                $query->the_post();
+                                get_template_part('template-parts/categorie', 'accueil');
+                            }
+                        }
 
-                    <div class="boite">
-                        <h5>Portfolio et Carrière</h5>
-                    </div>
+                        wp_reset_postdata();
+                    ?>
+                </div>
+                
+                <div class="thematiques-cours">
+                    <h2>Thématiques De Cours</h2>
+                    <div class="cours">
+                        <?php
+                            // La requête
+                            $args = array(
+                                'post_type' => 'post',
+                                'category_name' => 'theme' 
+                            );
+                            $query = new WP_Query($args);
 
-                    <div class="boite">
-                        <h5>Vidéo</h5>
-                    </div>
+                            // La boucle
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    get_template_part('template-parts/categorie', 'theme');
+                                }
+                            } 
 
-                    <div class="boite">
-                        <h5>Jeux vidéo et Illustration</h5>
-                    </div>
-
-                    <div class="boite">
-                        <h5>Animation 2D - 3D</h5>
+                            // Réinitialise les données de publication
+                            wp_reset_postdata();
+                        ?>
                     </div>
                 </div>
-            </div>
 
-            <div class="texte-descriptif">
-                <p>
-                    Le multimédia fait référence à la combinaison de différents types de
-                    médias, tels que le texte, l’image, la vidéo, l’audio et d’autres
-                    éléments interactifs, dans un seul support ou système. Il vise à créer
-                    une expérience riche et immersive pour les utilisateurs.
-                </p>
-            </div>
+                <div class="Conteneur__video">
+                    <?php dynamic_sidebar( 'video_acc' ); ?>
+                </div>
 
-            <div>
-                <h3>"Créez, Intégrez, Émerveillez </h3>
-                <h3> La Puissance du Multimédia!" </h3>
-            </div>
-
+            </section>
         </main>
+       
+    <?php get_footer();?>   
 
-    <?php get_footer(); ?>   
+    
+
     

@@ -1,6 +1,7 @@
-  <footer class="site__footer">
-
+<footer class="site__footer">
+<?php get_template_part('vagues-variantes/vaguesBasPiedPage')?> 
   <div class="contenu__footer">
+
     <div class="footer__logo">
       <?php the_custom_logo(); ?>
     </div>
@@ -8,38 +9,39 @@
     <div class="adresse section">
       <h2>Adresse</h2>
       <p>3800 Avenue Sherbrooke Est </p>
-      <p>Montréal,QC</p> <p>H1X 2A2</p> 
+      <p>Montréal,QC</p> <p>H1X 2A2</p>
     </div>
 
     <div class="rejoindre section">
       <h2>Nous Rejoindre</h2>
       <div class="liste__joindre">
-        <p><a href="#">Inscriprion</a></p>
-        <p><a href="#">Visite Virtuelle</a></p>
+        <p><a href="#">Inscription</a></p>
+        <p><a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">informations supplémentaire</a></p>
         <p><a href="#">Porte Ouverte</a></p>
       </div>
     </div>
 
     <div class="recherche__footer section">
       <h2>Recherche</h2>
-      <form action="">
-        <input type="text" name="" id="">
-      </form>
+      <?php  get_search_form(); ?> 
     </div>
+
+      <div class="suivezNous section">
+        <h2>Suivez Nous</h2>
+
+        <?php wp_nav_menu(array(
+            "menu" => "footer-icon",
+            "container" => "nav",
+            "container_class" => "menu__icon", //pour changer le nom de la class
+        )); ?>
+    </div>
+
   </div>
 
-  <div class="suivezNous section">
-    <h2>Suivez Nous</h2>
-    <div class="reseaux">
-      <div class="reseau"><a href=""></a></div>
-      <div class="reseau"><a href=""></a></div>
-      <div class="reseau"><a href=""></a></div>
-      <div class="reseau"><a href=""></a></div>
-      <div class="reseau"><a href=""></a></div>
-    </div>
-  </div>
 
 
-  </footer>
 
-  <?php wp_footer(); ?>
+</footer>
+
+<?php wp_footer(); ?>
+

@@ -1,10 +1,105 @@
-.affiche__img { 
+.section__presentation {
+  //background: linear-gradient(0deg, rgba(21,69,105,1) 0%, rgba(29,53,87,1) 100%);
+
   display: flex;
-  img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 133px);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+
+  .vague__general {
+    top: 0;
+    height: 100%;
+
+    svg {
+      width: auto;
+      height: 70%;
+    }
   }
+
+  
+  .titre {
+    height: 20%;
+    background-color: #1E5076;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+      // width: 75%;
+      font-size: 1rem;
+
+      @media screen and (min-width : $largeur__tablette) {
+        font-size: 1.5rem;
+      }
+    }
+
+  }
+
+  .affiche__img { 
+    // height: 95vh;
+    z-index: 2;
+    height: 80%;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    // background-color: #0C2447;
+
+    @media screen and (min-width : $largeur__bureau) {
+      height: 80%;
+    }
+     
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      display: flex;
+    }
+  }
+  
+}
+
+.conteneur__texte__acc {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: #154569;
+
+  @media screen and (min-width : $largeur__bureau) {
+    flex-direction: row;
+    height: 250px;
+  }
+
+  .texte__descriptif {
+    padding: 15px;
+
+    @media screen and (min-width : $largeur__bureau) {
+      width: 33%;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+      padding: 10px;
+    }
+
+  }
+
+  .texte__descriptif:nth-child(2){
+    background-color: #457B9D;
+  }
+
 }
 
 
@@ -14,59 +109,51 @@
   margin: 0 auto; /* Centre la vidéo horizontalement */
   position: relative;
   display: block;
-  margin-top: 50px;
+  margin-top: 100px;
+  padding-bottom: 200px;
 
   @media screen and (min-width : $largeur__bureau) {
     max-width: 70vw;
   }
 
   iframe {
+    background-color: #154569;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -10px, rgba(0, 0, 0, 0.3) 0px 15px 30px -15px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px ;
     width: 100%;
     height: calc(100vw * 9 / 16); /* Calculez la hauteur en fonction du rapport 16:9 */
 
     @media screen and (min-width : $largeur__bureau) {
       height: calc(70vw * 9 / 16); /* Calculez la hauteur en fonction du rapport 16:9 */
+      padding: 15px;
     }
 
   }
 }
 
 .thematiques-cours {
-  margin: 5em auto;
-  width: 80vw;
   display: flex;
+  margin-top: 30px;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
   .cours {
     margin-top: 2em;
-    width: 100%;
-    max-height: 100vh; /* Limite la hauteur du conteneur à 100vh */
+    //ackground-color: #0f2038;
+    width: 90vw;
+    height: auto;
+    // height: 100%; /* Limite la hauteur du conteneur à 100vh */
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    
-    .boite {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      border: 2px solid rgb(59, 0, 53);
-      border-radius: 30px;
-      background-color: rgb(128, 0, 104);
-      margin: 10px; /* Espace autour des boîtes de cours */
-      height: 200px;
-      width: 20%;
-      cursor: default;
 
-      h5 {
-        color: rgb(255, 255, 255);
-      }
-
+    @media screen and (min-width : $largeur__tablette) {
+      flex-direction: row;
     }
-    
+  
   }
 
 }

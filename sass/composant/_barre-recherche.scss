@@ -1,0 +1,67 @@
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// body {
+//   background: #f2f2f2;
+//   font-family: 'Open Sans', sans-serif;
+// }
+
+.recherche {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+
+.site__main {
+
+  h2 {
+    // font-size: 5em;
+    text-align: center;
+  }
+  
+  h6 {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .recherche__input {
+    border: 1px solid #457B9D;
+    border-right: none;
+    padding: 5px;
+    height: 36px; /* Ajusté à la taille du bouton */
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #9DBFAF;
+    width: 70rem;
+    height: 4rem;
+  
+    &:focus {
+      color: #00B4CC;
+    }
+  }
+    
+  .btn__recherche {
+    right: 2rem;
+    position: relative;
+    padding: 20px;
+    height: 4rem;
+    border: 1px solid #A8DADC;
+    background:#A8DADC;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
+  .wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}	

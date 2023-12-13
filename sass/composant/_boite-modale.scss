@@ -1,0 +1,68 @@
+.boite__modale, .info__projet {
+  transform: scale(0) translate(-50%, -50%);
+  transform-origin: 50px 50px;
+  position: fixed;
+  transition: transform .5s;
+  width: 75%;
+  // height: 100%;
+  padding: 20px;
+  background-color: #457B9D;
+  border-radius: 30px;
+  border: #326889 3px solid;
+  z-index: 1200000;
+  top: 50%;
+  left: 50%;
+
+  @media screen and (min-width: $largeur__bureau) {
+    width: 950px;
+  }
+
+  h2 {
+    color: #ffffff;
+    padding-bottom: 50px;
+  }
+
+  h4 {
+    color: #F1FAEE;
+  }
+
+  .btn__fermer {
+    padding: 5px;
+    color: #F1FAEE;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+  }
+
+}
+.info__projet {
+  // max-height: 70vh;
+  // overflow-y: scroll;
+
+  .btn__fermer {
+    display: none;
+  }
+  .div__scroll {
+    max-height: 70vh;
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 10px; // Ajoutez cette ligne
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+}
+
+.superposition {
+  position : fixed;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background-color : rgba(0, 0, 0, 0.5);
+  display : none;
+  z-index: 90;
+}

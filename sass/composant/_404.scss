@@ -1,3 +1,68 @@
-.site__erreur {
-  background-color: rgb(251, 0, 0);
-}
+.site__erreur{
+  height: 70vh;
+
+
+  .info__erreur {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: 7em;
+    text-align: center;
+    color: red;
+  }
+  
+  h6 {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+  }
+
+  .recherche__input {
+      border: 3px solid red;
+      border-right: none;
+      padding: 5px;
+      height: 36px; /* Ajusté à la taille du bouton */
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #9DBFAF;
+      width: 70rem;
+      height: 3rem;
+    
+      &:focus {
+        color: #00B4CC;
+      }
+    }
+    
+     .btn__recherche {
+      right: 2em;
+      position: relative;
+      width: 54px;
+      height: 50px;
+      border: 5px solid red;
+      background: red;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 35%;
+  }
+    /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
+    .wrap {
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }	
+
+  

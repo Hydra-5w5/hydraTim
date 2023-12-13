@@ -1,83 +1,91 @@
 <?php
 /**
- * category.php est le modèle par défaut pour afficher une archive d'articles de catégorie spécifique
- * afficher une archive d'articles de catégorie spécifique
+ * category.php est le modèle par défaut pour afficher une archive d'articles de catégorie spécifique.
  */
+
+get_header();
 ?>
 
-<?php get_header(); ?>
-
 <main class="site__main">
+    <?php 
+        if (!is_front_page()) {
+            get_template_part('vagues-variantes/vaguesHautPiedPage');
+        }
+    ?>
+    <div class="vagues__general">
+        <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
+    </div>
+
     <section class="section__categorie">
         <?php
-            $category = get_queried_object();
+        $category = get_queried_object();
         ?>
-        <!-- Affiche les titre et nom de catégorie -->
         <div class="conteneur__texte">
             <h1><?php single_cat_title(); ?></h1>
             <p><?php the_archive_description(); ?></p>
-        </div>
-        <!-- Affiche le menu a option -->
-        <div class="conteneur__option">
+        </div> 
+
+
+        <?php
+            // Affiche le menu de choix des projets
+            if($category->slug == 'cours') { 
+                echo '<div class="btns__sessions">';
+                echo '<div class="titre__session"><h5>Sessions:</h5></div>';
+                echo '<div class="btn__session" id="btn__session1"><h4>1</h4></div>';
+                echo '<div class="btn__session" id="btn__session2"><h4>2</h4></div>';
+                echo '<div class="btn__session" id="btn__session3"><h4>3</h4></div>';
+                echo '<div class="btn__session" id="btn__session4"><h4>4</h4></div>';
+                echo '<div class="btn__session" id="btn__session5"><h4>5</h4></div>';
+                echo '<div class="btn__session" id="btn__session6"><h4>6</h4></div>';
+                echo '</div>';
+            }
+        ?>
+
+
+        <!-- classe personnalisée basée sur la catégorie actuelle -->
+        <?php
+            $category_class = 'class__' . $category->slug;
+        ?>
+        <!-- Affiche les articles -->
+        <div class="conteneur__bloc <?= $category_class ?>" id="articles-containeur">
             <?php
-                // Vérifiez si la catégorie a un slug égal à "cours"
-                if ($category->slug === 'cours') {
-                    ?>
-                    <select name="sessions" id="sessions">
-                        <option value="1" selected>Session 1</option>
-                        <option value="2">Session 2</option>
-                        <option value="3">Session 3</option>
-                        <option value="4">Session 4</option>
-                        <option value="5">Session 5</option>
-                        <option value="6">Session 6</option>
-                    </select>
-                    <?php
+                // Affichez les articles de la catégorie initiale (cours)
+                $args = array(
+                    'category_name' => $category->slug,
+                    'orderby' => 'title',
+                    'order' => 'ASC'
+                );
+                $query = new WP_Query($args);
+
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) : $query->the_post();
+                        get_template_part('template-parts/categorie', $category->slug);
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+
+                // Vérifie si la catégorie actuelle est "prof" ou "cours" pour afficher les boutons
+                if ($category->slug === 'profs' || $category->slug === 'temoignage') {
+                    echo '<div class="btn__gauche"></div>';
+                    echo '<div class="btn__droite"></div>';
                 }
             ?>
         </div>
-        <!-- Affiche les articles -->
-        <div class="conteneur__bloc" id="articles-container">
-            <?php
-            // Affichez les articles de la catégorie initiale
-            $args = array(
-                'category_name' => $category->slug,
-                'orderby' => 'title',
-                'order' => 'ASC'
-            );
-            $query = new WP_Query($args);
 
-            if ($query->have_posts()) :
-                while ($query->have_posts()) : $query->the_post();
-                    get_template_part('template-parts/categorie', $category->slug);
-                    // Affichez le contenu de chaque article ici
-                endwhile;
-                wp_reset_postdata();
-            endif;
-            ?>
-        </div>
-        <!-- Affiche les menus secondaire -->
-        <div class="conteneur__menu">                
-            <?php 
-            // Correspondance entre les catégories et les noms de menu
-            $menu_correspondance = array(
-                'etudiants' => 'menu-etudiants',
-                'projets' => 'menu-projets'
-                // Ajoutez d'autres correspondances au besoin
-            );
-
-            // Vérifiez si la catégorie a une correspondance de menu
-            if (array_key_exists($category->slug, $menu_correspondance)) {
-                $menu_name = $menu_correspondance[$category->slug];
-                // Affichez le menu spécifique ici
+        <?php
+            // Affiche le menu de choix des projets
+            if($category->slug == 'projets') {
+                echo '<div class="choix__projets">';
                 wp_nav_menu(array(
-                    "menu" => $menu_name,
+                    "menu" => "choix-projets",
                     "container" => "nav",
-                    "container_class" => "menu__secondaire"
+                    "container_class" => "menu__choix", //pour changer le nom de la class
                 ));
             }
-            ?>
-        </div>
-    </section>
+        ?>
+
+    </section> 
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer();
+?>

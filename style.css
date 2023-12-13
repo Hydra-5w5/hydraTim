@@ -612,6 +612,7 @@ a {
 }
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur {
   padding: 20px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 @media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav .bouton__burger__conteneur {
@@ -630,15 +631,23 @@ a {
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:first-child {
   transform-origin: 0% 0%;
 }
+.site__entete .entete__nav .menu__nav input:checked ~ .bouton__burger__conteneur div:first-child {
+  transform: rotate(-25deg) translate(2px, 1px);
+}
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:last-child {
   margin-bottom: 0;
   transform-origin: 60px;
 }
+.site__entete .entete__nav .menu__nav input:checked ~ .bouton__burger__conteneur div:nth-child(2) {
+  opacity: 0;
+}
 .site__entete .entete__nav .menu__nav .bouton__burger__conteneur div:nth-child(2) {
   transform-origin: 0% 0%;
-  right: 0;
-  width: 30px;
   right: 10px;
+  width: 30px;
+}
+.site__entete .entete__nav .menu__nav input:checked ~ .bouton__burger__conteneur div:last-child {
+  transform: rotate(30deg) translate(-2px, -1px);
 }
 .site__entete .entete__nav .menu__nav #cc__bouton__burger:checked ~ .menu__entete {
   display: flex;

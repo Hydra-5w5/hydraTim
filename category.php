@@ -7,11 +7,7 @@ get_header();
 ?>
 
 <main class="site__main">
-    <?php 
-        if (!is_front_page()) {
-            get_template_part('vagues-variantes/vaguesHautPiedPage');
-        }
-    ?>
+    <?php get_template_part('vagues-variantes/vaguesHautPiedPage'); ?>
     <div class="vagues__general">
         <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
     </div>

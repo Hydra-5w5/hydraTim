@@ -1049,7 +1049,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .recherche__section article {
-    width: 60%;
+    width: 50%;
   }
 }
 .recherche__section article a {
@@ -1098,11 +1098,22 @@ body {
   border-radius: 20px 0 0 20px;
   outline: none;
   color: #9DBFAF;
-  width: 70rem;
+  width: 20rem;
   height: 4rem;
+  margin-left: 2em;
 }
 .site__main .recherche__input:focus {
   color: #00B4CC;
+}
+@media screen and (min-width: 768px) {
+  .site__main .recherche__input {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .site__main .recherche__input {
+    width: 55rem;
+  }
 }
 .site__main .btn__recherche {
   right: 2rem;
@@ -1144,37 +1155,48 @@ body {
   color: red;
 }
 .site__erreur h6 {
-  margin-top: 10px;
   text-align: center;
   color: red;
+  padding: 2em;
+  font-size: 20px;
 }
 .site__erreur .recherche__input {
   border: 3px solid red;
   border-right: none;
   padding: 5px;
   height: 36px; /* Ajusté à la taille du bouton */
-  border-radius: 5px 0 0 5px;
+  border-radius: 20px 0 0 20px;
   outline: none;
   color: #9DBFAF;
-  width: 70rem;
-  height: 3rem;
+  width: 20rem;
+  height: 4rem;
+  margin-left: 2em;
 }
 .site__erreur .recherche__input:focus {
   color: #00B4CC;
 }
+@media screen and (min-width: 768px) {
+  .site__erreur .recherche__input {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .site__erreur .recherche__input {
+    width: 70rem;
+  }
+}
 .site__erreur .btn__recherche {
-  right: 2em;
+  right: 2rem;
   position: relative;
-  width: 54px;
-  height: 50px;
+  padding: 20px;
+  height: 4rem;
   border: 5px solid red;
   background: red;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
-  border-radius: 35%;
+  border-radius: 20px;
 }
 .site__erreur .wrap {
   width: 30%;
@@ -1263,6 +1285,7 @@ body {
   border: none;
   color: #ffffff;
   outline: none;
+  padding: 1em;
 }
 .site__footer .suivezNous {
   padding-top: 20px;
@@ -1322,6 +1345,15 @@ body {
 }
 .site__footer .suivezNous .menu__icon .menu .behance a {
   background-image: url("http://cidweb37.sg-host.com/wp-content/uploads/2023/11/145799.png");
+}
+
+/************* BARRE DE RECHERCHE FOOTER *************/
+.btn__recherche {
+  right: 2em;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 5px;
 }
 
 /************* BARRE DE RECHERCHE FOOTER *************/

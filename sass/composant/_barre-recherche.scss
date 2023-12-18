@@ -34,13 +34,26 @@ body {
     border-radius: 20px 0 0 20px;
     outline: none;
     color: #9DBFAF;
-    width: 70rem;
+    width: 20rem;
     height: 4rem;
+    margin-left: 2em;
   
     &:focus {
       color: #00B4CC;
     }
-  }
+
+    
+@media screen and (min-width: $largeur__tablette) {
+    width: 25rem; 
+  
+}
+
+@media screen and (min-width: $largeur__bureau) {
+  width: 55rem;
+
+}
+}
+  
     
   .btn__recherche {
     right: 2rem;

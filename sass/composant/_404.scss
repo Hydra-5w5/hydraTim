@@ -19,9 +19,11 @@
   }
   
   h6 {
-    margin-top: 10px;
+    // margin-top: 4em;
     text-align: center;
     color: red;
+    padding: 2em;
+    font-size: 20px;
   }
 
   .recherche__input {
@@ -29,30 +31,40 @@
       border-right: none;
       padding: 5px;
       height: 36px; /* Ajusté à la taille du bouton */
-      border-radius: 5px 0 0 5px;
+      border-radius: 20px 0 0 20px;
       outline: none;
       color: #9DBFAF;
-      width: 70rem;
-      height: 3rem;
+      width: 20rem;
+      height: 4rem;
+      margin-left: 2em;
     
       &:focus {
         color: #00B4CC;
       }
+
+    @media screen and (min-width: $largeur__tablette) {
+        width: 25rem; 
+      
+    }
+    
+    @media screen and (min-width: $largeur__bureau) {
+      width: 70rem;
+    
+    }
     }
     
      .btn__recherche {
-      right: 2em;
+      right: 2rem;
       position: relative;
-      width: 54px;
-      height: 50px;
+      padding: 20px;
+      height: 4rem;
       border: 5px solid red;
       background: red;
       text-align: center;
       color: #fff;
-      border-radius: 0 5px 5px 0;
       cursor: pointer;
       font-size: 20px;
-      border-radius: 35%;
+      border-radius: 20px;
   }
     /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
     .wrap {
@@ -64,5 +76,3 @@
     }
 
   }	
-
-  

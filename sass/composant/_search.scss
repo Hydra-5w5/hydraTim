@@ -11,7 +11,7 @@
   z-index: 2;
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 10px;
   }
 
@@ -53,7 +53,7 @@
     width: 90%;
 
     @media screen and (min-width : $largeur__tablette) {
-      width: 60%;
+      width: 50%;
     }
 
     a {

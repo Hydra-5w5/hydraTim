@@ -59,16 +59,9 @@
   
 
     img {
-      object-fit: fill;
-      height: auto;
+      object-fit: cover;
+      height: 100%;
       width: 100%;
-
-      @media screen and (min-width:$largeur__bureau) {
-        width: auto;
-        align-items: center;
-        height: 100%;
-      }
-
     }
 
   }

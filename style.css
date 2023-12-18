@@ -1873,16 +1873,9 @@ a {
   }
 }
 .blocflex__etudiants .cat__image img {
-  object-fit: fill;
-  height: auto;
+  object-fit: cover;
+  height: 100%;
   width: 100%;
-}
-@media screen and (min-width: 1080px) {
-  .blocflex__etudiants .cat__image img {
-    width: auto;
-    align-items: center;
-    height: 100%;
-  }
 }
 
 /******************************** Evenement ***********************************/
@@ -2234,16 +2227,9 @@ a .blocflex__evenement:hover {
   }
 }
 .blocflex__stage .cat__image img {
-  object-fit: fill;
-  height: auto;
+  object-fit: cover;
+  height: 100%;
   width: 100%;
-}
-@media screen and (min-width: 1080px) {
-  .blocflex__stage .cat__image img {
-    width: auto;
-    align-items: center;
-    height: 100%;
-  }
 }
 
 .blocflex__temoignage {

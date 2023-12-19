@@ -21,6 +21,7 @@ Text Domain: hydra-5w5
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -451,7 +452,7 @@ a {
   display: none;
   opacity: 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .site__entete .entete__nav .menu__nav .menu__entete #menu-entete {
     transform: translateX(100%);
     animation: slideIn 0.5s forwards;
@@ -465,7 +466,7 @@ a {
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .site__entete .entete__nav .menu__nav .menu__entete #menu-entete {
     transform: translateX(100%);
     animation: slideIn 0.5s forwards;
@@ -493,12 +494,16 @@ a {
   display: flex;
   list-style-type: none;
   flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 90vh;
   align-items: center;
   padding: 0;
+  margin: 0;
   gap: 20px;
   /* Styles pour chaque élément de la liste */
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .site__entete .entete__nav .menu__nav .menu__entete .menu {
     padding-top: 80px;
     padding-right: 10px;
@@ -508,10 +513,11 @@ a {
   .site__entete .entete__nav .menu__nav .menu__entete .menu {
     background: none;
     position: static;
+    width: auto;
     top: auto;
     right: auto;
     flex-direction: row;
-    transform: translateX(0);
+    height: auto;
   }
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item {
@@ -527,31 +533,42 @@ a {
   transition: color 1s ease;
   position: relative;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  top: 20px;
-  left: 0;
-  background-color: #ffffff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover {
+  color: #b2e1ff;
 }
-.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+@media screen and (min-width: 1080px) {
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover {
+    color: #ffffff;
+  }
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 20px;
+    left: 0;
+    background-color: #4080a8;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   top: 38px;
+  display: flex;
   list-style: none;
   width: 100%;
+  padding-top: 5px;
   height: 100%;
   padding-left: 0;
+  gap: 20px;
   /* Styles pour les liens du sous-menu */
 }
 @media screen and (min-width: 1080px) {
@@ -566,6 +583,9 @@ a {
   padding-bottom: 10px;
   margin-bottom: 20px;
   position: relative;
+}
+.site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a::after {
+  top: 100px;
 }
 @media screen and (min-width: 1080px) {
   .site__entete .entete__nav .menu__nav .menu__entete .menu .menu-item .sub-menu a {
@@ -654,6 +674,7 @@ a {
   width: 100%;
   height: 70%;
   position: fixed;
+  right: 0;
   top: 0;
   padding-top: 30px;
   text-align: center;
@@ -913,7 +934,7 @@ a {
   width: 0;
   height: 0;
   border-style: solid;
-  z-index: 100;
+  z-index: 9;
   position: absolute;
   top: 5%;
   cursor: pointer;
@@ -1115,7 +1136,7 @@ a {
   z-index: 2;
 }
 .recherche__section h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 .recherche__section h6 {
@@ -1153,7 +1174,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .recherche__section article {
-    width: 60%;
+    width: 50%;
   }
 }
 .recherche__section article a {
@@ -1170,6 +1191,11 @@ a {
   font-size: 1rem;
 }
 
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
 .recherche {
   width: 100%;
   position: relative;
@@ -1181,13 +1207,6 @@ a {
 .site__main {
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
 }
-.site__main h2 {
-  text-align: center;
-}
-.site__main h6 {
-  margin-top: 10px;
-  text-align: center;
-}
 .site__main .recherche__input {
   border: 1px solid #457B9D;
   border-right: none;
@@ -1196,11 +1215,22 @@ a {
   border-radius: 20px 0 0 20px;
   outline: none;
   color: #9DBFAF;
-  width: 70rem;
+  width: 20rem;
   height: 4rem;
+  margin-left: 2em;
 }
 .site__main .recherche__input:focus {
   color: #00B4CC;
+}
+@media screen and (min-width: 768px) {
+  .site__main .recherche__input {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .site__main .recherche__input {
+    width: 55rem;
+  }
 }
 .site__main .btn__recherche {
   right: 2rem;
@@ -1224,7 +1254,7 @@ a {
 }
 
 .site__erreur {
-  height: 70vh;
+  height: 100vh;
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
 }
 .site__erreur .info__erreur {
@@ -1236,43 +1266,63 @@ a {
   position: relative;
   z-index: 2;
 }
+.site__erreur .img__anim {
+  height: 150px;
+  width: 150px;
+}
+.site__erreur .img__anim img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .site__erreur h1 {
   font-size: 7em;
   text-align: center;
   color: red;
 }
 .site__erreur h6 {
-  margin-top: 10px;
   text-align: center;
   color: red;
+  padding: 2em;
+  font-size: 20px;
 }
 .site__erreur .recherche__input {
   border: 3px solid red;
   border-right: none;
   padding: 5px;
   height: 36px; /* Ajusté à la taille du bouton */
-  border-radius: 5px 0 0 5px;
+  border-radius: 20px 0 0 20px;
   outline: none;
   color: #9DBFAF;
-  width: 70rem;
-  height: 3rem;
+  width: 20rem;
+  height: 4rem;
+  margin-left: 2em;
 }
 .site__erreur .recherche__input:focus {
   color: #00B4CC;
 }
+@media screen and (min-width: 768px) {
+  .site__erreur .recherche__input {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .site__erreur .recherche__input {
+    width: 70rem;
+  }
+}
 .site__erreur .btn__recherche {
-  right: 2em;
+  right: 2rem;
   position: relative;
-  width: 54px;
-  height: 50px;
+  padding: 20px;
+  height: 4rem;
   border: 5px solid red;
   background: red;
   text-align: center;
   color: #fff;
-  border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
-  border-radius: 35%;
+  border-radius: 20px;
 }
 .site__erreur .wrap {
   width: 30%;
@@ -1361,6 +1411,7 @@ a {
   border: none;
   color: #ffffff;
   outline: none;
+  padding: 1em;
 }
 .site__footer .suivezNous {
   padding-top: 20px;
@@ -1853,16 +1904,9 @@ a {
   }
 }
 .blocflex__etudiants .cat__image img {
-  object-fit: fill;
-  height: auto;
+  object-fit: cover;
+  height: 100%;
   width: 100%;
-}
-@media screen and (min-width: 1080px) {
-  .blocflex__etudiants .cat__image img {
-    width: auto;
-    align-items: center;
-    height: 100%;
-  }
 }
 
 /******************************** Evenement ***********************************/
@@ -2214,16 +2258,9 @@ a .blocflex__evenement:hover {
   }
 }
 .blocflex__stage .cat__image img {
-  object-fit: fill;
-  height: auto;
+  object-fit: cover;
+  height: 100%;
   width: 100%;
-}
-@media screen and (min-width: 1080px) {
-  .blocflex__stage .cat__image img {
-    width: auto;
-    align-items: center;
-    height: 100%;
-  }
 }
 
 .blocflex__temoignage {

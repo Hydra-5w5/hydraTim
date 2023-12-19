@@ -1,9 +1,9 @@
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-// body {
-//   background: #f2f2f2;
-//   font-family: 'Open Sans', sans-serif;
-// }
+body {
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
 
 .recherche {
   width: 100%;
@@ -16,15 +16,6 @@
 
 .site__main {
 
-  h2 {
-    // font-size: 5em;
-    text-align: center;
-  }
-  
-  h6 {
-    margin-top: 10px;
-    text-align: center;
-  }
 
   .recherche__input {
     border: 1px solid #457B9D;
@@ -34,13 +25,26 @@
     border-radius: 20px 0 0 20px;
     outline: none;
     color: #9DBFAF;
-    width: 70rem;
+    width: 20rem;
     height: 4rem;
+    margin-left: 2em;
   
     &:focus {
       color: #00B4CC;
     }
-  }
+
+    
+@media screen and (min-width: $largeur__tablette) {
+    width: 25rem; 
+  
+}
+
+@media screen and (min-width: $largeur__bureau) {
+  width: 55rem;
+
+}
+}
+  
     
   .btn__recherche {
     right: 2rem;

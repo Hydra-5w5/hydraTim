@@ -11,8 +11,10 @@
             <section class="section-accueil">
     
                 <section class="section__presentation">
+
                     <?php get_template_part('vagues-variantes/vaguesGeneral')?> 
                     <div class="affiche__img">
+                        <div class="app"></div>
                         <img src="<?php header_image(); ?>" alt="">
                     </div>
                     <div class="titre">

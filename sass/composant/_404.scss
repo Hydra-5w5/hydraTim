@@ -1,5 +1,5 @@
 .site__erreur{
-  height: 70vh;
+  height: 100vh;
 
 
   .info__erreur {
@@ -10,6 +10,17 @@
     flex-direction: column;
     position: relative;
     z-index: 2;
+  }
+
+  .img__anim {
+    height: 150px;
+    width: 150px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   h1 {

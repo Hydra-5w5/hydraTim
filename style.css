@@ -1254,7 +1254,7 @@ body {
 }
 
 .site__erreur {
-  height: 70vh;
+  height: 100vh;
   /* Redimensionnez le conteneur pour voir la barre de recherche changer ! */
 }
 .site__erreur .info__erreur {
@@ -1265,6 +1265,15 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 2;
+}
+.site__erreur .img__anim {
+  height: 150px;
+  width: 150px;
+}
+.site__erreur .img__anim img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .site__erreur h1 {
   font-size: 7em;
